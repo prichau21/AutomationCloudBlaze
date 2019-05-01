@@ -9,13 +9,13 @@
 	 	    <run>
 		 		<include name="Smoke"></include>
 		 	</run>
-	 	</groups>
+	 	</groups>  
 	 	
 	   	<classes>   						   	  
-          <!--   <class name="com.CloudBlaze.Onboarding.Home"></class> 	
+            <class name="com.CloudBlaze.Onboarding.Home"></class> 	
             <class name="com.CloudBlaze.Onboarding.DataFlow"></class>	
  		 	<class name="com.CloudBlaze.Onboarding.DataSources"></class>    	
- 		    <class name="com.CloudBlaze.Onboarding.SystemParams"></class>	--> 
+ 		    <class name="com.CloudBlaze.Onboarding.SystemParams"></class>
  		 	<class name="com.CloudBlaze.Onboarding.Subscription"></class>
            <!--<class name="com.CloudBlaze.Onboarding.ServicePrincipal"></class>   
  		 	
