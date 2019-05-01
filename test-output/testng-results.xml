@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="9" passed="9">
+  <reporter-output>
+  </reporter-output>
+  <suite name="CloudBlaze Automation" duration-ms="50043" started-at="2019-04-30T12:37:37Z" finished-at="2019-04-30T12:38:27Z">
+    <groups>
+      <group name="Smoke">
+        <method signature="Subscription.verifySubscriptionPage()[pri:1, instance:com.CloudBlaze.Onboarding.Subscription@2f54a33d]" name="verifySubscriptionPage" class="com.CloudBlaze.Onboarding.Subscription"/>
+        <method signature="Subscription.verifyUrlOfSubscription()[pri:2, instance:com.CloudBlaze.Onboarding.Subscription@2f54a33d]" name="verifyUrlOfSubscription" class="com.CloudBlaze.Onboarding.Subscription"/>
+        <method signature="Subscription.verifySubscriptionPageComponents()[pri:4, instance:com.CloudBlaze.Onboarding.Subscription@2f54a33d]" name="verifySubscriptionPageComponents" class="com.CloudBlaze.Onboarding.Subscription"/>
+        <method signature="Subscription.verifyGridComponents()[pri:5, instance:com.CloudBlaze.Onboarding.Subscription@2f54a33d]" name="verifyGridComponents" class="com.CloudBlaze.Onboarding.Subscription"/>
+        <method signature="Subscription.verifyNumberOfRecords()[pri:6, instance:com.CloudBlaze.Onboarding.Subscription@2f54a33d]" name="verifyNumberOfRecords" class="com.CloudBlaze.Onboarding.Subscription"/>
+        <method signature="Subscription.verifyOnClickOfCancelAllFieldShouldGetClear()[pri:7, instance:com.CloudBlaze.Onboarding.Subscription@2f54a33d]" name="verifyOnClickOfCancelAllFieldShouldGetClear" class="com.CloudBlaze.Onboarding.Subscription"/>
+        <method signature="Subscription.verifySubscriptionIsCreated()[pri:8, instance:com.CloudBlaze.Onboarding.Subscription@2f54a33d]" name="verifySubscriptionIsCreated" class="com.CloudBlaze.Onboarding.Subscription"/>
+        <method signature="Subscription.verifyDeleteRecord()[pri:9, instance:com.CloudBlaze.Onboarding.Subscription@2f54a33d]" name="verifyDeleteRecord" class="com.CloudBlaze.Onboarding.Subscription"/>
+        <method signature="Subscription.verifyEditButton()[pri:10, instance:com.CloudBlaze.Onboarding.Subscription@2f54a33d]" name="verifyEditButton" class="com.CloudBlaze.Onboarding.Subscription"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test name="CloudBlaze Tests" duration-ms="50043" started-at="2019-04-30T12:37:37Z" finished-at="2019-04-30T12:38:27Z">
+      <class name="com.CloudBlaze.Onboarding.Subscription">
+        <test-method status="PASS" signature="Report(java.lang.String)[pri:0, instance:com.CloudBlaze.Onboarding.Subscription@2f54a33d]" name="Report" is-config="true" duration-ms="135" started-at="2019-04-30T12:37:37Z" finished-at="2019-04-30T12:37:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://cloudblaze-ui-react.azurewebsites.net/#]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Report -->
+        <test-method status="PASS" signature="init(java.lang.String)[pri:0, instance:com.CloudBlaze.Onboarding.Subscription@2f54a33d]" name="init" is-config="true" duration-ms="11352" started-at="2019-04-30T12:37:37Z" finished-at="2019-04-30T12:37:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://cloudblaze-ui-react.azurewebsites.net/#]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="verifySubscriptionPage()[pri:1, instance:com.CloudBlaze.Onboarding.Subscription@2f54a33d]" name="verifySubscriptionPage" duration-ms="4195" started-at="2019-04-30T12:37:49Z" finished-at="2019-04-30T12:37:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySubscriptionPage -->
+        <test-method status="PASS" signature="verifyUrlOfSubscription()[pri:2, instance:com.CloudBlaze.Onboarding.Subscription@2f54a33d]" name="verifyUrlOfSubscription" duration-ms="15" started-at="2019-04-30T12:37:53Z" depends-on-methods="com.CloudBlaze.Onboarding.Subscription.verifySubscriptionPage" finished-at="2019-04-30T12:37:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUrlOfSubscription -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.CloudBlaze.Onboarding.Subscription@2f54a33d]" name="getResult" is-config="true" duration-ms="0" started-at="2019-04-30T12:37:53Z" finished-at="2019-04-30T12:37:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySubscriptionPage status=SUCCESS method=Subscription.verifySubscriptionPage()[pri:1, instance:com.CloudBlaze.Onboarding.Subscription@2f54a33d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.CloudBlaze.Onboarding.Subscription@2f54a33d]" name="getResult" is-config="true" duration-ms="0" started-at="2019-04-30T12:37:53Z" finished-at="2019-04-30T12:37:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUrlOfSubscription status=SUCCESS method=Subscription.verifyUrlOfSubscription()[pri:2, instance:com.CloudBlaze.Onboarding.Subscription@2f54a33d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="verifySubscriptionPageComponents()[pri:4, instance:com.CloudBlaze.Onboarding.Subscription@2f54a33d]" name="verifySubscriptionPageComponents" duration-ms="332" started-at="2019-04-30T12:37:53Z" depends-on-methods="com.CloudBlaze.Onboarding.Subscription.verifyUrlOfSubscription" finished-at="2019-04-30T12:37:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySubscriptionPageComponents -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.CloudBlaze.Onboarding.Subscription@2f54a33d]" name="getResult" is-config="true" duration-ms="0" started-at="2019-04-30T12:37:53Z" finished-at="2019-04-30T12:37:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySubscriptionPageComponents status=SUCCESS method=Subscription.verifySubscriptionPageComponents()[pri:4, instance:com.CloudBlaze.Onboarding.Subscription@2f54a33d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="verifyGridComponents()[pri:5, instance:com.CloudBlaze.Onboarding.Subscription@2f54a33d]" name="verifyGridComponents" duration-ms="109" started-at="2019-04-30T12:37:53Z" depends-on-methods="com.CloudBlaze.Onboarding.Subscription.verifySubscriptionPageComponents" finished-at="2019-04-30T12:37:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGridComponents -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.CloudBlaze.Onboarding.Subscription@2f54a33d]" name="getResult" is-config="true" duration-ms="2" started-at="2019-04-30T12:37:53Z" finished-at="2019-04-30T12:37:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyGridComponents status=SUCCESS method=Subscription.verifyGridComponents()[pri:5, instance:com.CloudBlaze.Onboarding.Subscription@2f54a33d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="verifyNumberOfRecords()[pri:6, instance:com.CloudBlaze.Onboarding.Subscription@2f54a33d]" name="verifyNumberOfRecords" duration-ms="30" started-at="2019-04-30T12:37:53Z" depends-on-methods="com.CloudBlaze.Onboarding.Subscription.verifyGridComponents" finished-at="2019-04-30T12:37:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNumberOfRecords -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.CloudBlaze.Onboarding.Subscription@2f54a33d]" name="getResult" is-config="true" duration-ms="0" started-at="2019-04-30T12:37:53Z" finished-at="2019-04-30T12:37:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyNumberOfRecords status=SUCCESS method=Subscription.verifyNumberOfRecords()[pri:6, instance:com.CloudBlaze.Onboarding.Subscription@2f54a33d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="verifyOnClickOfCancelAllFieldShouldGetClear()[pri:7, instance:com.CloudBlaze.Onboarding.Subscription@2f54a33d]" name="verifyOnClickOfCancelAllFieldShouldGetClear" duration-ms="11042" started-at="2019-04-30T12:37:53Z" depends-on-methods="com.CloudBlaze.Onboarding.Subscription.verifyNumberOfRecords" finished-at="2019-04-30T12:38:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOnClickOfCancelAllFieldShouldGetClear -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.CloudBlaze.Onboarding.Subscription@2f54a33d]" name="getResult" is-config="true" duration-ms="0" started-at="2019-04-30T12:38:04Z" finished-at="2019-04-30T12:38:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyOnClickOfCancelAllFieldShouldGetClear status=SUCCESS method=Subscription.verifyOnClickOfCancelAllFieldShouldGetClear()[pri:7, instance:com.CloudBlaze.Onboarding.Subscription@2f54a33d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="verifySubscriptionIsCreated()[pri:8, instance:com.CloudBlaze.Onboarding.Subscription@2f54a33d]" name="verifySubscriptionIsCreated" duration-ms="8696" started-at="2019-04-30T12:38:04Z" depends-on-methods="com.CloudBlaze.Onboarding.Subscription.verifyOnClickOfCancelAllFieldShouldGetClear" finished-at="2019-04-30T12:38:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySubscriptionIsCreated -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.CloudBlaze.Onboarding.Subscription@2f54a33d]" name="getResult" is-config="true" duration-ms="0" started-at="2019-04-30T12:38:13Z" finished-at="2019-04-30T12:38:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySubscriptionIsCreated status=SUCCESS method=Subscription.verifySubscriptionIsCreated()[pri:8, instance:com.CloudBlaze.Onboarding.Subscription@2f54a33d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="verifyDeleteRecord()[pri:9, instance:com.CloudBlaze.Onboarding.Subscription@2f54a33d]" name="verifyDeleteRecord" duration-ms="4265" started-at="2019-04-30T12:38:13Z" depends-on-methods="com.CloudBlaze.Onboarding.Subscription.verifySubscriptionIsCreated" finished-at="2019-04-30T12:38:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeleteRecord -->
+        <test-method status="PASS" signature="verifyEditButton()[pri:10, instance:com.CloudBlaze.Onboarding.Subscription@2f54a33d]" name="verifyEditButton" duration-ms="9846" started-at="2019-04-30T12:38:17Z" depends-on-methods="com.CloudBlaze.Onboarding.Subscription.verifyDeleteRecord" finished-at="2019-04-30T12:38:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEditButton -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.CloudBlaze.Onboarding.Subscription@2f54a33d]" name="getResult" is-config="true" duration-ms="0" started-at="2019-04-30T12:38:17Z" finished-at="2019-04-30T12:38:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyDeleteRecord status=SUCCESS method=Subscription.verifyDeleteRecord()[pri:9, instance:com.CloudBlaze.Onboarding.Subscription@2f54a33d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.CloudBlaze.Onboarding.Subscription@2f54a33d]" name="getResult" is-config="true" duration-ms="0" started-at="2019-04-30T12:38:27Z" finished-at="2019-04-30T12:38:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyEditButton status=SUCCESS method=Subscription.verifyEditButton()[pri:10, instance:com.CloudBlaze.Onboarding.Subscription@2f54a33d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.CloudBlaze.Onboarding.Subscription@2f54a33d]" name="tearDown" is-config="true" duration-ms="186" started-at="2019-04-30T12:38:27Z" finished-at="2019-04-30T12:38:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.CloudBlaze.Onboarding.Subscription -->
+    </test> <!-- CloudBlaze Tests -->
+  </suite> <!-- CloudBlaze Automation -->
+</testng-results>

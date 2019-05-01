@@ -1,0 +1,6 @@
+15:56:14,171 DEBUG devpinoyLogger:39 - User has successfully clicked on Workflow Mangement Link
+15:56:18,958 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
+15:56:18,959 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
+15:56:18,961 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+15:56:18,962 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+15:56:18,963 DEBUG cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/Sharad%20Singh/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
