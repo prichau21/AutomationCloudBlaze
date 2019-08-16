@@ -1,28 +1,27 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="CloudBlaze Automation">
-	<test name="CloudBlaze Tests">
+           <suite name="CloudBlaze Automation">
+	       <test name="CloudBlaze Tests">
 	
-	 	<parameter name="env" value="https://cloudblaze-ui-react.azurewebsites.net/#"/>
+	 	   <parameter name="env" value="https://cloudblaze-ui-react.azurewebsites.net/#"/>
 	
-	   	<groups>
+	     	<groups>
 	 	    <run>
-		 		<include name="Smoke"></include>
+		    <include name="Smoke"></include>
 		 	</run>
-	 	</groups>  
+	 	    </groups>  
 	 	
-	   	<classes>   						   	  
-            <class name="com.CloudBlaze.Onboarding.Home"></class> 	
-            <class name="com.CloudBlaze.Onboarding.DataFlow"></class>	
- 		 	<class name="com.CloudBlaze.Onboarding.DataSources"></class>    	
- 		    <class name="com.CloudBlaze.Onboarding.SystemParams"></class>
- 		 	<class name="com.CloudBlaze.Onboarding.Subscription"></class>
-           <!--<class name="com.CloudBlaze.Onboarding.ServicePrincipal"></class>   
- 		 	
- 		 	 <class name="com.CloudBlaze.Monitoring.DataFlowScheduled"></class>
- 		 	
- 		 	<class name="com.CloudBlaze.UserSecurity.UserRoles"></class>-->
-		 		
-		</classes>
-	</test>
-</suite>	
+	         <classes>   						   	  
+            <!-- <   <class name="com.CloudBlaze.Onboarding.Home"></class>
+ 		    <class name="com.CloudBlaze.Onboarding.DataSources"></class>  --> 
+            <class name="com.CloudBlaze.Onboarding.DataFlow"></class> 
+ 		    <!--<class name="com.CloudBlaze.Onboarding.BlobReadOperation"></class>
+ 		    <class name="com.CloudBlaze.Onboarding.SystemParams"></class>	
+ 		   <class name="com.CloudBlaze.Onboarding.CustomOperation"></class>
+ 	        <class name="com.CloudBlaze.Onboarding.Subscription"></class>   
+            <class name="com.CloudBlaze.Onboarding.ServicePrincipal"></class>	
+ 		   <class name="com.CloudBlaze.Monitoring.DataFlowScheduled"></class>
+ 		    <class name="com.CloudBlaze.UserSecurity.UserRoles"></class>-->
+		    </classes>
+	       </test>
+         </suite>	 

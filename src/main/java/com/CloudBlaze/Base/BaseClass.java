@@ -68,7 +68,8 @@ public class BaseClass {
 				System.out.println("Something wrong with the env URL");
 			}
 
-			if (driverPath.equals("\\Drivers\\chromedriver.exe")) {
+			if (driverPath.equals("\\Drivers\\chromedriver.exe")) 
+			{
 				System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + driverPath);
 				driver = new ChromeDriver();
 			}else if (driverPath.equals("/Drivers/chromedriverLinux")) {

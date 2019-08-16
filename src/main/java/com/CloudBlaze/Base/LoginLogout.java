@@ -16,16 +16,21 @@ public class LoginLogout extends BaseClass implements ILoginLogout
 	public static void ExecuteLogin(WebDriver driver) throws Exception 
 	{
 		try {
-			String UserName=CloudBlazeConstants.Username;
-			String UserPwd=CloudBlazeConstants.Password;
 			
-			//test.log(LogStatus.INFO, "Login with User name",UserName);
-			 
-			driver.findElement(By.xpath(txtbx_UserName)).sendKeys(UserName);
-			driver.findElement(By.xpath(txtbx_Password)).sendKeys(UserPwd);
-			driver.findElement(By.xpath(btn_LogIn)).click();
-			//test.log(LogStatus.INFO, "User has clicked on Login button");
-		} catch (Exception e) {
+
+			driver.findElement(By.xpath("//*[@id='root']//button[text()='Login']")).click();
+			Thread.sleep(1000);
+			driver.findElement(By.xpath("//*[@id='i0116']")).sendKeys("priyanka.chauhan@rawcubes.com");
+			Thread.sleep(1000);
+			driver.findElement(By.xpath("//*[@id='idSIButton9']")).click();
+			Thread.sleep(2000);
+			driver.findElement(By.xpath("//*[@id='i0118']")).sendKeys("Sanju21@");
+			Thread.sleep(1000);
+			driver.findElement(By.xpath("//*[@id='idSIButton9']")).click();
+			Thread.sleep(1000);
+			driver.findElement(By.xpath("//*[@id='idSIButton9']")).click();
+		    Thread.sleep(1000);		} 
+		catch (Exception e) {
 			log.error("Some exception happened",e);
 		//	test.log(LogStatus.ERROR, "Some exception happened",e);
 			e.printStackTrace();

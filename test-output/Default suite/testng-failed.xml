@@ -3,23 +3,26 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.CloudBlaze.Onboarding.Subscription">
+      <class name="com.CloudBlaze.Onboarding.DataFlow">
         <methods>
-          <include name="verifySubscriptionPageComponents"/>
-          <include name="verifyGridComponents"/>
-          <include name="verifyUrlOfSubscription"/>
-          <include name="getResult"/>
-          <include name="verifyOnClickOfCancelAllFieldShouldGetClear"/>
-          <include name="verifyDeleteRecord"/>
-          <include name="verifySubscriptionPage"/>
-          <include name="tearDown"/>
           <include name="verifyNumberOfRecords"/>
-          <include name="verifyEditButton"/>
+          <include name="verifyOnAddClickFirstPannel"/>
+          <include name="getResult"/>
+          <include name="verifyDataFlowPage"/>
+          <include name="verifyUrlOfDataFlowPage"/>
+          <include name="verifyComponentsOfDataFlowPage"/>
+          <include name="verifyColumnsOfGrid"/>
+          <include name="verifyOnAddClickPannelareDisplaying"/>
+          <include name="tearDown"/>
+          <include name="verifyGridComponents"/>
+          <include name="verifyEditDataFlow"/>
+          <include name="verifyComponentsOfDataFlow"/>
+          <include name="verifyAddDataFlow"/>
+          <include name="VerifyLogin"/>
           <include name="Report"/>
-          <include name="verifySubscriptionIsCreated"/>
           <include name="init"/>
         </methods>
-      </class> <!-- com.CloudBlaze.Onboarding.Subscription -->
+      </class> <!-- com.CloudBlaze.Onboarding.DataFlow -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -8,7 +8,7 @@ public interface ILoginLogout {
 	 * btn_KnoxLogIn="//*[@id='signIn']";
 	 */
 
-	public String txtbx_UserName = "//*[@id='inlineFormInputGroup1']";
+	public String txtbx_UserName = "//*[@id='i0116']";
 	public String txtbx_Password = "//*[@id='password']";
 	public String btn_LogIn = "//*[@id='signIn']";
 

@@ -9,23 +9,26 @@
       </run>
     </groups>
     <classes>
-      <class name="com.CloudBlaze.Onboarding.Subscription">
+      <class name="com.CloudBlaze.Onboarding.DataFlow">
         <methods>
-          <include name="verifySubscriptionPageComponents"/>
-          <include name="verifyGridComponents"/>
-          <include name="verifyUrlOfSubscription"/>
-          <include name="getResult"/>
-          <include name="verifyOnClickOfCancelAllFieldShouldGetClear"/>
-          <include name="verifyDeleteRecord"/>
-          <include name="verifySubscriptionPage"/>
-          <include name="tearDown"/>
           <include name="verifyNumberOfRecords"/>
-          <include name="verifyEditButton"/>
+          <include name="verifyOnAddClickFirstPannel"/>
+          <include name="getResult"/>
+          <include name="verifyDataFlowPage"/>
+          <include name="verifyUrlOfDataFlowPage"/>
+          <include name="verifyComponentsOfDataFlowPage"/>
+          <include name="verifyPublisedFlowInAzure"/>
+          <include name="verifyColumnsOfGrid"/>
+          <include name="verifyOnAddClickPannelareDisplaying"/>
+          <include name="tearDown"/>
+          <include name="verifyGridComponents"/>
+          <include name="verifyEditDataFlow"/>
+          <include name="verifyComponentsOfDataFlow"/>
+          <include name="VerifyLogin"/>
           <include name="Report"/>
-          <include name="verifySubscriptionIsCreated"/>
           <include name="init"/>
         </methods>
-      </class> <!-- com.CloudBlaze.Onboarding.Subscription -->
+      </class> <!-- com.CloudBlaze.Onboarding.DataFlow -->
     </classes>
   </test> <!-- CloudBlaze Tests(failed) -->
 </suite> <!-- Failed suite [CloudBlaze Automation] -->
