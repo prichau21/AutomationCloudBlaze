@@ -29,30 +29,12 @@ public class DataFlow extends BaseClass implements IOnBoarding
 
 {
 	static ExcelUtils reader = new ExcelUtils(System.getProperty("user.dir") + "/TestData/TestData.xlsx");
-	@Test(priority=1, groups = { "Smoke" })
-	public void VerifyLogin() throws InterruptedException
-	{ 
-		test = report.startTest("login");
-	    driver.manage().timeouts().implicitlyWait(8,TimeUnit.SECONDS) ;
-	    driver.findElement(By.xpath("//*[@id='root']//button[text()='Login']")).click();
-		Thread.sleep(1000);
-		driver.findElement(By.xpath("//*[@id='i0116']")).sendKeys("priyanka.chauhan@rawcubes.com");
-		Thread.sleep(1000);
-		driver.findElement(By.xpath("//*[@id='idSIButton9']")).click();
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//*[@id='i0118']")).sendKeys("Sanju21@");
-		Thread.sleep(1000);
-		driver.findElement(By.xpath("//*[@id='idSIButton9']")).click();
-		Thread.sleep(1000);
-		driver.findElement(By.xpath("//*[@id='idSIButton9']")).click();
-	    Thread.sleep(1000);
-		
-	}	
+	
 	
 	
 	//Verify DataFlow Page Link 
 	
-	@Test(priority=2,dependsOnMethods = { "VerifyLogin" },groups = { "Smoke" })
+	@Test(priority=2,groups = { "Smoke" })
 	public void verifyDataFlowPage() throws InterruptedException 
 	{
 		//driver.navigate().refresh();
@@ -320,12 +302,15 @@ public class DataFlow extends BaseClass implements IOnBoarding
 			
 			 driver.findElement(By.xpath(xpathSourceField)).click();
 			 Thread.sleep(1000);
-			 driver.findElement(By.xpath("//*[@id='menu-age2']//li[text()='"+reader.getCellData("DataFlow","Source", 2)+"']")).click();
+		
+			 driver.findElement(By.xpath("/html/body//div[text()='"+reader.getCellData("DataFlow","Source", 2)+"']")).click();
 			 Thread.sleep(1000);
 			
 			 driver.findElement(By.xpath(xpathDestinationField)).click();
 			 Thread.sleep(1000);
-			 driver.findElement(By.xpath("//*[@id='menu-age3']//li[text()='"+reader.getCellData("DataFlow","Destination", 2)+"']")).click();
+			 
+			
+			 driver.findElement(By.xpath("/html/body//div[text()='"+reader.getCellData("DataFlow","Destination", 2)+"']")).click();
 			 Thread.sleep(1000);
 			
 			 String selectTableLink = driver.findElement(By.xpath(xpathSelectTableLink)).getText();
@@ -366,9 +351,9 @@ public class DataFlow extends BaseClass implements IOnBoarding
 			 test.log(LogStatus.PASS,"Table Columns","Where clause Column is displaying");
              Thread.sleep(1000);
              			 
-		    driver.findElement(By.xpath("/html/body/div[6]/div[2]/div[1]/div[4]/div/div[1]/div[1]/table/thead/tr/th[1]/span/span[1]/input")).click();
-            Thread.sleep(1000);
-			driver.findElement(By.xpath("(//*[@id='1'])[5]")).click();
+		     driver.findElement(By.xpath("/html/body/div[6]/div[2]/div[1]/div[4]/div/div[1]/div[1]/table/thead/tr/th[1]/span/span[1]/input")).click();
+             Thread.sleep(1000);
+			 driver.findElement(By.xpath("(//*[@id='1'])[5]")).click();
 		 
 			 boolean cancel = driver.findElement(By.xpath("(/html/body/div//button[text()='Cancel'])[3]")).isEnabled();
 			 Assert.assertEquals(cancel, true,"Cancel button is not Displaying or Disabled");
@@ -415,7 +400,7 @@ public class DataFlow extends BaseClass implements IOnBoarding
    }
 		
 		
-	    @Test(priority =12, dependsOnMethods = { "verifyComponentsOfDataFlow" },groups = { "Smoke" })
+	    @Test(priority =12, dependsOnMethods = { "verifyAddDataFlow" },groups = { "Smoke" })
 	    public static void verifyEditDataFlow() throws InterruptedException 
 	    {  
 	    	driver.navigate().refresh();
@@ -502,7 +487,7 @@ public class DataFlow extends BaseClass implements IOnBoarding
 	 String toaster = driver.findElement(By.xpath(toasterRecordSaved)).getText();
 	System.out.println(toaster);
 	Assert.assertEquals(toaster,"data flow published successfully","data flow is not published");
-    test.log(LogStatus.PASS, "Delete Record","data flow published successfully");
+    test.log(LogStatus.PASS, "Publish","data flow published successfully");
 	
 	
 	

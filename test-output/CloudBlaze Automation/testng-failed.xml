@@ -9,26 +9,19 @@
       </run>
     </groups>
     <classes>
-      <class name="com.CloudBlaze.Onboarding.DataFlow">
+      <class name="com.Fullload_CDC.MysqlToAdlsDM">
         <methods>
-          <include name="verifyNumberOfRecords"/>
-          <include name="verifyOnAddClickFirstPannel"/>
-          <include name="getResult"/>
-          <include name="verifyDataFlowPage"/>
-          <include name="verifyUrlOfDataFlowPage"/>
-          <include name="verifyComponentsOfDataFlowPage"/>
-          <include name="verifyPublisedFlowInAzure"/>
-          <include name="verifyColumnsOfGrid"/>
-          <include name="verifyOnAddClickPannelareDisplaying"/>
+          <include name="verifyFlowOnMontioringScreen"/>
           <include name="tearDown"/>
-          <include name="verifyGridComponents"/>
-          <include name="verifyEditDataFlow"/>
-          <include name="verifyComponentsOfDataFlow"/>
-          <include name="VerifyLogin"/>
+          <include name="verifyScheduledFlow"/>
+          <include name="verifySourceMySql"/>
+          <include name="verifyAddDataFlow"/>
           <include name="Report"/>
+          <include name="getResult"/>
+          <include name="verifyAddDestination"/>
           <include name="init"/>
         </methods>
-      </class> <!-- com.CloudBlaze.Onboarding.DataFlow -->
+      </class> <!-- com.Fullload_CDC.MysqlToAdlsDM -->
     </classes>
   </test> <!-- CloudBlaze Tests(failed) -->
 </suite> <!-- Failed suite [CloudBlaze Automation] -->

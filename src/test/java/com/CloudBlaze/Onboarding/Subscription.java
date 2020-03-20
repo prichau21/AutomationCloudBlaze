@@ -1,6 +1,7 @@
 package com.CloudBlaze.Onboarding;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.ElementNotVisibleException;
@@ -18,27 +19,10 @@ public class Subscription extends BaseClass implements IOnBoarding
 
 	static ExcelUtils reader = new ExcelUtils(System.getProperty("user.dir") + "/TestData/TestData.xlsx");
 
-	@Test(priority=1, groups = { "Smoke" })
-	public void VerifyLogin() throws InterruptedException
-	{  test = report.startTest("login");
-
-		driver.findElement(By.xpath("//*[@id='root']//button[text()='Login']")).click();
-		Thread.sleep(1000);
-		driver.findElement(By.xpath("//*[@id='i0116']")).sendKeys("priyanka.chauhan@rawcubes.com");
-		Thread.sleep(1000);
-		driver.findElement(By.xpath("//*[@id='idSIButton9']")).click();
-		Thread.sleep(1000);
-		driver.findElement(By.xpath("//*[@id='i0118']")).sendKeys("Sanju21@");
-		Thread.sleep(1000);
-		driver.findElement(By.xpath("//*[@id='idSIButton9']")).click();
-		Thread.sleep(1000);
-		driver.findElement(By.xpath("//*[@id='idSIButton9']")).click();
-	    Thread.sleep(1000);
-		
-	}
 	
 	
-	@Test(priority = 2,  dependsOnMethods = { "VerifyLogin" },groups = { "Smoke" })
+	
+	@Test(priority = 2,groups = { "Smoke" })
 	public void verifySubscriptionPage() throws InterruptedException 
 	{
 		//driver.navigate().refresh();
@@ -357,9 +341,8 @@ public class Subscription extends BaseClass implements IOnBoarding
 		 Thread.sleep(1000);
          test=report.startTest("DeleteDialogBox");
 		 driver.findElement(By.className(classDeleteButton)).click();
-		 WebElement deleteDialogBox = driver.findElement(By.xpath(xpathDeleteDialogBox));
-		 Assert.assertTrue(deleteDialogBox.isDisplayed());
-		 test.log(LogStatus.PASS, "Delete DialogBox","delete DialogBox is displaying");
+		 Thread.sleep(1000);
+		
 		 String deleteText = driver.findElement(By.xpath(xpathDeleteText)).getText();
 		 Assert.assertEquals(deleteText,"Delete","Delete is not Displaying");
 		 test.log(LogStatus.PASS, "Delete DialogBox","Delete is  Displaying");
@@ -385,11 +368,8 @@ public class Subscription extends BaseClass implements IOnBoarding
 		Thread.sleep(1000);
 		driver.findElement(By.xpath(xpathSelectServicePrincipal)).click();
 		Thread.sleep(1000);
-		driver.findElement(By.xpath(xpathFirstElementOfDropDown)).click();
-		
-		
-		
-		
+		//driver.findElement(By.xpath(xpathFirstElementOfDropDown)).click();
+		driver.findElement(By.xpath(xpathQaspServiceprincipal)).click();
 		String name = reader.getCellData("Subscription", "Name", 2);
 		driver.findElement(By.id(idName)).sendKeys(name);
 		Thread.sleep(1000);
@@ -402,8 +382,8 @@ public class Subscription extends BaseClass implements IOnBoarding
 		driver.findElement(By.id(idSubmitBtn)).click();
 		Thread.sleep(1500);
 		String toaster = driver.findElement(By.xpath(toasterRecordSaved)).getText();
-		Thread.sleep(1000);
-		
+        Thread.sleep(1600);
+		System.out.println("toaster message is"+ toaster);
         Assert.assertEquals(toaster,"Subscription added successfully!","Subscription is not added succesfully");
         test.log(LogStatus.PASS, "Subscription Added", "Subscription is added succesfully");
         
@@ -496,9 +476,9 @@ public class Subscription extends BaseClass implements IOnBoarding
 		 driver.findElement(By.xpath(xpathEdit)).click();
 		 Thread.sleep(1000);
 		 
-		 driver.findElement(By.xpath(xpathSelectServicePrincipal)).click();
-		 Thread.sleep(1000);
-		 driver.findElement(By.xpath(xpathFirstElementOfDropDown)).click();
+		// driver.findElement(By.xpath(xpathSelectServicePrincipal)).click();
+		// Thread.sleep(1000);
+		// driver.findElement(By.xpath(xpathFirstElementOfDropDown)).click();
 			
 			
 		
@@ -527,7 +507,7 @@ public class Subscription extends BaseClass implements IOnBoarding
 	     driver.findElement(By.id(idDescription)).sendKeys(desc);
 		 Thread.sleep(1000);
 		 driver.findElement(By.id(idSubmitBtn)).click();
-		 Thread.sleep(1000);
+		 Thread.sleep(1600);
 		 String toaster = driver.findElement(By.xpath(toasterRecordSaved)).getText();
 		 Assert.assertEquals(toaster,"Subscription updated successfully!","Updation is not succesfully");
 	     test.log(LogStatus.PASS, "Subscription Edit","Updation is succesfully");

@@ -21,32 +21,14 @@ public class DataFlowScheduled extends BaseClass implements IMonitoring
 	static ExcelUtils reader = new ExcelUtils(System.getProperty("user.dir") + "/TestData/TestData.xlsx");
 	
 	//Verify Data Flow Scheduled Link
-	@Test(priority=1, groups = { "Smoke" })
-	public void VerifyLogin() throws InterruptedException
-	{ 
-		test = report.startTest("login");
-	    driver.manage().timeouts().implicitlyWait(8,TimeUnit.SECONDS) ;
-	    driver.findElement(By.xpath("//*[@id='root']//button[text()='Login']")).click();
-		Thread.sleep(1000);
-		driver.findElement(By.xpath("//*[@id='i0116']")).sendKeys("priyanka.chauhan@rawcubes.com");
-		Thread.sleep(1000);
-		driver.findElement(By.xpath("//*[@id='idSIButton9']")).click();
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//*[@id='i0118']")).sendKeys("Sanju21@");
-		Thread.sleep(1000);
-		driver.findElement(By.xpath("//*[@id='idSIButton9']")).click();
-		Thread.sleep(1000);
-		driver.findElement(By.xpath("//*[@id='idSIButton9']")).click();
-	    Thread.sleep(1000);
-		
-	}	
 	
-   @Test(priority=2,dependsOnMethods = {"VerifyLogin"}, groups={ "Smoke" } )
-
-public void VerifyDataFlowScheduledPage() throws InterruptedException
-{
-	//driver.navigate().refresh();
-	//Thread.sleep(1000);
+	
+        @Test(priority=2, groups={ "Smoke" } )
+        public void VerifyDataFlowScheduledPage() throws InterruptedException
+     
+        {
+	       //driver.navigate().refresh();
+	       //Thread.sleep(1000);
 	test=report.startTest("Click on Data Flow Scheduled Link");
 	try
 	{
@@ -59,7 +41,7 @@ public void VerifyDataFlowScheduledPage() throws InterruptedException
 	Thread.sleep(2000);
 	test.log(LogStatus.PASS, "User has successfully clicked on Data Flow Scheduled Page Link");
 	
-}
+    }
        //Verify When user Click on Data Flow Scheduled Link ,Data Flow Scheduled Page will Display 
 		@Test(priority = 3, dependsOnMethods = { "VerifyDataFlowScheduledPage" }, groups = { "Smoke" })
 		public static void verifyUrlOfDataFlowScheduledPage() throws InterruptedException 
@@ -70,7 +52,7 @@ public void VerifyDataFlowScheduledPage() throws InterruptedException
 			test = report.startTest("Verify Url of Data Flow Scheduled Page");
 
 			// verify the Url of the page
-			 if(driver.getCurrentUrl().equals(xpathUrlOfDataFlowScheduled)) {
+			if(driver.getCurrentUrl().equals(xpathUrlOfDataFlowScheduled)) {
 			Assert.assertEquals(xpathUrlOfDataFlowScheduled, driver.getCurrentUrl(),"URL is not matching");
 			test.log(LogStatus.PASS, "Page URL is Correct", driver.getCurrentUrl());
 				}
@@ -174,14 +156,14 @@ public void VerifyDataFlowScheduledPage() throws InterruptedException
 			 //verify number of columns in Grid
 		     test = report.startTest(" Verify  columns in Grid ");
 			 int columnsInGrid = driver.findElements(By.xpath(xpathColumnsInGrid)).size();
-			 if(columnsInGrid==8)
+			 if(columnsInGrid==9)
 			 {
 				 
-				 test.log(LogStatus.PASS, "Total columns", "8 columns are displaying on grid");
+				 test.log(LogStatus.PASS, "Total columns", "9 columns are displaying on grid");
 			 }
 			 else
 			 {   
-				 test.log(LogStatus.FAIL, "Total columns", "8 columns are not displaying on grid");
+				 test.log(LogStatus.FAIL, "Total columns", "9 columns are not displaying on grid");
 				 
 			 }
 		     
@@ -230,6 +212,11 @@ public void VerifyDataFlowScheduledPage() throws InterruptedException
 			     {
 			    	
 					 test.log(LogStatus.PASS, "Total columns", "Action is Displaying"); 
+			     }
+			     if(columns.equals("Created On"))
+			     {
+			    	
+					 test.log(LogStatus.PASS, "Total columns", "Created On is Displaying"); 
 			     }
 			     if(columns.equals("Last ActionBy"))
 			     {
@@ -293,7 +280,7 @@ public void VerifyDataFlowScheduledPage() throws InterruptedException
 				//Thread.sleep(1000);
 				driver.findElement(By.xpath(xpathDataFlowName)).click();
 				Thread.sleep(1000);
-				driver.findElement(By.xpath(xpathFirstElementOfDropDown)).click();
+				driver.findElement(By.xpath("//*[@id='menu-dataflowname']//div//ul/li[text()='Dataflowtesting']")).click(); // ENTER NAME OF FLOW THAT YOU WANT SELECT 
 				Thread.sleep(1000);
 				driver.findElement(By.xpath(xpathSelectFrequency)).click();
 				Thread.sleep(2000);
@@ -323,10 +310,9 @@ public void VerifyDataFlowScheduledPage() throws InterruptedException
 		        test=report.startTest("Flow Is Scheduled");
 		        driver.findElement(By.xpath(xpathDataFlowName)).click();
 				Thread.sleep(1000);
-				driver.findElement(By.xpath(xpathFirstElementOfDropDown)).click();
+				driver.findElement(By.xpath("//*[@id='menu-dataflowname']//div//ul/li[text()='Dataflowtesting']")).click(); // ENTER NAME OF FLOW THAT YOU WANT SELECT 				Thread.sleep(1000);
 				Thread.sleep(1000);
 				driver.findElement(By.xpath(xpathSelectFrequency)).click();
-				
 	            Thread.sleep(2000);
 				driver.findElement(By.xpath("//*[@id='root']//div/form//div[text()='Alternate day of each week']")).click();
 			    Thread.sleep(1000);
@@ -340,7 +326,7 @@ public void VerifyDataFlowScheduledPage() throws InterruptedException
 				driver.findElement(By.xpath("//*[@id='root']//*[@name='description']")).sendKeys(description);
 		        Thread.sleep(1000);
 				driver.findElement(By.xpath(xpathSubmit)).click();
-				Thread.sleep(1000);
+				Thread.sleep(1500);
 				String toaster = driver.findElement(By.xpath(xpathtoaster)).getText();
 			
 				System.out.println(toaster);
@@ -359,24 +345,21 @@ public void VerifyDataFlowScheduledPage() throws InterruptedException
 		 		}
 		 		
 			}
-		   test=report.startTest("SameNameFlowCanScheduledAgain");
-		   driver.findElement(By.xpath(xpathDataFlowName)).click();
-		   Thread.sleep(1000);
-		   driver.findElement(By.xpath(xpathFirstElementOfDropDown)).click();
-		   Thread.sleep(1000);
-		   driver.findElement(By.xpath(xpathSelectFrequency)).click();
-		   Thread.sleep(2000);
-		   driver.findElement(By.xpath("//*[@id='root']//div/form//div[text()='First friday of each Month']")).click();
-		   Thread.sleep(1000);
-          driver.findElement(By.xpath(xpathEndDate)).click();
-	 	   Thread.sleep(5000);
-	 	   driver.findElement(By.xpath("//*[@id='Edate']/div/div[2]/div/div[2]/div[2]/div[5]/div[3]")).click();
-	 	   Thread.sleep(1000);
-		   driver.findElement(By.xpath(xpathSubmit)).click();
-		   Thread.sleep(1000);
-		   String alerts = driver.findElement(By.xpath(alert)).getText();
-	        Assert.assertEquals(alerts,"Schedule already created for this Data flow","Schedule is not created for this Data flow");
-	        test.log(LogStatus.PASS,"Schedule Data flow", "Schedule already created for this Data flow");
+//		   test=report.startTest("SameNameFlowCanScheduledAgain");
+//		   driver.findElement(By.xpath(xpathDataFlowName)).click();
+//		   Thread.sleep(1000);
+//		   if(driver.findElement(By.xpath("//*[@id='menu-dataflowname']//div//ul/li[text()='test_df_demo']")).getText().equals("test_df_demo"))
+//	   {
+//		   System.out.println("User is able to see Published Flow on Drop down");
+//		   test.log(LogStatus.FAIL,"Published Flow","User is able to see Published Flow on Drop down ");
+//		   
+//		   }
+//		   else
+//		   {
+//			   System.out.println("User is not able to see Publish Flow on Drop Down");
+//			   test.log(LogStatus.PASS,"Published Flow","User is not able to see Publish Flow on Drop Down");
+//		   }
+//		       Thread.sleep(1000);
 		  
 			}
 			
@@ -434,8 +417,9 @@ public void VerifyDataFlowScheduledPage() throws InterruptedException
 				      Assert.assertEquals(deleteText,"Delete","Delete is not Displaying");
 				      test.log(LogStatus.PASS, "Delete DialogBox","Delete is  Displaying");
 				      String deleteStatement = driver.findElement(By.xpath(xpathDeleteStatement)).getText();
-				      Assert.assertEquals(deleteStatement,"Are you sure you want to delete this entry?","Are you sure you want to delete this entry? text is not displaying!!!");
-				      test.log(LogStatus.PASS, "Delete DialogBox", "Are you sure you want to delete this entry? text is  Displaying");
+				     System.out.println(deleteStatement);
+				      Assert.assertEquals(deleteStatement,"Are you sure you want to delete this entry?","MSg is displaying");
+				      test.log(LogStatus.PASS, "Delete DialogBox", "This flow is under Inprogress state, If you delete this flow then related pipeline will fail");
 				      WebElement yesButton = driver.findElement(By.xpath(xpathDeleteYesButton));
 				      Assert.assertTrue(yesButton.isEnabled());
 				      test.log(LogStatus.PASS, "yes Button", "yes Button is displaying and Enabled");
@@ -460,7 +444,7 @@ public void VerifyDataFlowScheduledPage() throws InterruptedException
 					driver.findElement(By.xpath(xpathDelete)).click();
 					Thread.sleep(1000);
 					driver.findElement(By.xpath(yesButton)).click();
-					Thread.sleep(1000);
+					Thread.sleep(1500);
 					String toaster = driver.findElement(By.xpath(xpathtoaster)).getText();
 					Assert.assertEquals(toaster,"Scheduled Flow deleted successfully!","Record is not Deleted succesfully ");
 				     test.log(LogStatus.PASS, "Delete Record", "Record is Deleted Successfully Toaster message is displaying");
@@ -478,15 +462,7 @@ public void VerifyDataFlowScheduledPage() throws InterruptedException
 			 		System.out.println("Record is Deleted Successfuly ,not displaying on Screen");
 			 		test.log(LogStatus.PASS, "Delete Record", "Record is deleted Sucessfully, not Displaying on Screen");
 			 		
-				     int rows2 = driver.findElements(By.xpath(xpathRowInGrid)).size();
-					
-					if (rows2 == rows - 1) {
-						test.log(LogStatus.PASS, "Delete Record", "Record is deleted Sucessfully");
-					} else {
-						test.log(LogStatus.FAIL, "Delete Record", "Record id not Deleted");
-					}
-					 
-				}
+			   }
 			   
 			   
 			
@@ -500,9 +476,9 @@ public void VerifyDataFlowScheduledPage() throws InterruptedException
 				  
 				   driver.findElement(By.xpath(xpathDataFlowName)).click();
 				   Thread.sleep(1000);
-				   driver.findElement(By.xpath(xpathFirstElementOfDropDown)).click();
+				   driver.findElement(By.xpath("//*[@id='menu-dataflowname']//div//ul/li[text()='Dataflowtesting']")).click(); // ENTER NAME OF FLOW THAT YOU WANT SELECT 				   Thread.sleep(1000);
 				   Thread.sleep(1000);
-                   driver.findElement(By.xpath(xpathSelectFrequency)).click();
+					driver.findElement(By.xpath(xpathSelectFrequency)).click();
 				   Thread.sleep(1000);
 				   driver.findElement(By.xpath("//*[@id='root']//div[1][text()='Now']")).click();
 				
@@ -533,19 +509,17 @@ public void VerifyDataFlowScheduledPage() throws InterruptedException
 					   test.log(LogStatus.PASS, "Delete DialogBox", "description Field is Displaying");  
 					  
 				    }
-			   @Test(priority = 12, dependsOnMethods = { "verifyDeleteRecord" }, groups = { "Smoke" })
+			   @Test(priority = 13, dependsOnMethods = { "verifyNowFrequency" }, groups = { "Smoke" })
 				public static void verifySpecificDayFrequency() throws InterruptedException 
 				{
 				   test=report.startTest("Specific Day  Frequency");
-				   
-				   driver.findElement(By.xpath(xpathDataFlowScheduled)).click();
-					  
+				   driver.navigate().refresh();
+				 
 				   driver.findElement(By.xpath(xpathDataFlowName)).click();
-				   Thread.sleep(1000);
-				   driver.findElement(By.xpath(xpathSecondElementOfDropDown)).click();
-				   Thread.sleep(1000);
-                   driver.findElement(By.xpath(xpathSelectFrequency)).click();
-				   Thread.sleep(1000);
+					Thread.sleep(1000);
+					driver.findElement(By.xpath("//*[@id='menu-dataflowname']//div//ul/li[text()='SuperStoreSales123']")).click(); // ENTER NAME OF FLOW THAT YOU WANT SELECT 				Thread.sleep(1000);
+					Thread.sleep(1000);
+					driver.findElement(By.xpath(xpathSelectFrequency)).click();
 				   driver.findElement(By.xpath("//*[@id='root']//div[text()='Specific day of each month']")).click();
 				   driver.findElement(By.id("specificId")).sendKeys(reader.getCellData("Scheduler","Day", 2));
 				   Thread.sleep(1000);
@@ -572,13 +546,10 @@ public void VerifyDataFlowScheduledPage() throws InterruptedException
 			        {
 				      if(driver.findElement(By.xpath("//*[@id='root']//table//tbody//tr["+i+"]//td[2]")).getText().equals("Priyanka"))
 			 	    {
-			 			
-			 			test.log(LogStatus.PASS,"Record is  displaying on grid Sucessfully!!!");
+			 			 
+			 			test.log(LogStatus.PASS,"Record is displaying on grid Sucessfully!!!");
 			 		}
-			 		
-				
-				
-				    }	
+			 		}	
                     }
 		     
                     }

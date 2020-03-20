@@ -9,6 +9,7 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -21,6 +22,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
@@ -59,12 +61,8 @@ public class BaseClass {
 
 			if (env.contains("https://cloudblaze-ui-react.azurewebsites.net/#")) {
 				System.out.println("Environment is Test (i.e.," + env + ")");
-			} else if (env.contains("http://192.168.0.63:8009/datablazev2/home")
-					|| env.contains("http://192.168.0.63:8009/home/")) {
-				System.out.println("Environment is Dev (i.e.," + env + ")");
-			} else if (env.contains("http://101.53.139.79:8009/")) {
-				System.out.println("Environment is UAT (i.e.," + env + ")");
-			} else {
+			}
+			 else {
 				System.out.println("Something wrong with the env URL");
 			}
 
@@ -105,10 +103,23 @@ public class BaseClass {
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
 		// Maximizing & Opening the respective browser
-		driver.manage().window().maximize();
+		  driver.manage().window().maximize();
 		// driver.get(DatablazeConstants.Dev);
-		driver.get(env);
+		   driver.get(env);
 	//	LoginLogout.ExecuteLogin(driver);
+		    driver.findElement(By.xpath("//*[@id='root']//button[text()='Login']")).click();
+			Thread.sleep(1000);
+			driver.findElement(By.xpath("//*[@id='i0116']")).sendKeys("priyanka.chauhan@rawcubes.com");
+			Thread.sleep(1000);
+			driver.findElement(By.xpath("//*[@id='idSIButton9']")).click();
+			Thread.sleep(1500);
+			driver.findElement(By.xpath("//*[@id='i0118']")).sendKeys("Sanju21@");
+			Thread.sleep(1000);
+			driver.findElement(By.xpath("//*[@id='idSIButton9']")).click();
+			Thread.sleep(1000);
+			driver.findElement(By.xpath("//*[@id='idSIButton9']")).click();
+		    Thread.sleep(1000);
+		    driver.navigate().refresh();
 	}
 
 	public static String getChromeDriverPath() {
@@ -116,7 +127,7 @@ public class BaseClass {
 
 		if (OS.contains("Window")) {
 			System.out.println("OS is " + OS);
-			return "\\Drivers\\chromedriver.exe";
+			return "\\Drivers\\chromedriver.exe";  //changd
 		} // else if (OS.contains("Mac")) {
 			// return "libs/chromedriver_mac"
 			// }
@@ -146,7 +157,8 @@ public class BaseClass {
 
 	@Parameters("env")
 	@BeforeTest(alwaysRun = true)
-	public static void Report(String env) {
+	public static void Report(String env) 
+	{
 		DateFormat df = new SimpleDateFormat("_dd-MM-yyyy_hh-mm-ss");
 		String timeStamp = df.format(new Date());
 		String currentDir1 = System.getProperty("user.dir") + "/Reports/TestReport";
@@ -157,15 +169,18 @@ public class BaseClass {
 		String currentDir2 = System.getProperty("user.dir") + "/Reports/TestReport.html";
 		report = new ExtentReports(currentDir2, true);
 
-		report.addSystemInfo("Host Name", "Datablaze").addSystemInfo("Environment", env).addSystemInfo("OS", "Linux")
-				.addSystemInfo("User Name", "SHARAD KUMAR SINGH");
+		report.addSystemInfo("Host Name", "CloudBlaze").addSystemInfo("Environment", env).addSystemInfo("OS", "Linux")
+				.addSystemInfo("User Name", "Priyanka Chauhan");
 		report.loadConfig(new File(System.getProperty("user.dir") + "/Properties/extent-config.xml"));
 
 	}
 
+	
+
 	// Implementing Report Generation
 	@AfterMethod(alwaysRun = true)
-	public static void getResult(ITestResult result) throws Exception {
+	public static void getResult(ITestResult result) throws Exception 
+	{
 		if (result.getStatus() == ITestResult.FAILURE) {
 		test.log(LogStatus.FAIL, "Test Case Failed is " + result.getName());
 			// To capture screenshot path and store the path of the screenshot in the string
@@ -175,13 +190,17 @@ public class BaseClass {
 			String screenshotPath = getScreenshot(driver, result.getName());
 			// To add it in the extent report
 		test.log(LogStatus.FAIL, test.addScreenCapture(screenshotPath));
-		} else if (result.getStatus() == ITestResult.SKIP) {
+		} 
+		else if (result.getStatus() == ITestResult.SKIP) {
 		test.log(LogStatus.SKIP, "Test Case Skipped is " + result.getName());
-		} else if (result.getStatus() == ITestResult.SUCCESS) {
+		} 
+		else if (result.getStatus() == ITestResult.SUCCESS) {
 		test.log(LogStatus.PASS, "Test Case Ran is " + result.getName());
-		} else if (result.getStatus() == ITestResult.SUCCESS_PERCENTAGE_FAILURE) {
+		} 
+		else if (result.getStatus() == ITestResult.SUCCESS_PERCENTAGE_FAILURE) {
 		test.log(LogStatus.INFO, "Test Case Success Perccentage_failure is" + result.getName());
-		} else {
+		} 
+		else {
 		test.log(LogStatus.UNKNOWN, "Something wrong happened");
 		}
 	}

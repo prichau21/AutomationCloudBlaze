@@ -17,26 +17,7 @@ import com.relevantcodes.extentreports.LogStatus;
     public class SystemParams extends BaseClass implements IOnBoarding {
     static ExcelUtils reader = new ExcelUtils(System.getProperty("user.dir") + "/TestData/TestData.xlsx");
 	
-    @Test(priority=1, groups = { "Smoke" })
-	public void VerifyLogin() throws InterruptedException
-	{ 
-		test = report.startTest("login");
-	    driver.manage().timeouts().implicitlyWait(8,TimeUnit.SECONDS) ;
-	    driver.findElement(By.xpath("//*[@id='root']//button[text()='Login']")).click();
-		Thread.sleep(1000);
-		driver.findElement(By.xpath("//*[@id='i0116']")).sendKeys("priyanka.chauhan@rawcubes.com");
-		Thread.sleep(1000);
-		driver.findElement(By.xpath("//*[@id='idSIButton9']")).click();
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//*[@id='i0118']")).sendKeys("Sanju21@");
-		Thread.sleep(1000);
-		driver.findElement(By.xpath("//*[@id='idSIButton9']")).click();
-		Thread.sleep(1000);
-		driver.findElement(By.xpath("//*[@id='idSIButton9']")).click();
-	    Thread.sleep(1000);
-		
-	}	
-	
+   
     
     
     

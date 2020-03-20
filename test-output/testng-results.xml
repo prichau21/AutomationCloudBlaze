@@ -1,30 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="15" passed="15">
+<testng-results skipped="0" failed="1" ignored="0" total="5" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="CloudBlaze Automation" duration-ms="111594" started-at="2019-08-12T08:46:36Z" finished-at="2019-08-12T08:48:28Z">
+  <suite name="CloudBlaze Automation" duration-ms="1216130" started-at="2020-03-16T10:02:44Z" finished-at="2020-03-16T10:23:00Z">
     <groups>
       <group name="Smoke">
-        <method signature="DataFlow.DpdpipelinePRovisioning()[pri:15, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d]" name="DpdpipelinePRovisioning" class="com.CloudBlaze.Onboarding.DataFlow"/>
-        <method signature="DataFlow.DpdpipelineSchemaProcessor()[pri:16, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d]" name="DpdpipelineSchemaProcessor" class="com.CloudBlaze.Onboarding.DataFlow"/>
-        <method signature="DataFlow.VerifyLogin()[pri:1, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d]" name="VerifyLogin" class="com.CloudBlaze.Onboarding.DataFlow"/>
-        <method signature="DataFlow.verifyDataFlowPage()[pri:2, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d]" name="verifyDataFlowPage" class="com.CloudBlaze.Onboarding.DataFlow"/>
-        <method signature="DataFlow.verifyUrlOfDataFlowPage()[pri:3, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d]" name="verifyUrlOfDataFlowPage" class="com.CloudBlaze.Onboarding.DataFlow"/>
-        <method signature="DataFlow.verifyComponentsOfDataFlowPage()[pri:4, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d]" name="verifyComponentsOfDataFlowPage" class="com.CloudBlaze.Onboarding.DataFlow"/>
-        <method signature="DataFlow.verifyGridComponents()[pri:5, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d]" name="verifyGridComponents" class="com.CloudBlaze.Onboarding.DataFlow"/>
-        <method signature="DataFlow.verifyColumnsOfGrid()[pri:6, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d]" name="verifyColumnsOfGrid" class="com.CloudBlaze.Onboarding.DataFlow"/>
-        <method signature="DataFlow.verifyNumberOfRecords()[pri:7, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d]" name="verifyNumberOfRecords" class="com.CloudBlaze.Onboarding.DataFlow"/>
-        <method signature="DataFlow.verifyOnAddClickPannelareDisplaying()[pri:8, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d]" name="verifyOnAddClickPannelareDisplaying" class="com.CloudBlaze.Onboarding.DataFlow"/>
-        <method signature="DataFlow.verifyOnAddClickFirstPannel()[pri:9, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d]" name="verifyOnAddClickFirstPannel" class="com.CloudBlaze.Onboarding.DataFlow"/>
-        <method signature="DataFlow.verifyComponentsOfDataFlow()[pri:10, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d]" name="verifyComponentsOfDataFlow" class="com.CloudBlaze.Onboarding.DataFlow"/>
-        <method signature="DataFlow.verifyAddDataFlow()[pri:11, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d]" name="verifyAddDataFlow" class="com.CloudBlaze.Onboarding.DataFlow"/>
-        <method signature="DataFlow.verifyEditDataFlow()[pri:12, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d]" name="verifyEditDataFlow" class="com.CloudBlaze.Onboarding.DataFlow"/>
-        <method signature="DataFlow.verifyPublisedFlowInAzure()[pri:13, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d]" name="verifyPublisedFlowInAzure" class="com.CloudBlaze.Onboarding.DataFlow"/>
+        <method signature="MysqlToAdlsDM.verifySourceMySql()[pri:1, instance:com.Fullload_CDC.MysqlToAdlsDM@a3d8174]" name="verifySourceMySql" class="com.Fullload_CDC.MysqlToAdlsDM"/>
+        <method signature="MysqlToAdlsDM.verifyAddDestination()[pri:2, instance:com.Fullload_CDC.MysqlToAdlsDM@a3d8174]" name="verifyAddDestination" class="com.Fullload_CDC.MysqlToAdlsDM"/>
+        <method signature="MysqlToAdlsDM.verifyAddDataFlow()[pri:3, instance:com.Fullload_CDC.MysqlToAdlsDM@a3d8174]" name="verifyAddDataFlow" class="com.Fullload_CDC.MysqlToAdlsDM"/>
+        <method signature="MysqlToAdlsDM.verifyScheduledFlow()[pri:4, instance:com.Fullload_CDC.MysqlToAdlsDM@a3d8174]" name="verifyScheduledFlow" class="com.Fullload_CDC.MysqlToAdlsDM"/>
+        <method signature="MysqlToAdlsDM.verifyFlowOnMontioringScreen()[pri:5, instance:com.Fullload_CDC.MysqlToAdlsDM@a3d8174]" name="verifyFlowOnMontioringScreen" class="com.Fullload_CDC.MysqlToAdlsDM"/>
       </group> <!-- Smoke -->
     </groups>
-    <test name="CloudBlaze Tests" duration-ms="111594" started-at="2019-08-12T08:46:36Z" finished-at="2019-08-12T08:48:28Z">
-      <class name="com.CloudBlaze.Onboarding.DataFlow">
-        <test-method status="PASS" signature="Report(java.lang.String)[pri:0, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d]" name="Report" is-config="true" duration-ms="304" started-at="2019-08-12T08:46:36Z" finished-at="2019-08-12T08:46:37Z">
+    <test name="CloudBlaze Tests" duration-ms="1216130" started-at="2020-03-16T10:02:44Z" finished-at="2020-03-16T10:23:00Z">
+      <class name="com.Fullload_CDC.MysqlToAdlsDM">
+        <test-method status="PASS" signature="Report(java.lang.String)[pri:0, instance:com.Fullload_CDC.MysqlToAdlsDM@a3d8174]" name="Report" is-config="true" duration-ms="140" started-at="2020-03-16T10:02:44Z" finished-at="2020-03-16T10:02:44Z">
           <params>
             <param index="0">
               <value>
@@ -35,7 +25,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Report -->
-        <test-method status="PASS" signature="init(java.lang.String)[pri:0, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d]" name="init" is-config="true" duration-ms="13753" started-at="2019-08-12T08:46:37Z" finished-at="2019-08-12T08:46:50Z">
+        <test-method status="PASS" signature="init(java.lang.String)[pri:0, instance:com.Fullload_CDC.MysqlToAdlsDM@a3d8174]" name="init" is-config="true" duration-ms="28371" started-at="2020-03-16T10:02:44Z" finished-at="2020-03-16T10:03:12Z">
           <params>
             <param index="0">
               <value>
@@ -46,236 +36,209 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="VerifyLogin()[pri:1, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d]" name="VerifyLogin" duration-ms="13843" started-at="2019-08-12T08:46:50Z" finished-at="2019-08-12T08:47:04Z">
+        <test-method status="PASS" signature="verifySourceMySql()[pri:1, instance:com.Fullload_CDC.MysqlToAdlsDM@a3d8174]" name="verifySourceMySql" duration-ms="45317" started-at="2020-03-16T10:03:12Z" finished-at="2020-03-16T10:03:57Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyLogin -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d]" name="getResult" is-config="true" duration-ms="2" started-at="2019-08-12T08:47:04Z" finished-at="2019-08-12T08:47:04Z">
+        </test-method> <!-- verifySourceMySql -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.MysqlToAdlsDM@a3d8174]" name="getResult" is-config="true" duration-ms="2" started-at="2020-03-16T10:03:57Z" finished-at="2020-03-16T10:03:57Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=VerifyLogin status=SUCCESS method=DataFlow.VerifyLogin()[pri:1, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d] output={null}]]]>
+                <![CDATA[[TestResult name=verifySourceMySql status=SUCCESS method=MysqlToAdlsDM.verifySourceMySql()[pri:1, instance:com.Fullload_CDC.MysqlToAdlsDM@a3d8174] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="verifyDataFlowPage()[pri:2, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d]" name="verifyDataFlowPage" duration-ms="4171" started-at="2019-08-12T08:47:04Z" depends-on-methods="com.CloudBlaze.Onboarding.DataFlow.VerifyLogin" finished-at="2019-08-12T08:47:08Z">
+        <test-method status="PASS" signature="verifyAddDestination()[pri:2, instance:com.Fullload_CDC.MysqlToAdlsDM@a3d8174]" name="verifyAddDestination" duration-ms="20882" started-at="2020-03-16T10:03:57Z" depends-on-methods="com.Fullload_CDC.MysqlToAdlsDM.verifySourceMySql" finished-at="2020-03-16T10:04:18Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyDataFlowPage -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d]" name="getResult" is-config="true" duration-ms="0" started-at="2019-08-12T08:47:08Z" finished-at="2019-08-12T08:47:08Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyDataFlowPage status=SUCCESS method=DataFlow.verifyDataFlowPage()[pri:2, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="verifyUrlOfDataFlowPage()[pri:3, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d]" name="verifyUrlOfDataFlowPage" duration-ms="4465" started-at="2019-08-12T08:47:08Z" depends-on-methods="com.CloudBlaze.Onboarding.DataFlow.verifyDataFlowPage" finished-at="2019-08-12T08:47:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUrlOfDataFlowPage -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d]" name="getResult" is-config="true" duration-ms="1" started-at="2019-08-12T08:47:13Z" finished-at="2019-08-12T08:47:13Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyUrlOfDataFlowPage status=SUCCESS method=DataFlow.verifyUrlOfDataFlowPage()[pri:3, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="verifyComponentsOfDataFlowPage()[pri:4, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d]" name="verifyComponentsOfDataFlowPage" duration-ms="3149" started-at="2019-08-12T08:47:13Z" depends-on-methods="com.CloudBlaze.Onboarding.DataFlow.verifyUrlOfDataFlowPage" finished-at="2019-08-12T08:47:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyComponentsOfDataFlowPage -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d]" name="getResult" is-config="true" duration-ms="0" started-at="2019-08-12T08:47:16Z" finished-at="2019-08-12T08:47:16Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyComponentsOfDataFlowPage status=SUCCESS method=DataFlow.verifyComponentsOfDataFlowPage()[pri:4, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="verifyGridComponents()[pri:5, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d]" name="verifyGridComponents" duration-ms="156" started-at="2019-08-12T08:47:16Z" depends-on-methods="com.CloudBlaze.Onboarding.DataFlow.verifyComponentsOfDataFlowPage" finished-at="2019-08-12T08:47:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyGridComponents -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d]" name="getResult" is-config="true" duration-ms="0" started-at="2019-08-12T08:47:16Z" finished-at="2019-08-12T08:47:16Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyGridComponents status=SUCCESS method=DataFlow.verifyGridComponents()[pri:5, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="verifyColumnsOfGrid()[pri:6, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d]" name="verifyColumnsOfGrid" duration-ms="438" started-at="2019-08-12T08:47:16Z" depends-on-methods="com.CloudBlaze.Onboarding.DataFlow.verifyGridComponents" finished-at="2019-08-12T08:47:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyColumnsOfGrid -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d]" name="getResult" is-config="true" duration-ms="1" started-at="2019-08-12T08:47:17Z" finished-at="2019-08-12T08:47:17Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyColumnsOfGrid status=SUCCESS method=DataFlow.verifyColumnsOfGrid()[pri:6, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="verifyNumberOfRecords()[pri:7, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d]" name="verifyNumberOfRecords" duration-ms="37" started-at="2019-08-12T08:47:17Z" depends-on-methods="com.CloudBlaze.Onboarding.DataFlow.verifyColumnsOfGrid" finished-at="2019-08-12T08:47:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNumberOfRecords -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d]" name="getResult" is-config="true" duration-ms="0" started-at="2019-08-12T08:47:17Z" finished-at="2019-08-12T08:47:17Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyNumberOfRecords status=SUCCESS method=DataFlow.verifyNumberOfRecords()[pri:7, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="verifyOnAddClickPannelareDisplaying()[pri:8, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d]" name="verifyOnAddClickPannelareDisplaying" duration-ms="289" started-at="2019-08-12T08:47:17Z" depends-on-methods="com.CloudBlaze.Onboarding.DataFlow.verifyNumberOfRecords" finished-at="2019-08-12T08:47:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyOnAddClickPannelareDisplaying -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d]" name="getResult" is-config="true" duration-ms="0" started-at="2019-08-12T08:47:17Z" finished-at="2019-08-12T08:47:17Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyOnAddClickPannelareDisplaying status=SUCCESS method=DataFlow.verifyOnAddClickPannelareDisplaying()[pri:8, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="verifyOnAddClickFirstPannel()[pri:9, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d]" name="verifyOnAddClickFirstPannel" duration-ms="1448" started-at="2019-08-12T08:47:17Z" depends-on-methods="com.CloudBlaze.Onboarding.DataFlow.verifyOnAddClickPannelareDisplaying" finished-at="2019-08-12T08:47:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyOnAddClickFirstPannel -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d]" name="getResult" is-config="true" duration-ms="1" started-at="2019-08-12T08:47:18Z" finished-at="2019-08-12T08:47:18Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyOnAddClickFirstPannel status=SUCCESS method=DataFlow.verifyOnAddClickFirstPannel()[pri:9, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="verifyComponentsOfDataFlow()[pri:10, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d]" name="verifyComponentsOfDataFlow" duration-ms="2284" started-at="2019-08-12T08:47:18Z" depends-on-methods="com.CloudBlaze.Onboarding.DataFlow.verifyOnAddClickFirstPannel" finished-at="2019-08-12T08:47:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyComponentsOfDataFlow -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d]" name="getResult" is-config="true" duration-ms="0" started-at="2019-08-12T08:47:21Z" finished-at="2019-08-12T08:47:21Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyComponentsOfDataFlow status=SUCCESS method=DataFlow.verifyComponentsOfDataFlow()[pri:10, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="verifyAddDataFlow()[pri:11, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d]" name="verifyAddDataFlow" duration-ms="30581" started-at="2019-08-12T08:47:21Z" depends-on-methods="com.CloudBlaze.Onboarding.DataFlow.verifyComponentsOfDataFlow" finished-at="2019-08-12T08:47:51Z">
+        </test-method> <!-- verifyAddDestination -->
+        <test-method status="PASS" signature="verifyAddDataFlow()[pri:3, instance:com.Fullload_CDC.MysqlToAdlsDM@a3d8174]" name="verifyAddDataFlow" duration-ms="43596" started-at="2020-03-16T10:04:18Z" depends-on-methods="com.Fullload_CDC.MysqlToAdlsDM.verifyAddDestination" finished-at="2020-03-16T10:05:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddDataFlow -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d]" name="getResult" is-config="true" duration-ms="0" started-at="2019-08-12T08:47:51Z" finished-at="2019-08-12T08:47:51Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.MysqlToAdlsDM@a3d8174]" name="getResult" is-config="true" duration-ms="0" started-at="2020-03-16T10:04:18Z" finished-at="2020-03-16T10:04:18Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyAddDataFlow status=SUCCESS method=DataFlow.verifyAddDataFlow()[pri:11, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d] output={null}]]]>
+                <![CDATA[[TestResult name=verifyAddDestination status=SUCCESS method=MysqlToAdlsDM.verifyAddDestination()[pri:2, instance:com.Fullload_CDC.MysqlToAdlsDM@a3d8174] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="verifyEditDataFlow()[pri:12, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d]" name="verifyEditDataFlow" duration-ms="18154" started-at="2019-08-12T08:47:51Z" depends-on-methods="com.CloudBlaze.Onboarding.DataFlow.verifyComponentsOfDataFlow" finished-at="2019-08-12T08:48:10Z">
+        <test-method status="PASS" signature="verifyScheduledFlow()[pri:4, instance:com.Fullload_CDC.MysqlToAdlsDM@a3d8174]" name="verifyScheduledFlow" duration-ms="18663" started-at="2020-03-16T10:05:02Z" depends-on-methods="com.Fullload_CDC.MysqlToAdlsDM.verifyAddDataFlow" finished-at="2020-03-16T10:05:21Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyEditDataFlow -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d]" name="getResult" is-config="true" duration-ms="0" started-at="2019-08-12T08:48:10Z" finished-at="2019-08-12T08:48:10Z">
+        </test-method> <!-- verifyScheduledFlow -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.MysqlToAdlsDM@a3d8174]" name="getResult" is-config="true" duration-ms="0" started-at="2020-03-16T10:05:02Z" finished-at="2020-03-16T10:05:02Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyEditDataFlow status=SUCCESS method=DataFlow.verifyEditDataFlow()[pri:12, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d] output={null}]]]>
+                <![CDATA[[TestResult name=verifyAddDataFlow status=SUCCESS method=MysqlToAdlsDM.verifyAddDataFlow()[pri:3, instance:com.Fullload_CDC.MysqlToAdlsDM@a3d8174] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="verifyPublisedFlowInAzure()[pri:13, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d]" name="verifyPublisedFlowInAzure" duration-ms="9767" started-at="2019-08-12T08:48:10Z" depends-on-methods="com.CloudBlaze.Onboarding.DataFlow.verifyEditDataFlow" finished-at="2019-08-12T08:48:19Z">
+        <test-method status="FAIL" signature="verifyFlowOnMontioringScreen()[pri:5, instance:com.Fullload_CDC.MysqlToAdlsDM@a3d8174]" name="verifyFlowOnMontioringScreen" duration-ms="1044970" started-at="2020-03-16T10:05:21Z" depends-on-methods="com.Fullload_CDC.MysqlToAdlsDM.verifyScheduledFlow" finished-at="2020-03-16T10:22:46Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[chrome not reachable
+  (Session info: chrome=80.0.3987.132)
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LAPTOP-2G86F66K', ip: '192.168.0.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58894}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7f35c2fc521491e5dab76d0f735b46c5]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=80.0.3987.132)
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LAPTOP-2G86F66K', ip: '192.168.0.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58894}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7f35c2fc521491e5dab76d0f735b46c5
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.refresh(RemoteWebDriver.java:856)
+at com.Fullload_CDC.ReuseFuntions.verifyFlowMontioringScreen(ReuseFuntions.java:360)
+at com.Fullload_CDC.MysqlToAdlsDM.verifyFlowOnMontioringScreen(MysqlToAdlsDM.java:113)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyPublisedFlowInAzure -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d]" name="getResult" is-config="true" duration-ms="1" started-at="2019-08-12T08:48:19Z" finished-at="2019-08-12T08:48:19Z">
+        </test-method> <!-- verifyFlowOnMontioringScreen -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.MysqlToAdlsDM@a3d8174]" name="getResult" is-config="true" duration-ms="0" started-at="2020-03-16T10:05:21Z" finished-at="2020-03-16T10:05:21Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyPublisedFlowInAzure status=SUCCESS method=DataFlow.verifyPublisedFlowInAzure()[pri:13, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d] output={null}]]]>
+                <![CDATA[[TestResult name=verifyScheduledFlow status=SUCCESS method=MysqlToAdlsDM.verifyScheduledFlow()[pri:4, instance:com.Fullload_CDC.MysqlToAdlsDM@a3d8174] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="DpdpipelinePRovisioning()[pri:15, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d]" name="DpdpipelinePRovisioning" duration-ms="5338" started-at="2019-08-12T08:48:19Z" finished-at="2019-08-12T08:48:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DpdpipelinePRovisioning -->
-        <test-method status="PASS" signature="DpdpipelineSchemaProcessor()[pri:16, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d]" name="DpdpipelineSchemaProcessor" duration-ms="3317" started-at="2019-08-12T08:48:25Z" finished-at="2019-08-12T08:48:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DpdpipelineSchemaProcessor -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d]" name="getResult" is-config="true" duration-ms="0" started-at="2019-08-12T08:48:25Z" finished-at="2019-08-12T08:48:25Z">
+        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.MysqlToAdlsDM@a3d8174]" name="getResult" is-config="true" duration-ms="14107" started-at="2020-03-16T10:22:46Z" finished-at="2020-03-16T10:23:00Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=DpdpipelinePRovisioning status=SUCCESS method=DataFlow.DpdpipelinePRovisioning()[pri:15, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d] output={null}]]]>
+                <![CDATA[[TestResult name=verifyFlowOnMontioringScreen status=FAILURE method=MysqlToAdlsDM.verifyFlowOnMontioringScreen()[pri:5, instance:com.Fullload_CDC.MysqlToAdlsDM@a3d8174] output={null}]]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[chrome not reachable
+  (Session info: chrome=80.0.3987.132)
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LAPTOP-2G86F66K', ip: '192.168.0.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58894}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7f35c2fc521491e5dab76d0f735b46c5]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=80.0.3987.132)
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LAPTOP-2G86F66K', ip: '192.168.0.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58894}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7f35c2fc521491e5dab76d0f735b46c5
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:289)
+at com.CloudBlaze.Base.BaseClass.getScreenshot(BaseClass.java:213)
+at com.CloudBlaze.Base.BaseClass.getResult(BaseClass.java:190)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d]" name="getResult" is-config="true" duration-ms="1" started-at="2019-08-12T08:48:28Z" finished-at="2019-08-12T08:48:28Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=DpdpipelineSchemaProcessor status=SUCCESS method=DataFlow.DpdpipelineSchemaProcessor()[pri:16, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.CloudBlaze.Onboarding.DataFlow@1f97cf0d]" name="tearDown" is-config="true" duration-ms="483" started-at="2019-08-12T08:48:28Z" finished-at="2019-08-12T08:48:29Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Fullload_CDC.MysqlToAdlsDM@a3d8174]" name="tearDown" is-config="true" duration-ms="330" started-at="2020-03-16T10:23:00Z" finished-at="2020-03-16T10:23:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.CloudBlaze.Onboarding.DataFlow -->
+      </class> <!-- com.Fullload_CDC.MysqlToAdlsDM -->
     </test> <!-- CloudBlaze Tests -->
   </suite> <!-- CloudBlaze Automation -->
 </testng-results>

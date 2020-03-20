@@ -40,4 +40,26 @@ public interface IMonitoring {
 	public String triggerTime="//*[@id='scheduleTime']";
 	public String description="//*[@id='root']//*[@name='description']";
 	
+	//xpath of monitoring Page
+	
+	public String xpathMonitoringlink="//*[@id='root']//div//a[@href='#/dataflow-monitoring']";
+	public String xpathMonitoringUrl="https://cloudblaze-ui-react.azurewebsites.net/#/dataflow-monitoring";
+	public String xpathMonitoringTitle="//*[@id='root']/div//h2[text()='Data flow Monitoring']";
+	public String xpathDataFlowScheduledTitle="//*[@id='root']//div//label[text()='Total DataFlow Scheduled']";
+	public String xpathRowsTransferredtitle="//*[@id='root']//div//label[text()='Total No of Rows Transferred (Millions)']";
+	public String xpathAmountOfDatatransferred="//*[@id='root']//div//label[text()='Amount of Data Transferred (GB)']";
+	public String xpathRowsSurfaced="//*[@id='root']//div//label[text()='Total No of Rows Surfaced (Millions )']";
+	public String xpathStartdatelabel="//*[@id='Sdate']/div/label[text()='Start Date']";
+	public String xpathEnddateLabel="//*[@id='Edate']/div/label[text()='End Date']";
+	public String xpathClearBtn="//*[@id='root']/div//button[text()='Clear']";
+	public String xpathRefreshBtn="//*[@id='root']/div//button[text()=' Refresh']";
+	public String xpathNone="//*[@id='menu-searchBy']//ul//li[text()='None']";
+	public String xpathDataFlow="//*[@id='menu-searchBy']//ul//li[text()='Data Flow']";
+	public String xpathDataSource="//*[@id='menu-searchBy']//ul//li[text()='Data Source']";
+	public String xpathTable="//*[@id='menu-searchBy']//ul//li[text()='Table']";
+	public String xpathSucceeded="//*[@id='menu-SelectStatus']//ul/li[text()='Succeeded']";
+	public String xpathFailed="//*[@id='menu-SelectStatus']//ul/li[text()='Failed']";
+	public String xpathInprogress="//*[@id='menu-SelectStatus']//ul/li[text()='InProgress']";
+	public String xpathCancelled="//*[@id='menu-SelectStatus']//ul/li[text()='Cancelled']";
+	
     }

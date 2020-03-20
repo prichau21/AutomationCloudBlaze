@@ -15,34 +15,9 @@ import com.CloudBlaze.PageObjects.IOnBoarding;
 import com.relevantcodes.extentreports.LogStatus;
 
     public class ServicePrincipal extends BaseClass implements IOnBoarding {
-
+    static ExcelUtils reader = new ExcelUtils(System.getProperty("user.dir") + "/TestData/TestData.xlsx");
 	
-	
-	
-	
-	
-	static ExcelUtils reader = new ExcelUtils(System.getProperty("user.dir") + "/TestData/TestData.xlsx");
-	@Test(priority=1, groups = { "Smoke" })
-	public void VerifyLogin() throws InterruptedException
-	{ 
-		test = report.startTest("login");
-	    driver.manage().timeouts().implicitlyWait(8,TimeUnit.SECONDS) ;
-	    driver.findElement(By.xpath("//*[@id='root']//button[text()='Login']")).click();
-		Thread.sleep(1000);
-		driver.findElement(By.xpath("//*[@id='i0116']")).sendKeys("priyanka.chauhan@rawcubes.com");
-		Thread.sleep(1000);
-		driver.findElement(By.xpath("//*[@id='idSIButton9']")).click();
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//*[@id='i0118']")).sendKeys("Sanju21@");
-		Thread.sleep(1000);
-		driver.findElement(By.xpath("//*[@id='idSIButton9']")).click();
-		Thread.sleep(1000);
-		driver.findElement(By.xpath("//*[@id='idSIButton9']")).click();
-	    Thread.sleep(1000);
-		
-	}	
-	
-	@Test(priority=2,dependsOnMethods = { "VerifyLogin" }, groups= { "Smoke" })
+	@Test(priority=2, groups= { "Smoke" })
 	public void verifyServicePrincipalPage() throws InterruptedException
 	{
 		//driver.navigate().refresh();
@@ -136,14 +111,14 @@ import com.relevantcodes.extentreports.LogStatus;
 	            test.log(LogStatus.PASS, "Application Field WaterMark","Application Water Mark is Displaying");
 	            
 	             //verify Key Field 
-	     		WebElement key=driver.findElement(By.id(idOfKey));
+	     		WebElement key=driver.findElement(By.id("servicePrincipalKey"));
 	     		Assert.assertTrue(key.isDisplayed());
 	     		test.log(LogStatus.PASS, "Key Field", "Key Field is displaying");
 	     		
-         		//Verify Key Field WaterMark
-	     		 String keyWM = driver.findElement(By.xpath(xpathOfKeyWM)).getText();
-     	     	 Assert.assertEquals(keyWM,"Key *","Key * WaterMark is not Displaying");
-                 test.log(LogStatus.PASS,"Key Field WaterMark", "Key * WaterMark is Displaying");
+         		//Verify + Button 
+	     		 WebElement plusBtn = driver.findElement(By.xpath(xpathPlusButton));
+     	     	 Assert.assertTrue(plusBtn.isEnabled());
+                 test.log(LogStatus.PASS,"Plus button", "plus button is displaying");
 	     		
 	    		//verify Description Field 
 	    		WebElement description=driver.findElement(By.id(idOfDescription));
@@ -330,13 +305,14 @@ import com.relevantcodes.extentreports.LogStatus;
 	     		driver.findElement(By.id(idOfApplicationID)).sendKeys(reader.getCellData("ServicePrincipal","ApplicationID",2));
 	     		Thread.sleep(1000);
 	     		
-	     		driver.findElement(By.id(idOfKey)).sendKeys(reader.getCellData("ServicePrincipal","Key", 2));
-	     		Thread.sleep(1000);
+	     		//driver.findElement(By.id(idOfKey)).sendKeys(reader.getCellData("ServicePrincipal","Key", 2));
+	     		//Thread.sleep(1000);
 	     		driver.findElement(By.id(idOfDescription)).sendKeys(reader.getCellData("ServicePrincipal","Description",2));
-	     		Thread.sleep(1000);
+	     		Thread.sleep(2000);
 	    		
 	    		
-	     		driver.findElement(By.xpath(xpathCancelbutton)).click();
+	     		//driver.findElement(By.xpath(xpathCancelbutton)).click();
+	     		driver.findElement(By.xpath("(//*[@id='root']//div//button[text()='Cancel'])[2]")).click();
 	     		
 	    		Thread.sleep(4000);
 	    		
@@ -361,18 +337,24 @@ import com.relevantcodes.extentreports.LogStatus;
 	        	//driver.navigate().refresh();
 	        	Thread.sleep(1000);
 	        	test = report.startTest("Add Service Principal");
-	     		
-	        	
-               
-
 	     		driver.findElement(By.id(idOfName)).sendKeys(reader.getCellData("ServicePrincipal","Name", 2));
 	     		Thread.sleep(1000);
 	     		driver.findElement(By.id(idOfApplicationID)).sendKeys(reader.getCellData("ServicePrincipal","ApplicationID",2));
 	     		Thread.sleep(1000);
-	     		driver.findElement(By.id(idOfKey)).sendKeys(reader.getCellData("ServicePrincipal","Key", 2));
-	     		Thread.sleep(1000);	
 	     		driver.findElement(By.id(idOfDescription)).sendKeys(reader.getCellData("ServicePrincipal","Description",2));
 	     		Thread.sleep(1000);
+	     		
+	     		driver.findElement(By.xpath(xpathPlusButton)).click();
+	     		Thread.sleep(1000);
+     	     	driver.findElement(By.xpath(xpathKeyField)).sendKeys("TestingKey");
+     	     	Thread.sleep(1000);
+     	     	driver.findElement(By.xpath(xpathKeyValue)).sendKeys("TestingValue"); 
+     	     	Thread.sleep(1000);
+     	     	driver.findElement(By.xpath(xpathSubmitBtnForKeyGeneration)).click();
+     	     	
+     	     	//driver.findElement(By.id(idOfKey)).sendKeys(reader.getCellData("ServicePrincipal","Key", 2));
+	     	//	Thread.sleep(1000);	
+	     		
 	     		
 	     		driver.findElement(By.xpath(xpathSubmitButtonSP)).click();
 	     		Thread.sleep(1500);
@@ -418,11 +400,11 @@ import com.relevantcodes.extentreports.LogStatus;
 	    	     driver.findElement(By.id(idOfApplicationID)).sendKeys(reader.getCellData("ServicePrincipal","ApplicationID",3));
 	    		 Thread.sleep(1000);
 	    		 
-	    		 driver.findElement(By.id(idOfKey)).sendKeys(Keys.CONTROL + "a");
-	    		 driver.findElement(By.id(idOfKey)).sendKeys(Keys.BACK_SPACE);
+	    		// driver.findElement(By.id(idOfKey)).sendKeys(Keys.CONTROL + "a");
+	    		// driver.findElement(By.id(idOfKey)).sendKeys(Keys.BACK_SPACE);
 	    	
-	    	     driver.findElement(By.id(idOfKey)).sendKeys(reader.getCellData("ServicePrincipal","Key",3));
-	    		 Thread.sleep(1000);
+	    	    // driver.findElement(By.id(idOfKey)).sendKeys(reader.getCellData("ServicePrincipal","Key",3));
+	    		// Thread.sleep(1000);
 	    		 
 	    		 driver.findElement(By.id(idOfDescription)).sendKeys(Keys.CONTROL + "a");
 	    		 driver.findElement(By.id(idOfDescription)).sendKeys(Keys.BACK_SPACE);
@@ -431,7 +413,7 @@ import com.relevantcodes.extentreports.LogStatus;
 	    		 Thread.sleep(1000);
 	    		 
 	    		 driver.findElement(By.xpath(xpathSubmitButtonSP)).click();
-	    		 Thread.sleep(1500);
+	    		 Thread.sleep(1600);
 	    		 String toaster = driver.findElement(By.xpath(toasterRecordSaved)).getText();
 	    		 Thread.sleep(1000);
 	    		 Assert.assertEquals(toaster,"Service Principal updated successfully!"," Service principal updation is not succesfully");
@@ -450,6 +432,7 @@ import com.relevantcodes.extentreports.LogStatus;
 	    		// Assert.assertTrue(deleteDialogBox.isDisplayed());
 	    		// test.log(LogStatus.PASS, "Delete DialogBox","delete DialogBox is displaying");
 	    		 String deleteText = driver.findElement(By.xpath(xpathDeleteText)).getText();
+	    		 System.out.println("delete"+deleteText);
 	    		 Assert.assertEquals(deleteText,"Delete","Delete  is not Displaying");
 	    		 test.log(LogStatus.PASS, "Delete DialogBox","Delete is  Displaying");
 	    		 String deleteStatement = driver.findElement(By.xpath(xpathDeleteStatement)).getText();
