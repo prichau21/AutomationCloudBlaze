@@ -19,7 +19,7 @@ public void VerifyUserRolesPage() throws InterruptedException
 	test=report.startTest("Click on User Roles Link");
 	try
 	{
-		driver.findElement(By.xpath(xpathUserRoles)).click();
+		driver.findElement(By.xpath("//*[@id='root']/div/div/div/div/ul/li[14]/a")).click();
 	}
 	catch(ElementNotVisibleException e)
 	{
@@ -30,7 +30,7 @@ public void VerifyUserRolesPage() throws InterruptedException
 	
 }
 //Verify When user Click on User Roles Page ,its page will Display 
-	@Test(priority = 2, dependsOnMethods = { "VerifyUserRolesPage" }, groups = { "Smoke" })
+	/*@Test(priority = 2, dependsOnMethods = { "VerifyUserRolesPage" }, groups = { "Smoke" })
 	public static void verifyUrlOfUserRoles() throws InterruptedException 
 	{
 
@@ -48,6 +48,6 @@ public void VerifyUserRolesPage() throws InterruptedException
 		{
 	    test.log(LogStatus.FAIL, "Page URL is something else", driver.getCurrentUrl());
 		}
-   }
+   }*/
 	
 }

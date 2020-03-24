@@ -9,19 +9,15 @@
       </run>
     </groups>
     <classes>
-      <class name="com.Fullload_CDC.FiletoAdls">
+      <class name="com.CloudBlaze.UserSecurity.UserRoles">
         <methods>
-          <include name="verifyAddDestination"/>
           <include name="tearDown"/>
-          <include name="verifyFlowOnMontioringScreen"/>
-          <include name="verifySourceFile"/>
-          <include name="verifyAddDataFlow"/>
+          <include name="VerifyUserRolesPage"/>
           <include name="Report"/>
           <include name="getResult"/>
-          <include name="verifyScheduledFlow"/>
           <include name="init"/>
         </methods>
-      </class> <!-- com.Fullload_CDC.FiletoAdls -->
+      </class> <!-- com.CloudBlaze.UserSecurity.UserRoles -->
     </classes>
   </test> <!-- CloudBlaze Tests(failed) -->
 </suite> <!-- Failed suite [CloudBlaze Automation] -->
