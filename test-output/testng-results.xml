@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="5" passed="4">
+<testng-results skipped="4" failed="1" ignored="0" total="5" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="CloudBlaze Automation" duration-ms="1216130" started-at="2020-03-16T10:02:44Z" finished-at="2020-03-16T10:23:00Z">
+  <suite name="CloudBlaze Automation" duration-ms="45902" started-at="2020-03-24T07:09:29Z" finished-at="2020-03-24T07:10:15Z">
     <groups>
       <group name="Smoke">
-        <method signature="MysqlToAdlsDM.verifySourceMySql()[pri:1, instance:com.Fullload_CDC.MysqlToAdlsDM@a3d8174]" name="verifySourceMySql" class="com.Fullload_CDC.MysqlToAdlsDM"/>
-        <method signature="MysqlToAdlsDM.verifyAddDestination()[pri:2, instance:com.Fullload_CDC.MysqlToAdlsDM@a3d8174]" name="verifyAddDestination" class="com.Fullload_CDC.MysqlToAdlsDM"/>
-        <method signature="MysqlToAdlsDM.verifyAddDataFlow()[pri:3, instance:com.Fullload_CDC.MysqlToAdlsDM@a3d8174]" name="verifyAddDataFlow" class="com.Fullload_CDC.MysqlToAdlsDM"/>
-        <method signature="MysqlToAdlsDM.verifyScheduledFlow()[pri:4, instance:com.Fullload_CDC.MysqlToAdlsDM@a3d8174]" name="verifyScheduledFlow" class="com.Fullload_CDC.MysqlToAdlsDM"/>
-        <method signature="MysqlToAdlsDM.verifyFlowOnMontioringScreen()[pri:5, instance:com.Fullload_CDC.MysqlToAdlsDM@a3d8174]" name="verifyFlowOnMontioringScreen" class="com.Fullload_CDC.MysqlToAdlsDM"/>
+        <method signature="FiletoAdls.verifySourceFile()[pri:1, instance:com.Fullload_CDC.FiletoAdls@72cde7cc]" name="verifySourceFile" class="com.Fullload_CDC.FiletoAdls"/>
+        <method signature="FiletoAdls.verifyAddDestination()[pri:2, instance:com.Fullload_CDC.FiletoAdls@72cde7cc]" name="verifyAddDestination" class="com.Fullload_CDC.FiletoAdls"/>
+        <method signature="FiletoAdls.verifyAddDataFlow()[pri:3, instance:com.Fullload_CDC.FiletoAdls@72cde7cc]" name="verifyAddDataFlow" class="com.Fullload_CDC.FiletoAdls"/>
+        <method signature="FiletoAdls.verifyScheduledFlow()[pri:30, instance:com.Fullload_CDC.FiletoAdls@72cde7cc]" name="verifyScheduledFlow" class="com.Fullload_CDC.FiletoAdls"/>
+        <method signature="FiletoAdls.verifyFlowOnMontioringScreen()[pri:31, instance:com.Fullload_CDC.FiletoAdls@72cde7cc]" name="verifyFlowOnMontioringScreen" class="com.Fullload_CDC.FiletoAdls"/>
       </group> <!-- Smoke -->
     </groups>
-    <test name="CloudBlaze Tests" duration-ms="1216130" started-at="2020-03-16T10:02:44Z" finished-at="2020-03-16T10:23:00Z">
-      <class name="com.Fullload_CDC.MysqlToAdlsDM">
-        <test-method status="PASS" signature="Report(java.lang.String)[pri:0, instance:com.Fullload_CDC.MysqlToAdlsDM@a3d8174]" name="Report" is-config="true" duration-ms="140" started-at="2020-03-16T10:02:44Z" finished-at="2020-03-16T10:02:44Z">
+    <test name="CloudBlaze Tests" duration-ms="45902" started-at="2020-03-24T07:09:29Z" finished-at="2020-03-24T07:10:15Z">
+      <class name="com.Fullload_CDC.FiletoAdls">
+        <test-method status="PASS" signature="Report(java.lang.String)[pri:0, instance:com.Fullload_CDC.FiletoAdls@72cde7cc]" name="Report" is-config="true" duration-ms="312" started-at="2020-03-24T07:09:29Z" finished-at="2020-03-24T07:09:29Z">
           <params>
             <param index="0">
               <value>
@@ -25,7 +25,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Report -->
-        <test-method status="PASS" signature="init(java.lang.String)[pri:0, instance:com.Fullload_CDC.MysqlToAdlsDM@a3d8174]" name="init" is-config="true" duration-ms="28371" started-at="2020-03-16T10:02:44Z" finished-at="2020-03-16T10:03:12Z">
+        <test-method status="PASS" signature="init(java.lang.String)[pri:0, instance:com.Fullload_CDC.FiletoAdls@72cde7cc]" name="init" is-config="true" duration-ms="27219" started-at="2020-03-24T07:09:29Z" finished-at="2020-03-24T07:09:57Z">
           <params>
             <param index="0">
               <value>
@@ -36,74 +36,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="verifySourceMySql()[pri:1, instance:com.Fullload_CDC.MysqlToAdlsDM@a3d8174]" name="verifySourceMySql" duration-ms="45317" started-at="2020-03-16T10:03:12Z" finished-at="2020-03-16T10:03:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySourceMySql -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.MysqlToAdlsDM@a3d8174]" name="getResult" is-config="true" duration-ms="2" started-at="2020-03-16T10:03:57Z" finished-at="2020-03-16T10:03:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifySourceMySql status=SUCCESS method=MysqlToAdlsDM.verifySourceMySql()[pri:1, instance:com.Fullload_CDC.MysqlToAdlsDM@a3d8174] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="verifyAddDestination()[pri:2, instance:com.Fullload_CDC.MysqlToAdlsDM@a3d8174]" name="verifyAddDestination" duration-ms="20882" started-at="2020-03-16T10:03:57Z" depends-on-methods="com.Fullload_CDC.MysqlToAdlsDM.verifySourceMySql" finished-at="2020-03-16T10:04:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddDestination -->
-        <test-method status="PASS" signature="verifyAddDataFlow()[pri:3, instance:com.Fullload_CDC.MysqlToAdlsDM@a3d8174]" name="verifyAddDataFlow" duration-ms="43596" started-at="2020-03-16T10:04:18Z" depends-on-methods="com.Fullload_CDC.MysqlToAdlsDM.verifyAddDestination" finished-at="2020-03-16T10:05:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddDataFlow -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.MysqlToAdlsDM@a3d8174]" name="getResult" is-config="true" duration-ms="0" started-at="2020-03-16T10:04:18Z" finished-at="2020-03-16T10:04:18Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyAddDestination status=SUCCESS method=MysqlToAdlsDM.verifyAddDestination()[pri:2, instance:com.Fullload_CDC.MysqlToAdlsDM@a3d8174] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="verifyScheduledFlow()[pri:4, instance:com.Fullload_CDC.MysqlToAdlsDM@a3d8174]" name="verifyScheduledFlow" duration-ms="18663" started-at="2020-03-16T10:05:02Z" depends-on-methods="com.Fullload_CDC.MysqlToAdlsDM.verifyAddDataFlow" finished-at="2020-03-16T10:05:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyScheduledFlow -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.MysqlToAdlsDM@a3d8174]" name="getResult" is-config="true" duration-ms="0" started-at="2020-03-16T10:05:02Z" finished-at="2020-03-16T10:05:02Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyAddDataFlow status=SUCCESS method=MysqlToAdlsDM.verifyAddDataFlow()[pri:3, instance:com.Fullload_CDC.MysqlToAdlsDM@a3d8174] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="FAIL" signature="verifyFlowOnMontioringScreen()[pri:5, instance:com.Fullload_CDC.MysqlToAdlsDM@a3d8174]" name="verifyFlowOnMontioringScreen" duration-ms="1044970" started-at="2020-03-16T10:05:21Z" depends-on-methods="com.Fullload_CDC.MysqlToAdlsDM.verifyScheduledFlow" finished-at="2020-03-16T10:22:46Z">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method status="FAIL" signature="verifySourceFile()[pri:1, instance:com.Fullload_CDC.FiletoAdls@72cde7cc]" name="verifySourceFile" duration-ms="18334" started-at="2020-03-24T07:09:57Z" finished-at="2020-03-24T07:10:15Z">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
-              <![CDATA[chrome not reachable
-  (Session info: chrome=80.0.3987.132)
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=80.0.3987.149)
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'LAPTOP-2G86F66K', ip: '192.168.0.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+System info: host: 'LAPTOP-2G86F66K', ip: '192.168.29.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58894}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 7f35c2fc521491e5dab76d0f735b46c5]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58203}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4ddc96d0591f53e3e74ce5e1fe4dd88e
+*** Element info: {Using=id, value=Host}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=80.0.3987.132)
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=80.0.3987.149)
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'LAPTOP-2G86F66K', ip: '192.168.0.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+System info: host: 'LAPTOP-2G86F66K', ip: '192.168.29.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58894}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 7f35c2fc521491e5dab76d0f735b46c5
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58203}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4ddc96d0591f53e3e74ce5e1fe4dd88e
+*** Element info: {Using=id, value=Host}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -114,10 +69,11 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.refresh(RemoteWebDriver.java:856)
-at com.Fullload_CDC.ReuseFuntions.verifyFlowMontioringScreen(ReuseFuntions.java:360)
-at com.Fullload_CDC.MysqlToAdlsDM.verifyFlowOnMontioringScreen(MysqlToAdlsDM.java:113)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:363)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+at com.Fullload_CDC.FiletoAdls.verifySourceFile(FiletoAdls.java:53)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -145,47 +101,38 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyFlowOnMontioringScreen -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.MysqlToAdlsDM@a3d8174]" name="getResult" is-config="true" duration-ms="0" started-at="2020-03-16T10:05:21Z" finished-at="2020-03-16T10:05:21Z">
+        </test-method> <!-- verifySourceFile -->
+        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.FiletoAdls@72cde7cc]" name="getResult" is-config="true" duration-ms="6" started-at="2020-03-24T07:10:15Z" finished-at="2020-03-24T07:10:15Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyScheduledFlow status=SUCCESS method=MysqlToAdlsDM.verifyScheduledFlow()[pri:4, instance:com.Fullload_CDC.MysqlToAdlsDM@a3d8174] output={null}]]]>
+                <![CDATA[[TestResult name=verifySourceFile status=FAILURE method=FiletoAdls.verifySourceFile()[pri:1, instance:com.Fullload_CDC.FiletoAdls@72cde7cc] output={null}]]]>
               </value>
             </param>
           </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.MysqlToAdlsDM@a3d8174]" name="getResult" is-config="true" duration-ms="14107" started-at="2020-03-16T10:22:46Z" finished-at="2020-03-16T10:23:00Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyFlowOnMontioringScreen status=FAILURE method=MysqlToAdlsDM.verifyFlowOnMontioringScreen()[pri:5, instance:com.Fullload_CDC.MysqlToAdlsDM@a3d8174] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.WebDriverException">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
-              <![CDATA[chrome not reachable
-  (Session info: chrome=80.0.3987.132)
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=80.0.3987.149)
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'LAPTOP-2G86F66K', ip: '192.168.0.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+System info: host: 'LAPTOP-2G86F66K', ip: '192.168.29.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58894}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 7f35c2fc521491e5dab76d0f735b46c5]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58203}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4ddc96d0591f53e3e74ce5e1fe4dd88e]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=80.0.3987.132)
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=80.0.3987.149)
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'LAPTOP-2G86F66K', ip: '192.168.0.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+System info: host: 'LAPTOP-2G86F66K', ip: '192.168.29.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58894}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 7f35c2fc521491e5dab76d0f735b46c5
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58203}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4ddc96d0591f53e3e74ce5e1fe4dd88e
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -230,15 +177,139 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Fullload_CDC.MysqlToAdlsDM@a3d8174]" name="tearDown" is-config="true" duration-ms="330" started-at="2020-03-16T10:23:00Z" finished-at="2020-03-16T10:23:00Z">
+        <test-method status="SKIP" signature="verifyAddDestination()[pri:2, instance:com.Fullload_CDC.FiletoAdls@72cde7cc]" name="verifyAddDestination" duration-ms="0" started-at="2020-03-24T07:10:15Z" depends-on-methods="com.Fullload_CDC.FiletoAdls.verifySourceFile" finished-at="2020-03-24T07:10:15Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method FiletoAdls.verifyAddDestination()[pri:2, instance:com.Fullload_CDC.FiletoAdls@72cde7cc] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method FiletoAdls.verifyAddDestination()[pri:2, instance:com.Fullload_CDC.FiletoAdls@72cde7cc] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddDestination -->
+        <test-method status="SKIP" signature="verifyAddDataFlow()[pri:3, instance:com.Fullload_CDC.FiletoAdls@72cde7cc]" name="verifyAddDataFlow" duration-ms="0" started-at="2020-03-24T07:10:15Z" depends-on-methods="com.Fullload_CDC.FiletoAdls.verifyAddDestination" finished-at="2020-03-24T07:10:15Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method FiletoAdls.verifyAddDataFlow()[pri:3, instance:com.Fullload_CDC.FiletoAdls@72cde7cc] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method FiletoAdls.verifyAddDataFlow()[pri:3, instance:com.Fullload_CDC.FiletoAdls@72cde7cc] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddDataFlow -->
+        <test-method status="SKIP" signature="verifyScheduledFlow()[pri:30, instance:com.Fullload_CDC.FiletoAdls@72cde7cc]" name="verifyScheduledFlow" duration-ms="0" started-at="2020-03-24T07:10:15Z" depends-on-methods="com.Fullload_CDC.FiletoAdls.verifyAddDataFlow" finished-at="2020-03-24T07:10:15Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method FiletoAdls.verifyScheduledFlow()[pri:30, instance:com.Fullload_CDC.FiletoAdls@72cde7cc] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method FiletoAdls.verifyScheduledFlow()[pri:30, instance:com.Fullload_CDC.FiletoAdls@72cde7cc] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyScheduledFlow -->
+        <test-method status="SKIP" signature="verifyFlowOnMontioringScreen()[pri:31, instance:com.Fullload_CDC.FiletoAdls@72cde7cc]" name="verifyFlowOnMontioringScreen" duration-ms="0" started-at="2020-03-24T07:10:15Z" depends-on-methods="com.Fullload_CDC.FiletoAdls.verifyScheduledFlow" finished-at="2020-03-24T07:10:15Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method FiletoAdls.verifyFlowOnMontioringScreen()[pri:31, instance:com.Fullload_CDC.FiletoAdls@72cde7cc] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method FiletoAdls.verifyFlowOnMontioringScreen()[pri:31, instance:com.Fullload_CDC.FiletoAdls@72cde7cc] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFlowOnMontioringScreen -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Fullload_CDC.FiletoAdls@72cde7cc]" name="tearDown" is-config="true" duration-ms="166" started-at="2020-03-24T07:10:15Z" finished-at="2020-03-24T07:10:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.Fullload_CDC.MysqlToAdlsDM -->
+      </class> <!-- com.Fullload_CDC.FiletoAdls -->
     </test> <!-- CloudBlaze Tests -->
   </suite> <!-- CloudBlaze Automation -->
 </testng-results>

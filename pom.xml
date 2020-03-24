@@ -107,6 +107,11 @@
 			<artifactId>mail</artifactId>
 			<version>1.4.7</version>
 		</dependency>
+		
+		
+		
+
+		
 
 		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
 		<dependency>
@@ -115,11 +120,11 @@
 			<version>6.0.5</version>
 		</dependency>
 
-		<dependency>
+		<!-- <dependency>
 			<groupId>org.apache.maven.surefire</groupId>
 			<artifactId>surefire-testng</artifactId>
 			<version>2.14.1</version>
-		</dependency>
+		</dependency> -->
 		<dependency>
    <groupId>com.microsoft.azure</groupId>
    <artifactId>azure-client-authentication</artifactId>
@@ -187,7 +192,7 @@
 							</includes> -->
 						<suiteXmlFiles>
 							<!-- <suiteXmlFile>${suiteXmlFile}</suiteXmlFile> -->
-							<suiteXmlFile>testngTest.xml</suiteXmlFile>
+							<suiteXmlFile>testng.xml</suiteXmlFile>
 						</suiteXmlFiles>
 						<skip>false</skip>
 					</configuration>

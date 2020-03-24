@@ -9,19 +9,19 @@
       </run>
     </groups>
     <classes>
-      <class name="com.Fullload_CDC.MysqlToAdlsDM">
+      <class name="com.Fullload_CDC.FiletoAdls">
         <methods>
-          <include name="verifyFlowOnMontioringScreen"/>
+          <include name="verifyAddDestination"/>
           <include name="tearDown"/>
-          <include name="verifyScheduledFlow"/>
-          <include name="verifySourceMySql"/>
+          <include name="verifyFlowOnMontioringScreen"/>
+          <include name="verifySourceFile"/>
           <include name="verifyAddDataFlow"/>
           <include name="Report"/>
           <include name="getResult"/>
-          <include name="verifyAddDestination"/>
+          <include name="verifyScheduledFlow"/>
           <include name="init"/>
         </methods>
-      </class> <!-- com.Fullload_CDC.MysqlToAdlsDM -->
+      </class> <!-- com.Fullload_CDC.FiletoAdls -->
     </classes>
   </test> <!-- CloudBlaze Tests(failed) -->
 </suite> <!-- Failed suite [CloudBlaze Automation] -->

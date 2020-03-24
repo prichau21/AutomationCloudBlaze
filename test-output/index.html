@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,  4 skipped,  </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,39 +102,39 @@
                     <div class="method-list-content failed suite-CloudBlaze_Automation">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-CloudBlaze_Automation" title="com.Fullload_CDC.MysqlToAdlsDM" hash-for-method="verifyFlowOnMontioringScreen">verifyFlowOnMontioringScreen</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-CloudBlaze_Automation" title="com.Fullload_CDC.FiletoAdls" hash-for-method="verifySourceFile">verifySourceFile</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-CloudBlaze_Automation -->
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-CloudBlaze_Automation" class="hide-methods passed suite-CloudBlaze_Automation"> (hide)</a> <!-- hide-methods passed suite-CloudBlaze_Automation -->
-                      <a href="#" panel-name="suite-CloudBlaze_Automation" class="show-methods passed suite-CloudBlaze_Automation"> (show)</a> <!-- show-methods passed suite-CloudBlaze_Automation -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-CloudBlaze_Automation" class="hide-methods skipped suite-CloudBlaze_Automation"> (hide)</a> <!-- hide-methods skipped suite-CloudBlaze_Automation -->
+                      <a href="#" panel-name="suite-CloudBlaze_Automation" class="show-methods skipped suite-CloudBlaze_Automation"> (show)</a> <!-- show-methods skipped suite-CloudBlaze_Automation -->
                     </span>
-                    <div class="method-list-content passed suite-CloudBlaze_Automation">
+                    <div class="method-list-content skipped suite-CloudBlaze_Automation">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-CloudBlaze_Automation" title="com.Fullload_CDC.MysqlToAdlsDM" hash-for-method="verifyAddDataFlow">verifyAddDataFlow</a> <!-- method navigator-link -->
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CloudBlaze_Automation" title="com.Fullload_CDC.FiletoAdls" hash-for-method="verifyAddDataFlow">verifyAddDataFlow</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-CloudBlaze_Automation" title="com.Fullload_CDC.MysqlToAdlsDM" hash-for-method="verifyAddDestination">verifyAddDestination</a> <!-- method navigator-link -->
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CloudBlaze_Automation" title="com.Fullload_CDC.FiletoAdls" hash-for-method="verifyAddDestination">verifyAddDestination</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-CloudBlaze_Automation" title="com.Fullload_CDC.MysqlToAdlsDM" hash-for-method="verifyScheduledFlow">verifyScheduledFlow</a> <!-- method navigator-link -->
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CloudBlaze_Automation" title="com.Fullload_CDC.FiletoAdls" hash-for-method="verifyFlowOnMontioringScreen">verifyFlowOnMontioringScreen</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-CloudBlaze_Automation" title="com.Fullload_CDC.MysqlToAdlsDM" hash-for-method="verifySourceMySql">verifySourceMySql</a> <!-- method navigator-link -->
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CloudBlaze_Automation" title="com.Fullload_CDC.FiletoAdls" hash-for-method="verifyScheduledFlow">verifyScheduledFlow</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-CloudBlaze_Automation -->
+                    </div> <!-- method-list-content skipped suite-CloudBlaze_Automation -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -149,41 +149,44 @@
           <div class="suite-CloudBlaze_Automation-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.Fullload_CDC.MysqlToAdlsDM</span>
+              <span class="class-name">com.Fullload_CDC.FiletoAdls</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyFlowOnMontioringScreen">
-                  </a> <!-- verifyFlowOnMontioringScreen -->
-                  <span class="method-name">verifyFlowOnMontioringScreen</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=80.0.3987.132)
+                  <a name="verifySourceFile">
+                  </a> <!-- verifySourceFile -->
+                  <span class="method-name">verifySourceFile</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=80.0.3987.149)
 Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
-System info: host: &apos;LAPTOP-2G86F66K&apos;, ip: &apos;192.168.0.15&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+System info: host: &apos;LAPTOP-2G86F66K&apos;, ip: &apos;192.168.29.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58894}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 7f35c2fc521491e5dab76d0f735b46c5
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58203}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4ddc96d0591f53e3e74ce5e1fe4dd88e
+*** Element info: {Using=id, value=Host}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.refresh(RemoteWebDriver.java:856)
-	at com.Fullload_CDC.ReuseFuntions.verifyFlowMontioringScreen(ReuseFuntions.java:360)
-	at com.Fullload_CDC.MysqlToAdlsDM.verifyFlowOnMontioringScreen(MysqlToAdlsDM.java:113)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:363)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+	at com.Fullload_CDC.FiletoAdls.verifySourceFile(FiletoAdls.java:53)
 ... Removed 29 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-CloudBlaze_Automation-class-failed -->
-          <div class="suite-CloudBlaze_Automation-class-passed">
+          <div class="suite-CloudBlaze_Automation-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.Fullload_CDC.MysqlToAdlsDM</span>
+              <img src="skipped.png"/>
+              <span class="class-name">com.Fullload_CDC.FiletoAdls</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -191,6 +194,9 @@ Session ID: 7f35c2fc521491e5dab76d0f735b46c5
                   <a name="verifyAddDataFlow">
                   </a> <!-- verifyAddDataFlow -->
                   <span class="method-name">verifyAddDataFlow</span>
+                  <div class="stack-trace">java.lang.Throwable: Method FiletoAdls.verifyAddDataFlow()[pri:3, instance:com.Fullload_CDC.FiletoAdls@72cde7cc] depends on not successfully finished methods
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -198,6 +204,19 @@ Session ID: 7f35c2fc521491e5dab76d0f735b46c5
                   <a name="verifyAddDestination">
                   </a> <!-- verifyAddDestination -->
                   <span class="method-name">verifyAddDestination</span>
+                  <div class="stack-trace">java.lang.Throwable: Method FiletoAdls.verifyAddDestination()[pri:2, instance:com.Fullload_CDC.FiletoAdls@72cde7cc] depends on not successfully finished methods
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyFlowOnMontioringScreen">
+                  </a> <!-- verifyFlowOnMontioringScreen -->
+                  <span class="method-name">verifyFlowOnMontioringScreen</span>
+                  <div class="stack-trace">java.lang.Throwable: Method FiletoAdls.verifyFlowOnMontioringScreen()[pri:31, instance:com.Fullload_CDC.FiletoAdls@72cde7cc] depends on not successfully finished methods
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -205,17 +224,13 @@ Session ID: 7f35c2fc521491e5dab76d0f735b46c5
                   <a name="verifyScheduledFlow">
                   </a> <!-- verifyScheduledFlow -->
                   <span class="method-name">verifyScheduledFlow</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifySourceMySql">
-                  </a> <!-- verifySourceMySql -->
-                  <span class="method-name">verifySourceMySql</span>
+                  <div class="stack-trace">java.lang.Throwable: Method FiletoAdls.verifyScheduledFlow()[pri:30, instance:com.Fullload_CDC.FiletoAdls@72cde7cc] depends on not successfully finished methods
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-CloudBlaze_Automation-class-passed -->
+          </div> <!-- suite-CloudBlaze_Automation-class-skipped -->
         </div> <!-- panel CloudBlaze_Automation -->
         <div panel-name="test-xml-CloudBlaze_Automation" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -234,7 +249,7 @@ Session ID: 7f35c2fc521491e5dab76d0f735b46c5
       &lt;/run&gt;
     &lt;/groups&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.Fullload_CDC.MysqlToAdlsDM&quot;/&gt;
+      &lt;class name=&quot;com.Fullload_CDC.FiletoAdls&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- CloudBlaze Tests --&gt;
 &lt;/suite&gt; &lt;!-- CloudBlaze Automation --&gt;
@@ -278,7 +293,7 @@ Session ID: 7f35c2fc521491e5dab76d0f735b46c5
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
-                <span class="method-in-group-name">verifySourceMySql</span>
+                <span class="method-in-group-name">verifySourceFile</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -300,30 +315,30 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyFlowOnMontioringScreen')
-data.setCell(0, 2, 'com.Fullload_CDC.MysqlToAdlsDM')
-data.setCell(0, 3, 1044970);
+data.setCell(0, 1, 'verifySourceFile')
+data.setCell(0, 2, 'com.Fullload_CDC.FiletoAdls')
+data.setCell(0, 3, 18334);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifySourceMySql')
-data.setCell(1, 2, 'com.Fullload_CDC.MysqlToAdlsDM')
-data.setCell(1, 3, 45317);
+data.setCell(1, 1, 'verifyScheduledFlow')
+data.setCell(1, 2, 'com.Fullload_CDC.FiletoAdls')
+data.setCell(1, 3, 0);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyAddDataFlow')
-data.setCell(2, 2, 'com.Fullload_CDC.MysqlToAdlsDM')
-data.setCell(2, 3, 43596);
+data.setCell(2, 1, 'verifyFlowOnMontioringScreen')
+data.setCell(2, 2, 'com.Fullload_CDC.FiletoAdls')
+data.setCell(2, 3, 0);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'verifyAddDestination')
-data.setCell(3, 2, 'com.Fullload_CDC.MysqlToAdlsDM')
-data.setCell(3, 3, 20882);
+data.setCell(3, 2, 'com.Fullload_CDC.FiletoAdls')
+data.setCell(3, 3, 0);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyScheduledFlow')
-data.setCell(4, 2, 'com.Fullload_CDC.MysqlToAdlsDM')
-data.setCell(4, 3, 18663);
+data.setCell(4, 1, 'verifyAddDataFlow')
+data.setCell(4, 2, 'com.Fullload_CDC.FiletoAdls')
+data.setCell(4, 3, 0);
 window.suiteTableData['CloudBlaze_Automation']= { tableData: data, tableDiv: 'times-div-CloudBlaze_Automation'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 19 minutes</span>
+              <span class="suite-total-time">Total running time: 18 seconds</span>
               <div id="times-div-CloudBlaze_Automation">
               </div> <!-- times-div-CloudBlaze_Automation -->
             </div> <!-- times-div -->
@@ -349,62 +364,30 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.Fullload_CDC.MysqlToAdlsDM</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.Fullload_CDC.FiletoAdls</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">Report(https://cloudblaze-ui-react.azurewebsites.net/#)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-test before">
                 <span class="method-name">init(https://cloudblaze-ui-react.azurewebsites.net/#)</span>
-                <span class="method-start">140 ms</span>
+                <span class="method-start">313 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">verifySourceMySql</span>
-                <span class="method-start">28530 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=verifySourceMySql status=SUCCESS method=MysqlToAdlsDM.verifySourceMySql()[pri:1, in...)</span>
-                <span class="method-start">73854 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">verifyAddDestination</span>
-                <span class="method-start">73863 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=verifyAddDestination status=SUCCESS method=MysqlToAdlsDM.verifyAddDestination()[pri...)</span>
-                <span class="method-start">94745 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">verifyAddDataFlow</span>
-                <span class="method-start">94745 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=verifyAddDataFlow status=SUCCESS method=MysqlToAdlsDM.verifyAddDataFlow()[pri:3, in...)</span>
-                <span class="method-start">138344 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">verifyScheduledFlow</span>
-                <span class="method-start">138344 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=verifyScheduledFlow status=SUCCESS method=MysqlToAdlsDM.verifyScheduledFlow()[pri:4...)</span>
-                <span class="method-start">157009 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">verifyFlowOnMontioringScreen</span>
-                <span class="method-start">157009 ms</span>
+                <span class="method-name">verifySourceFile</span>
+                <span class="method-start">27546 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">getResult([TestResult name=verifyFlowOnMontioringScreen status=FAILURE method=MysqlToAdlsDM.verifyFlowOnMontio...)</span>
-                <span class="method-start">1202018 ms</span>
+                <span class="method-name">getResult([TestResult name=verifySourceFile status=FAILURE method=FiletoAdls.verifySourceFile()[pri:1, instanc...)</span>
+                <span class="method-start">45883 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">1216334 ms</span>
+                <span class="method-start">45920 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
