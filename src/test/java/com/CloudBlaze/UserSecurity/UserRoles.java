@@ -19,7 +19,7 @@ public void VerifyUserRolesPage() throws InterruptedException
 	test=report.startTest("Click on User Roles Link");
 	try
 	{
-		driver.findElement(By.xpath("//*[@id='root']/div/div/div/div/ul/li[14]/a")).click();
+		driver.findElement(By.xpath(xpathOrgInfo)).click();
 	}
 	catch(ElementNotVisibleException e)
 	{
