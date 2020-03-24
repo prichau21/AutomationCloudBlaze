@@ -193,17 +193,20 @@
 Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
 System info: host: &apos;LAPTOP-2G86F66K&apos;, ip: &apos;192.168.29.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50154}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c5e1d16bb327e76a999fa944fb94f272
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51446}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 64d87c872979042bcf2950c1eb9b6a5c
+*** Element info: {Using=xpath, value=//*[@id=&apos;idSIButton9&apos;]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.refresh(RemoteWebDriver.java:856)
-	at com.CloudBlaze.Base.BaseClass.init(BaseClass.java:122)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+	at com.CloudBlaze.Base.BaseClass.init(BaseClass.java:118)
 ... Removed 28 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -298,19 +301,19 @@ data.setCell(0, 1, 'verifyFlowOnMontioringScreen')
 data.setCell(0, 2, 'com.Fullload_CDC.FiletoAdls')
 data.setCell(0, 3, 0);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifySourceFile')
+data.setCell(1, 1, 'verifyScheduledFlow')
 data.setCell(1, 2, 'com.Fullload_CDC.FiletoAdls')
 data.setCell(1, 3, 0);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyAddDestination')
+data.setCell(2, 1, 'verifyAddDataFlow')
 data.setCell(2, 2, 'com.Fullload_CDC.FiletoAdls')
 data.setCell(2, 3, 0);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyScheduledFlow')
+data.setCell(3, 1, 'verifyAddDestination')
 data.setCell(3, 2, 'com.Fullload_CDC.FiletoAdls')
 data.setCell(3, 3, 0);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyAddDataFlow')
+data.setCell(4, 1, 'verifySourceFile')
 data.setCell(4, 2, 'com.Fullload_CDC.FiletoAdls')
 data.setCell(4, 3, 0);
 window.suiteTableData['CloudBlaze_Automation']= { tableData: data, tableDiv: 'times-div-CloudBlaze_Automation'}
@@ -356,19 +359,19 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">init(https://cloudblaze-ui-react.azurewebsites.net/#)</span>
-                <span class="method-start">172 ms</span>
+                <span class="method-start">158 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method after">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">getResult([TestResult name={null} status=CREATED method=FiletoAdls.verifySourceFile()[pri:1, instance:com.Full...)</span>
-                <span class="method-start">46400 ms</span>
+                <span class="method-start">34427 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">tearDown</span>
-                <span class="method-start">46448 ms</span>
+                <span class="method-start">34458 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

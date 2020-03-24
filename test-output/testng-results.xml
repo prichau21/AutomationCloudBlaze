@@ -2,7 +2,7 @@
 <testng-results skipped="5" failed="0" ignored="0" total="5" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="CloudBlaze Automation" duration-ms="46410" started-at="2020-03-24T11:02:27Z" finished-at="2020-03-24T11:03:13Z">
+  <suite name="CloudBlaze Automation" duration-ms="34438" started-at="2020-03-24T11:24:58Z" finished-at="2020-03-24T11:25:32Z">
     <groups>
       <group name="Smoke">
         <method signature="FiletoAdls.verifySourceFile()[pri:1, instance:com.Fullload_CDC.FiletoAdls@72cde7cc]" name="verifySourceFile" class="com.Fullload_CDC.FiletoAdls"/>
@@ -12,9 +12,9 @@
         <method signature="FiletoAdls.verifyFlowOnMontioringScreen()[pri:31, instance:com.Fullload_CDC.FiletoAdls@72cde7cc]" name="verifyFlowOnMontioringScreen" class="com.Fullload_CDC.FiletoAdls"/>
       </group> <!-- Smoke -->
     </groups>
-    <test name="CloudBlaze Tests" duration-ms="46410" started-at="2020-03-24T11:02:27Z" finished-at="2020-03-24T11:03:13Z">
+    <test name="CloudBlaze Tests" duration-ms="34438" started-at="2020-03-24T11:24:58Z" finished-at="2020-03-24T11:25:32Z">
       <class name="com.Fullload_CDC.FiletoAdls">
-        <test-method status="PASS" signature="Report(java.lang.String)[pri:0, instance:com.Fullload_CDC.FiletoAdls@72cde7cc]" name="Report" is-config="true" duration-ms="172" started-at="2020-03-24T11:02:27Z" finished-at="2020-03-24T11:02:27Z">
+        <test-method status="PASS" signature="Report(java.lang.String)[pri:0, instance:com.Fullload_CDC.FiletoAdls@72cde7cc]" name="Report" is-config="true" duration-ms="158" started-at="2020-03-24T11:24:58Z" finished-at="2020-03-24T11:24:58Z">
           <params>
             <param index="0">
               <value>
@@ -25,7 +25,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Report -->
-        <test-method status="FAIL" signature="init(java.lang.String)[pri:0, instance:com.Fullload_CDC.FiletoAdls@72cde7cc]" name="init" is-config="true" duration-ms="46190" started-at="2020-03-24T11:02:27Z" finished-at="2020-03-24T11:03:13Z">
+        <test-method status="FAIL" signature="init(java.lang.String)[pri:0, instance:com.Fullload_CDC.FiletoAdls@72cde7cc]" name="init" is-config="true" duration-ms="34249" started-at="2020-03-24T11:24:58Z" finished-at="2020-03-24T11:25:32Z">
           <params>
             <param index="0">
               <value>
@@ -40,8 +40,9 @@
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
 System info: host: 'LAPTOP-2G86F66K', ip: '192.168.29.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50154}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c5e1d16bb327e76a999fa944fb94f272]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51446}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 64d87c872979042bcf2950c1eb9b6a5c
+*** Element info: {Using=xpath, value=//*[@id='idSIButton9']}]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
@@ -49,8 +50,9 @@ Session ID: c5e1d16bb327e76a999fa944fb94f272]]>
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
 System info: host: 'LAPTOP-2G86F66K', ip: '192.168.29.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50154}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c5e1d16bb327e76a999fa944fb94f272
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51446}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 64d87c872979042bcf2950c1eb9b6a5c
+*** Element info: {Using=xpath, value=//*[@id='idSIButton9']}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -61,9 +63,11 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.refresh(RemoteWebDriver.java:856)
-at com.CloudBlaze.Base.BaseClass.init(BaseClass.java:122)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+at com.CloudBlaze.Base.BaseClass.init(BaseClass.java:118)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -94,7 +98,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="SKIP" signature="verifySourceFile()[pri:1, instance:com.Fullload_CDC.FiletoAdls@72cde7cc]" name="verifySourceFile" duration-ms="0" started-at="2020-03-24T11:03:13Z" finished-at="2020-03-24T11:03:13Z">
+        <test-method status="SKIP" signature="verifySourceFile()[pri:1, instance:com.Fullload_CDC.FiletoAdls@72cde7cc]" name="verifySourceFile" duration-ms="0" started-at="2020-03-24T11:25:32Z" finished-at="2020-03-24T11:25:32Z">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
               <![CDATA[chrome not reachable
@@ -102,8 +106,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
 System info: host: 'LAPTOP-2G86F66K', ip: '192.168.29.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50154}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c5e1d16bb327e76a999fa944fb94f272]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51446}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 64d87c872979042bcf2950c1eb9b6a5c
+*** Element info: {Using=xpath, value=//*[@id='idSIButton9']}]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
@@ -111,8 +116,9 @@ Session ID: c5e1d16bb327e76a999fa944fb94f272]]>
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
 System info: host: 'LAPTOP-2G86F66K', ip: '192.168.29.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50154}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c5e1d16bb327e76a999fa944fb94f272
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51446}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 64d87c872979042bcf2950c1eb9b6a5c
+*** Element info: {Using=xpath, value=//*[@id='idSIButton9']}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -123,9 +129,11 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.refresh(RemoteWebDriver.java:856)
-at com.CloudBlaze.Base.BaseClass.init(BaseClass.java:122)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+at com.CloudBlaze.Base.BaseClass.init(BaseClass.java:118)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -156,7 +164,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySourceFile -->
-        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.FiletoAdls@72cde7cc]" name="getResult" is-config="true" duration-ms="1" started-at="2020-03-24T11:03:13Z" finished-at="2020-03-24T11:03:13Z">
+        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.FiletoAdls@72cde7cc]" name="getResult" is-config="true" duration-ms="2" started-at="2020-03-24T11:25:32Z" finished-at="2020-03-24T11:25:32Z">
           <params>
             <param index="0">
               <value>
@@ -202,7 +210,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="SKIP" signature="verifyAddDestination()[pri:2, instance:com.Fullload_CDC.FiletoAdls@72cde7cc]" name="verifyAddDestination" duration-ms="0" started-at="2020-03-24T11:03:13Z" depends-on-methods="com.Fullload_CDC.FiletoAdls.verifySourceFile" finished-at="2020-03-24T11:03:13Z">
+        <test-method status="SKIP" signature="verifyAddDestination()[pri:2, instance:com.Fullload_CDC.FiletoAdls@72cde7cc]" name="verifyAddDestination" duration-ms="0" started-at="2020-03-24T11:25:32Z" depends-on-methods="com.Fullload_CDC.FiletoAdls.verifySourceFile" finished-at="2020-03-24T11:25:32Z">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method FiletoAdls.verifyAddDestination()[pri:2, instance:com.Fullload_CDC.FiletoAdls@72cde7cc] depends on not successfully finished methods]]>
@@ -233,7 +241,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddDestination -->
-        <test-method status="SKIP" signature="verifyAddDataFlow()[pri:3, instance:com.Fullload_CDC.FiletoAdls@72cde7cc]" name="verifyAddDataFlow" duration-ms="0" started-at="2020-03-24T11:03:13Z" depends-on-methods="com.Fullload_CDC.FiletoAdls.verifyAddDestination" finished-at="2020-03-24T11:03:13Z">
+        <test-method status="SKIP" signature="verifyAddDataFlow()[pri:3, instance:com.Fullload_CDC.FiletoAdls@72cde7cc]" name="verifyAddDataFlow" duration-ms="0" started-at="2020-03-24T11:25:32Z" depends-on-methods="com.Fullload_CDC.FiletoAdls.verifyAddDestination" finished-at="2020-03-24T11:25:32Z">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method FiletoAdls.verifyAddDataFlow()[pri:3, instance:com.Fullload_CDC.FiletoAdls@72cde7cc] depends on not successfully finished methods]]>
@@ -264,7 +272,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddDataFlow -->
-        <test-method status="SKIP" signature="verifyScheduledFlow()[pri:30, instance:com.Fullload_CDC.FiletoAdls@72cde7cc]" name="verifyScheduledFlow" duration-ms="0" started-at="2020-03-24T11:03:13Z" depends-on-methods="com.Fullload_CDC.FiletoAdls.verifyAddDataFlow" finished-at="2020-03-24T11:03:13Z">
+        <test-method status="SKIP" signature="verifyScheduledFlow()[pri:30, instance:com.Fullload_CDC.FiletoAdls@72cde7cc]" name="verifyScheduledFlow" duration-ms="0" started-at="2020-03-24T11:25:32Z" depends-on-methods="com.Fullload_CDC.FiletoAdls.verifyAddDataFlow" finished-at="2020-03-24T11:25:32Z">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method FiletoAdls.verifyScheduledFlow()[pri:30, instance:com.Fullload_CDC.FiletoAdls@72cde7cc] depends on not successfully finished methods]]>
@@ -295,7 +303,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyScheduledFlow -->
-        <test-method status="SKIP" signature="verifyFlowOnMontioringScreen()[pri:31, instance:com.Fullload_CDC.FiletoAdls@72cde7cc]" name="verifyFlowOnMontioringScreen" duration-ms="0" started-at="2020-03-24T11:03:13Z" depends-on-methods="com.Fullload_CDC.FiletoAdls.verifyScheduledFlow" finished-at="2020-03-24T11:03:13Z">
+        <test-method status="SKIP" signature="verifyFlowOnMontioringScreen()[pri:31, instance:com.Fullload_CDC.FiletoAdls@72cde7cc]" name="verifyFlowOnMontioringScreen" duration-ms="0" started-at="2020-03-24T11:25:32Z" depends-on-methods="com.Fullload_CDC.FiletoAdls.verifyScheduledFlow" finished-at="2020-03-24T11:25:32Z">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method FiletoAdls.verifyFlowOnMontioringScreen()[pri:31, instance:com.Fullload_CDC.FiletoAdls@72cde7cc] depends on not successfully finished methods]]>
@@ -326,7 +334,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyFlowOnMontioringScreen -->
-        <test-method status="FAIL" signature="tearDown()[pri:0, instance:com.Fullload_CDC.FiletoAdls@72cde7cc]" name="tearDown" is-config="true" duration-ms="305" started-at="2020-03-24T11:03:13Z" finished-at="2020-03-24T11:03:13Z">
+        <test-method status="FAIL" signature="tearDown()[pri:0, instance:com.Fullload_CDC.FiletoAdls@72cde7cc]" name="tearDown" is-config="true" duration-ms="173" started-at="2020-03-24T11:25:32Z" finished-at="2020-03-24T11:25:32Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
