@@ -375,7 +375,7 @@ public class ReuseFuntions extends BaseClass implements IOnBoarding ,IMonitoring
 		     // Thread.sleep(3000);
 		     }
 	         System.out.println("Status is " + driver.findElement(By.xpath("(//*[@id='root']/div//table/tbody//tr/td[3][text()='"+reader.getCellData("DataFlow","Name", i)+"'])[1]/..//td[10]")).getText());
-	         String Status=driver.findElement(By.xpath("(//*[@id='root']/div//table/tbody//tr/td[3][text()='"+reader.getCellData("DataFlow","Name", 13)+"'])[1]/..//td[10]")).getText();
+	         String Status=driver.findElement(By.xpath("(//*[@id='root']/div//table/tbody//tr/td[3][text()='"+reader.getCellData("DataFlow","Name", i)+"'])[1]/..//td[10]")).getText();
 		     test.log(LogStatus.PASS,"Status of Flow is" +Status);         
 	}
 		    

@@ -9,15 +9,19 @@
       </run>
     </groups>
     <classes>
-      <class name="com.CloudBlaze.UserSecurity.UserRoles">
+      <class name="com.Fullload_CDC.SqltoAzuresql">
         <methods>
+          <include name="verifyAddDestination"/>
           <include name="tearDown"/>
-          <include name="VerifyUserRolesPage"/>
+          <include name="verifyAddDataFlow"/>
+          <include name="verifySourceAdd"/>
           <include name="Report"/>
           <include name="getResult"/>
+          <include name="verifyScheduledFlow"/>
           <include name="init"/>
+          <include name="verifyFlowOnMontioringScreen"/>
         </methods>
-      </class> <!-- com.CloudBlaze.UserSecurity.UserRoles -->
+      </class> <!-- com.Fullload_CDC.SqltoAzuresql -->
     </classes>
   </test> <!-- CloudBlaze Tests(failed) -->
 </suite> <!-- Failed suite [CloudBlaze Automation] -->

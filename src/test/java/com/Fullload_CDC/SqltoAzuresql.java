@@ -66,8 +66,8 @@ package com.Fullload_CDC;
   	 String tableName = driver.findElement(By.xpath(xpathTableName)).getText();
   	 Assert.assertEquals(tableName,"Table Name", "Table Name Column is Not displaying");
   	 test.log(LogStatus.PASS,"Table Columns","Table Column is displaying");
-  	 
-  	driver.findElement(By.xpath("/html/body/div[6]/div[2]/div[1]/div[4]/div/div[1]/table/thead/tr/th[1]/span/span[1]/input")).click();
+  	 Thread.sleep(1000);
+  	driver.findElement(By.xpath("/html/body/div[6]/div[2]/div[1]/div[5]/div/div[1]/table/thead/tr/th[1]/span/span[1]/input")).click();
        driver.findElement(By.xpath("(//*[@id='1'])[5]")).click();
 
   	  Thread.sleep(2000);
@@ -76,7 +76,8 @@ package com.Fullload_CDC;
   	 
   	 Thread.sleep(1000);
   	 driver.findElement(By.xpath(xpathSaveButton)).click();
-  	 Thread.sleep(1600);
+  	WebDriverWait wait = new WebDriverWait(driver,60);
+  	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(toasterRecordSaved)));
       String toaster = driver.findElement(By.xpath(toasterRecordSaved)).getText();
 
   	 Assert.assertEquals(toaster,"Flow added successfully!","Record is not added succesfully ");	    	
@@ -86,7 +87,7 @@ package com.Fullload_CDC;
   	 //driver.findElement(By.xpath("//*[@id='root']//main//div//table//tbody/tr[1]/td[6]/button")).click();
   	 Thread.sleep(2000);
   	 driver.findElement(By.xpath(xpathYesBtn)).click();
-  	WebDriverWait wait = new WebDriverWait(driver,60);
+  	
   	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(toasterRecordSaved)));
   	 String toaster2 = driver.findElement(By.xpath(toasterRecordSaved)).getText();
   	 System.out.println(toaster2);
@@ -105,5 +106,9 @@ package com.Fullload_CDC;
       {
       verifyFlowMontioringScreen(7);
       }
+      
+      
+		    
+	 
       
 }
