@@ -83,7 +83,8 @@ public class ReuseFuntions extends BaseClass implements IOnBoarding ,IMonitoring
     test = report.startTest("Verify Add Source");
     driver.navigate().refresh();
     Thread.sleep(2000);
-    driver.findElement(By.xpath(xpathDataSourcePageLink)).click();
+   // driver.findElement(By.xpath(xpathDataSourcePageLink)).click();
+    driver.findElement(By.xpath("//*[@id='root']/div/div/div/div/ul/li[6]/a")).click();
     driver.findElement(By.id("select-source")).click();
     Thread.sleep(1000);
     driver.findElement(By.xpath(xpathSource)).click();
