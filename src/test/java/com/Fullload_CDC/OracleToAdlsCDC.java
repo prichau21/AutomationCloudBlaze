@@ -7,6 +7,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -24,7 +25,7 @@ static ExcelUtils reader = new ExcelUtils(System.getProperty("user.dir") + "/Tes
 //Connection con = DriverManager.getConnection(URL, "userid", "password" );
 	
 		
-     @Test(priority = 1,groups = { "Smoke" })
+     @Test(priority =17,groups = { "Smoke" })
 	     public static void verifySourceAdd() throws InterruptedException 
 	   {    
 	        
@@ -33,13 +34,13 @@ static ExcelUtils reader = new ExcelUtils(System.getProperty("user.dir") + "/Tes
 	    } 
 	 
 	  
-	    @Test(priority =  2, dependsOnMethods = {"verifySourceAdd"},groups = { "Smoke" })
+	    @Test(priority = 18, dependsOnMethods = {"verifySourceAdd"},groups = { "Smoke" })
 	    public static void verifyAddDestination() throws InterruptedException 
 	    {	 verifyDestinationADLS(9);
 	        }
 	
 	 
-		           @Test(priority = 3,dependsOnMethods = { "verifyAddDestination" }, groups = { "Smoke" })
+		           @Test(priority = 19,dependsOnMethods = { "verifyAddDestination" },groups = { "Smoke" })
 	               public static void verifyAddDataFlow() throws InterruptedException 
 	                 {    
 			  
@@ -94,7 +95,7 @@ static ExcelUtils reader = new ExcelUtils(System.getProperty("user.dir") + "/Tes
 						 test.log(LogStatus.PASS,"Table Columns","Where clause Column is displaying");
 			             Thread.sleep(1000);
 			             			 
-			             driver.findElement(By.xpath("/html/body/div[6]/div[2]/div[1]/div[4]/div/div[1]/table/thead/tr/th[1]/span/span[1]/input")).click();//to uselect all tables
+			             driver.findElement(By.xpath("/html/body/div[6]/div[2]/div[1]/div[5]/div/div[1]/table/thead/tr/th[1]/span/span[1]/input")).click();//to uselect all tables
 			             Thread.sleep(1000);
 			             //driver.findElement(By.xpath("(/html/body/div//table/tbody/tr//td[2][text()='superstoresales'])[2]/preceding-sibling::td")).click();
 			             driver.findElement(By.xpath("(/html/body/div//table/tbody/tr//td[2][text()='"+reader.getCellData("DataFlow","Tablename",9)+"'])[2]/preceding-sibling::td")).click();// to select store table
@@ -115,7 +116,7 @@ static ExcelUtils reader = new ExcelUtils(System.getProperty("user.dir") + "/Tes
 			             driver.findElement(By.name("22")).click();// select Incremental Column 
 			             Thread.sleep(3000);
 			              
-			             driver.findElement(By.xpath("/html/body//div[4]//div[2]/div/button[text()='Save']")).click(); //save columns
+			             driver.findElement(By.xpath("/html/body//div[5]/div/div[2]//button[text()='Save']")).click(); //save columns
 						 boolean cancel = driver.findElement(By.xpath("(/html/body/div//button[text()='Cancel'])[3]")).isEnabled();
 						 Assert.assertEquals(cancel, true,"Cancel button is not Displaying or Disabled");
 						 test.log(LogStatus.PASS,"Cancel","Cancel button is Displaying and Enabled");
@@ -127,9 +128,10 @@ static ExcelUtils reader = new ExcelUtils(System.getProperty("user.dir") + "/Tes
 					     Thread.sleep(3000);
 						 driver.findElement(By.xpath("(/html/body//button[text()='Save'])[3]")).click();
 						 
-						 Thread.sleep(1000);
+						 Thread.sleep(3000);
 						 driver.findElement(By.xpath(xpathSaveButton)).click();
-						 Thread.sleep(1500);
+						 WebDriverWait wait = new WebDriverWait(driver,60);
+						 wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(toasterRecordSaved)));
 					     String toaster = driver.findElement(By.xpath(toasterRecordSaved)).getText();
 			    		
 				    	 Assert.assertEquals(toaster,"Flow added successfully!","Record is not added succesfully ");	    	
@@ -139,14 +141,14 @@ static ExcelUtils reader = new ExcelUtils(System.getProperty("user.dir") + "/Tes
 				    	 driver.findElement(By.xpath("//*[@id='root']/div//div[4]/table/tbody/tr[1]/td[7]/button[@title='Publish flow']")).click(); //publish Flow 
 				    	 Thread.sleep(1000);
 				    	 driver.findElement(By.xpath(xpathYesBtn)).click();
-				    	 WebDriverWait wait = new WebDriverWait(driver,60);
+				    	// WebDriverWait wait = new WebDriverWait(driver,60);
 				    	 wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(toasterRecordSaved)));
 				    	 String toaster2 = driver.findElement(By.xpath(toasterRecordSaved)).getText();
 				    	 System.out.println(toaster2);
 				    	 Assert.assertEquals(toaster2,"data flow published successfully","data flow is not published");
 				        test.log(LogStatus.PASS, "Publish","data flow published successfully");
 				   	     }
-		           @Test(priority = 4, dependsOnMethods = { "verifyAddDataFlow" },groups = { "Smoke" })
+		           @Test(priority = 20, dependsOnMethods = { "verifyAddDataFlow" },groups = { "Smoke" })
 	               public static void verifyScheduledFlow() throws InterruptedException 
 	                 {   
 		        	  
@@ -165,10 +167,17 @@ static ExcelUtils reader = new ExcelUtils(System.getProperty("user.dir") + "/Tes
 		   		   
 		   	        try (Connection connection = DriverManager.getConnection(connectionUrl);
 		   	        Statement statement = connection.createStatement();) {
-
-		   	        String selectSql = "update [Scheduling].[DataflowExeuctionCalendar] set currentsnapshotdate='2019-12-03'  where DataflowId=1824";//NEED TO ADD DATAFLOW ID AND DATE
+		   	      
+		   	        	
+		   	       String selectsql1="select DataFlowId from DataFlow where name='"+reader.getCellData("DataFlow","Name", 9)+"' and IsActive=1"; 	
+		   	    ResultSet rs=statement.executeQuery(selectsql1);
+		   	    while (rs.next()) {
+		            String FlowId = rs.getString(1);
+		            System.out.println("DataFlowId is "+ FlowId);
+		   	    
+		   	        String selectSql = "update [Scheduling].[DataflowExeuctionCalendar] set currentsnapshotdate='2019-12-03'  where DataflowId="+FlowId+"";   //NEED TO ADD DATAFLOW ID AND DATE
 		   	        statement.executeQuery(selectSql);
-
+		   	    }
 		   	        }
 		   	        
 		   	        catch (SQLException e)
@@ -178,22 +187,27 @@ static ExcelUtils reader = new ExcelUtils(System.getProperty("user.dir") + "/Tes
 		   	           
 		            }
 		   			
-		          @Test(priority = 5,dependsOnMethods = { "verifyScheduledFlow" }, groups = { "Smoke" })
+		          @Test(priority = 21,dependsOnMethods = { "verifyScheduledFlow" }, groups = { "Smoke" })
 	               public static void verifyDataFlowOnMontioringScreen() throws InterruptedException  
 	               {
 		        	  verifyFlowMontioringScreen(9);
+		        	 
 	               }
 		        	    
 		       	  
 		       
  
-             @Test(priority = 6,dependsOnMethods = { "verifyDataFlowOnMontioringScreen" },groups = { "Smoke" })
+             @Test(priority = 22,dependsOnMethods = { "verifyDataFlowOnMontioringScreen" },groups = { "Smoke" })
              public static void verifyDeleteScheduledFlow() throws InterruptedException  
             {   
-	          test= report.startTest("ReSccheduling Flow");
-	          driver.navigate().refresh();
-	          Thread.sleep(2000);
-	          driver.findElement(By.xpath(xpathDataFlowScheduled)).click();
+	         test= report.startTest("ReSccheduling Flow");
+	         driver.navigate().refresh();
+	         Thread.sleep(3000);
+	        
+	         driver.findElement(By.xpath(xpathDataFlowScheduled)).click();
+	         
+	          
+	          
 	          Thread.sleep(1000);
 	          driver.findElement(By.xpath("//*[@id='root']//div/table/tbody/tr[1]/td[2][text()='"+reader.getCellData("DataFlow","Name", 9)+"']/..//a[2]")).click();
 	          Thread.sleep(1000);
@@ -206,7 +220,7 @@ static ExcelUtils reader = new ExcelUtils(System.getProperty("user.dir") + "/Tes
             }
     
     
-            @Test(priority = 7, dependsOnMethods = { "verifyDeleteScheduledFlow" },groups = { "Smoke" })
+            @Test(priority = 23, dependsOnMethods = { "verifyDeleteScheduledFlow" },groups = { "Smoke" })
 	        public static void verifyRescheduled() throws InterruptedException  
 	        { 
 			    verifyScheduledFlowR(9 ,2);
@@ -222,12 +236,16 @@ static ExcelUtils reader = new ExcelUtils(System.getProperty("user.dir") + "/Tes
 	   	                + "loginTimeout=30;";
 				 try (Connection connection = DriverManager.getConnection(connectionUrl);
 			   	         Statement statement = connection.createStatement();) {
-
+					  String selectsql1="select DataFlowId from DataFlow where name='"+reader.getCellData("DataFlow","Name", 9)+"' and IsActive=1"; 	
+				   	    ResultSet rs=statement.executeQuery(selectsql1);
+				   	    while (rs.next()) {
+				            String FlowId = rs.getString(1);
+				            System.out.println("DataFlowId is "+ FlowId);
 			   	            
-			   	            String selectSql = "update [Scheduling].[DataflowExeuctionCalendar] set currentsnapshotdate='2019-12-04'  where DataflowId=1824";//NEED TO ADD DATAFLOW ID AND DATE
+			   	            String selectSql = "update [Scheduling].[DataflowExeuctionCalendar] set currentsnapshotdate='2019-12-04',PreviousSnapshotDate='2019-12-03'  where DataflowId="+FlowId+"";//NEED TO ADD DATAFLOW ID AND DATE
 			   	             statement.executeQuery(selectSql);
 
-			   	           
+				   	    }
 			   	        }
 			   	       
 			   	        catch (SQLException e) {
@@ -237,9 +255,10 @@ static ExcelUtils reader = new ExcelUtils(System.getProperty("user.dir") + "/Tes
 			   				
 			   		  
         }
-			   		 @Test(priority = 8,dependsOnMethods = { "verifyRescheduled" }, groups = { "Smoke" })
+			   		 @Test(priority = 24,dependsOnMethods = { "verifyRescheduled" }, groups = { "Smoke" })
 		               public static void verifyFlowOnMontioringScren() throws InterruptedException  
 		               {  
+			   			 Thread.sleep(3000);
 			   			 verifyFlowMontioringScreen(9);
 		               }
         }

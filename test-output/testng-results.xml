@@ -1,20 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="11" passed="11">
   <reporter-output>
   </reporter-output>
-  <suite name="CloudBlaze Automation" duration-ms="293821" started-at="2020-04-01T10:10:36Z" finished-at="2020-04-01T10:15:30Z">
+  <suite name="CloudBlaze Automation" duration-ms="1287699" started-at="2020-04-12T14:28:31Z" finished-at="2020-04-12T14:49:59Z">
     <groups>
       <group name="Smoke">
-        <method signature="SqltoAzuresql.verifySourceAdd()[pri:1, instance:com.Fullload_CDC.SqltoAzuresql@72cde7cc]" name="verifySourceAdd" class="com.Fullload_CDC.SqltoAzuresql"/>
-        <method signature="SqltoAzuresql.verifyAddDestination()[pri:2, instance:com.Fullload_CDC.SqltoAzuresql@72cde7cc]" name="verifyAddDestination" class="com.Fullload_CDC.SqltoAzuresql"/>
-        <method signature="SqltoAzuresql.verifyAddDataFlow()[pri:3, instance:com.Fullload_CDC.SqltoAzuresql@72cde7cc]" name="verifyAddDataFlow" class="com.Fullload_CDC.SqltoAzuresql"/>
-        <method signature="SqltoAzuresql.verifyScheduledFlow()[pri:4, instance:com.Fullload_CDC.SqltoAzuresql@72cde7cc]" name="verifyScheduledFlow" class="com.Fullload_CDC.SqltoAzuresql"/>
-        <method signature="SqltoAzuresql.verifyFlowOnMontioringScreen()[pri:5, instance:com.Fullload_CDC.SqltoAzuresql@72cde7cc]" name="verifyFlowOnMontioringScreen" class="com.Fullload_CDC.SqltoAzuresql"/>
+        <method signature="FullLoad.verifySystemParams()[pri:21, instance:com.Fullload_CDC.FullLoad@5fd4f8f5]" name="verifySystemParams" class="com.Fullload_CDC.FullLoad"/>
+        <method signature="FullLoad.verifyServicePrinciple()[pri:22, instance:com.Fullload_CDC.FullLoad@5fd4f8f5]" name="verifyServicePrinciple" class="com.Fullload_CDC.FullLoad"/>
+        <method signature="FullLoad.verifySubscription()[pri:23, instance:com.Fullload_CDC.FullLoad@5fd4f8f5]" name="verifySubscription" class="com.Fullload_CDC.FullLoad"/>
+        <method signature="FullLoad.verifyAddDataFactory()[pri:24, instance:com.Fullload_CDC.FullLoad@5fd4f8f5]" name="verifyAddDataFactory" class="com.Fullload_CDC.FullLoad"/>
+        <method signature="FullLoad.verifyAddSendgrid()[pri:25, instance:com.Fullload_CDC.FullLoad@5fd4f8f5]" name="verifyAddSendgrid" class="com.Fullload_CDC.FullLoad"/>
+        <method signature="FullLoad.verifyAddAzureFunction()[pri:26, instance:com.Fullload_CDC.FullLoad@5fd4f8f5]" name="verifyAddAzureFunction" class="com.Fullload_CDC.FullLoad"/>
+        <method signature="FullLoad.verifySourceAdd()[pri:27, instance:com.Fullload_CDC.FullLoad@5fd4f8f5]" name="verifySourceAdd" class="com.Fullload_CDC.FullLoad"/>
+        <method signature="FullLoad.verifyAddDestination()[pri:28, instance:com.Fullload_CDC.FullLoad@5fd4f8f5]" name="verifyAddDestination" class="com.Fullload_CDC.FullLoad"/>
+        <method signature="FullLoad.verifyAddDataFlow()[pri:29, instance:com.Fullload_CDC.FullLoad@5fd4f8f5]" name="verifyAddDataFlow" class="com.Fullload_CDC.FullLoad"/>
+        <method signature="FullLoad.verifyScheduledFlow()[pri:30, instance:com.Fullload_CDC.FullLoad@5fd4f8f5]" name="verifyScheduledFlow" class="com.Fullload_CDC.FullLoad"/>
+        <method signature="FullLoad.verifyFlowOnMontioringScreen()[pri:31, instance:com.Fullload_CDC.FullLoad@5fd4f8f5]" name="verifyFlowOnMontioringScreen" class="com.Fullload_CDC.FullLoad"/>
       </group> <!-- Smoke -->
     </groups>
-    <test name="CloudBlaze Tests" duration-ms="293821" started-at="2020-04-01T10:10:36Z" finished-at="2020-04-01T10:15:30Z">
-      <class name="com.Fullload_CDC.SqltoAzuresql">
-        <test-method status="PASS" signature="Report(java.lang.String)[pri:0, instance:com.Fullload_CDC.SqltoAzuresql@72cde7cc]" name="Report" is-config="true" duration-ms="136" started-at="2020-04-01T10:10:36Z" finished-at="2020-04-01T10:10:36Z">
+    <test name="CloudBlaze Tests" duration-ms="1287699" started-at="2020-04-12T14:28:31Z" finished-at="2020-04-12T14:49:59Z">
+      <class name="com.Fullload_CDC.FullLoad">
+        <test-method status="PASS" signature="Report(java.lang.String)[pri:0, instance:com.Fullload_CDC.FullLoad@5fd4f8f5]" name="Report" is-config="true" duration-ms="297" started-at="2020-04-12T14:28:31Z" finished-at="2020-04-12T14:28:32Z">
           <params>
             <param index="0">
               <value>
@@ -25,7 +31,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Report -->
-        <test-method status="PASS" signature="init(java.lang.String)[pri:0, instance:com.Fullload_CDC.SqltoAzuresql@72cde7cc]" name="init" is-config="true" duration-ms="29747" started-at="2020-04-01T10:10:36Z" finished-at="2020-04-01T10:11:06Z">
+        <test-method status="PASS" signature="init(java.lang.String)[pri:0, instance:com.Fullload_CDC.FullLoad@5fd4f8f5]" name="init" is-config="true" duration-ms="26818" started-at="2020-04-12T14:28:32Z" finished-at="2020-04-12T14:28:59Z">
           <params>
             <param index="0">
               <value>
@@ -36,86 +42,176 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="verifySourceAdd()[pri:1, instance:com.Fullload_CDC.SqltoAzuresql@72cde7cc]" name="verifySourceAdd" duration-ms="50921" started-at="2020-04-01T10:11:06Z" finished-at="2020-04-01T10:11:57Z">
+        <test-method status="PASS" signature="verifySystemParams()[pri:21, instance:com.Fullload_CDC.FullLoad@5fd4f8f5]" name="verifySystemParams" duration-ms="6788" started-at="2020-04-12T14:28:59Z" finished-at="2020-04-12T14:29:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySystemParams -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.FullLoad@5fd4f8f5]" name="getResult" is-config="true" duration-ms="1" started-at="2020-04-12T14:29:05Z" finished-at="2020-04-12T14:29:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySystemParams status=SUCCESS method=FullLoad.verifySystemParams()[pri:21, instance:com.Fullload_CDC.FullLoad@5fd4f8f5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="verifyServicePrinciple()[pri:22, instance:com.Fullload_CDC.FullLoad@5fd4f8f5]" name="verifyServicePrinciple" duration-ms="3565" started-at="2020-04-12T14:29:05Z" depends-on-methods="com.Fullload_CDC.FullLoad.verifySystemParams" finished-at="2020-04-12T14:29:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyServicePrinciple -->
+        <test-method status="PASS" signature="verifySubscription()[pri:23, instance:com.Fullload_CDC.FullLoad@5fd4f8f5]" name="verifySubscription" duration-ms="4123" started-at="2020-04-12T14:29:09Z" depends-on-methods="com.Fullload_CDC.FullLoad.verifyServicePrinciple" finished-at="2020-04-12T14:29:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySubscription -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.FullLoad@5fd4f8f5]" name="getResult" is-config="true" duration-ms="0" started-at="2020-04-12T14:29:09Z" finished-at="2020-04-12T14:29:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyServicePrinciple status=SUCCESS method=FullLoad.verifyServicePrinciple()[pri:22, instance:com.Fullload_CDC.FullLoad@5fd4f8f5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.FullLoad@5fd4f8f5]" name="getResult" is-config="true" duration-ms="0" started-at="2020-04-12T14:29:13Z" finished-at="2020-04-12T14:29:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySubscription status=SUCCESS method=FullLoad.verifySubscription()[pri:23, instance:com.Fullload_CDC.FullLoad@5fd4f8f5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="verifyAddDataFactory()[pri:24, instance:com.Fullload_CDC.FullLoad@5fd4f8f5]" name="verifyAddDataFactory" duration-ms="5574" started-at="2020-04-12T14:29:13Z" depends-on-methods="com.Fullload_CDC.FullLoad.verifySubscription" finished-at="2020-04-12T14:29:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddDataFactory -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.FullLoad@5fd4f8f5]" name="getResult" is-config="true" duration-ms="1" started-at="2020-04-12T14:29:19Z" finished-at="2020-04-12T14:29:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAddDataFactory status=SUCCESS method=FullLoad.verifyAddDataFactory()[pri:24, instance:com.Fullload_CDC.FullLoad@5fd4f8f5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="verifyAddSendgrid()[pri:25, instance:com.Fullload_CDC.FullLoad@5fd4f8f5]" name="verifyAddSendgrid" duration-ms="3486" started-at="2020-04-12T14:29:19Z" depends-on-methods="com.Fullload_CDC.FullLoad.verifyAddDataFactory" finished-at="2020-04-12T14:29:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddSendgrid -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.FullLoad@5fd4f8f5]" name="getResult" is-config="true" duration-ms="0" started-at="2020-04-12T14:29:22Z" finished-at="2020-04-12T14:29:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAddSendgrid status=SUCCESS method=FullLoad.verifyAddSendgrid()[pri:25, instance:com.Fullload_CDC.FullLoad@5fd4f8f5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="verifyAddAzureFunction()[pri:26, instance:com.Fullload_CDC.FullLoad@5fd4f8f5]" name="verifyAddAzureFunction" duration-ms="3586" started-at="2020-04-12T14:29:22Z" depends-on-methods="com.Fullload_CDC.FullLoad.verifyAddSendgrid" finished-at="2020-04-12T14:29:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddAzureFunction -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.FullLoad@5fd4f8f5]" name="getResult" is-config="true" duration-ms="0" started-at="2020-04-12T14:29:26Z" finished-at="2020-04-12T14:29:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAddAzureFunction status=SUCCESS method=FullLoad.verifyAddAzureFunction()[pri:26, instance:com.Fullload_CDC.FullLoad@5fd4f8f5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="verifySourceAdd()[pri:27, instance:com.Fullload_CDC.FullLoad@5fd4f8f5]" name="verifySourceAdd" duration-ms="52042" started-at="2020-04-12T14:29:26Z" depends-on-methods="com.Fullload_CDC.FullLoad.verifyAddAzureFunction" finished-at="2020-04-12T14:30:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySourceAdd -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.SqltoAzuresql@72cde7cc]" name="getResult" is-config="true" duration-ms="2" started-at="2020-04-01T10:11:57Z" finished-at="2020-04-01T10:11:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifySourceAdd status=SUCCESS method=SqltoAzuresql.verifySourceAdd()[pri:1, instance:com.Fullload_CDC.SqltoAzuresql@72cde7cc] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="verifyAddDestination()[pri:2, instance:com.Fullload_CDC.SqltoAzuresql@72cde7cc]" name="verifyAddDestination" duration-ms="20312" started-at="2020-04-01T10:11:57Z" depends-on-methods="com.Fullload_CDC.SqltoAzuresql.verifySourceAdd" finished-at="2020-04-01T10:12:17Z">
+        <test-method status="PASS" signature="verifyAddDestination()[pri:28, instance:com.Fullload_CDC.FullLoad@5fd4f8f5]" name="verifyAddDestination" duration-ms="22059" started-at="2020-04-12T14:30:18Z" depends-on-methods="com.Fullload_CDC.FullLoad.verifySourceAdd" finished-at="2020-04-12T14:30:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddDestination -->
-        <test-method status="PASS" signature="verifyAddDataFlow()[pri:3, instance:com.Fullload_CDC.SqltoAzuresql@72cde7cc]" name="verifyAddDataFlow" duration-ms="42220" started-at="2020-04-01T10:12:17Z" depends-on-methods="com.Fullload_CDC.SqltoAzuresql.verifyAddDestination" finished-at="2020-04-01T10:13:00Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.FullLoad@5fd4f8f5]" name="getResult" is-config="true" duration-ms="0" started-at="2020-04-12T14:30:18Z" finished-at="2020-04-12T14:30:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySourceAdd status=SUCCESS method=FullLoad.verifySourceAdd()[pri:27, instance:com.Fullload_CDC.FullLoad@5fd4f8f5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.FullLoad@5fd4f8f5]" name="getResult" is-config="true" duration-ms="0" started-at="2020-04-12T14:30:40Z" finished-at="2020-04-12T14:30:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAddDestination status=SUCCESS method=FullLoad.verifyAddDestination()[pri:28, instance:com.Fullload_CDC.FullLoad@5fd4f8f5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="verifyAddDataFlow()[pri:29, instance:com.Fullload_CDC.FullLoad@5fd4f8f5]" name="verifyAddDataFlow" duration-ms="71122" started-at="2020-04-12T14:30:40Z" depends-on-methods="com.Fullload_CDC.FullLoad.verifyAddDestination" finished-at="2020-04-12T14:31:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddDataFlow -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.SqltoAzuresql@72cde7cc]" name="getResult" is-config="true" duration-ms="0" started-at="2020-04-01T10:12:17Z" finished-at="2020-04-01T10:12:17Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyAddDestination status=SUCCESS method=SqltoAzuresql.verifyAddDestination()[pri:2, instance:com.Fullload_CDC.SqltoAzuresql@72cde7cc] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.SqltoAzuresql@72cde7cc]" name="getResult" is-config="true" duration-ms="0" started-at="2020-04-01T10:13:00Z" finished-at="2020-04-01T10:13:00Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyAddDataFlow status=SUCCESS method=SqltoAzuresql.verifyAddDataFlow()[pri:3, instance:com.Fullload_CDC.SqltoAzuresql@72cde7cc] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="verifyScheduledFlow()[pri:4, instance:com.Fullload_CDC.SqltoAzuresql@72cde7cc]" name="verifyScheduledFlow" duration-ms="17434" started-at="2020-04-01T10:13:00Z" depends-on-methods="com.Fullload_CDC.SqltoAzuresql.verifyAddDataFlow" finished-at="2020-04-01T10:13:17Z">
+        <test-method status="PASS" signature="verifyScheduledFlow()[pri:30, instance:com.Fullload_CDC.FullLoad@5fd4f8f5]" name="verifyScheduledFlow" duration-ms="18397" started-at="2020-04-12T14:31:51Z" depends-on-methods="com.Fullload_CDC.FullLoad.verifyAddDataFlow" finished-at="2020-04-12T14:32:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyScheduledFlow -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.SqltoAzuresql@72cde7cc]" name="getResult" is-config="true" duration-ms="0" started-at="2020-04-01T10:13:17Z" finished-at="2020-04-01T10:13:17Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.FullLoad@5fd4f8f5]" name="getResult" is-config="true" duration-ms="0" started-at="2020-04-12T14:31:51Z" finished-at="2020-04-12T14:31:51Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyScheduledFlow status=SUCCESS method=SqltoAzuresql.verifyScheduledFlow()[pri:4, instance:com.Fullload_CDC.SqltoAzuresql@72cde7cc] output={null}]]]>
+                <![CDATA[[TestResult name=verifyAddDataFlow status=SUCCESS method=FullLoad.verifyAddDataFlow()[pri:29, instance:com.Fullload_CDC.FullLoad@5fd4f8f5] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="verifyFlowOnMontioringScreen()[pri:5, instance:com.Fullload_CDC.SqltoAzuresql@72cde7cc]" name="verifyFlowOnMontioringScreen" duration-ms="133022" started-at="2020-04-01T10:13:17Z" depends-on-methods="com.Fullload_CDC.SqltoAzuresql.verifyScheduledFlow" finished-at="2020-04-01T10:15:30Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.FullLoad@5fd4f8f5]" name="getResult" is-config="true" duration-ms="0" started-at="2020-04-12T14:32:09Z" finished-at="2020-04-12T14:32:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyScheduledFlow status=SUCCESS method=FullLoad.verifyScheduledFlow()[pri:30, instance:com.Fullload_CDC.FullLoad@5fd4f8f5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="verifyFlowOnMontioringScreen()[pri:31, instance:com.Fullload_CDC.FullLoad@5fd4f8f5]" name="verifyFlowOnMontioringScreen" duration-ms="1069760" started-at="2020-04-12T14:32:09Z" depends-on-methods="com.Fullload_CDC.FullLoad.verifyScheduledFlow" finished-at="2020-04-12T14:49:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyFlowOnMontioringScreen -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.SqltoAzuresql@72cde7cc]" name="getResult" is-config="true" duration-ms="1" started-at="2020-04-01T10:15:30Z" finished-at="2020-04-01T10:15:30Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.FullLoad@5fd4f8f5]" name="getResult" is-config="true" duration-ms="0" started-at="2020-04-12T14:49:59Z" finished-at="2020-04-12T14:49:59Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyFlowOnMontioringScreen status=SUCCESS method=SqltoAzuresql.verifyFlowOnMontioringScreen()[pri:5, instance:com.Fullload_CDC.SqltoAzuresql@72cde7cc] output={null}]]]>
+                <![CDATA[[TestResult name=verifyFlowOnMontioringScreen status=SUCCESS method=FullLoad.verifyFlowOnMontioringScreen()[pri:31, instance:com.Fullload_CDC.FullLoad@5fd4f8f5] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Fullload_CDC.SqltoAzuresql@72cde7cc]" name="tearDown" is-config="true" duration-ms="205" started-at="2020-04-01T10:15:30Z" finished-at="2020-04-01T10:15:30Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Fullload_CDC.FullLoad@5fd4f8f5]" name="tearDown" is-config="true" duration-ms="368" started-at="2020-04-12T14:49:59Z" finished-at="2020-04-12T14:50:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.Fullload_CDC.SqltoAzuresql -->
+      </class> <!-- com.Fullload_CDC.FullLoad -->
     </test> <!-- CloudBlaze Tests -->
   </suite> <!-- CloudBlaze Automation -->
 </testng-results>

@@ -9,19 +9,25 @@
       </run>
     </groups>
     <classes>
-      <class name="com.Fullload_CDC.SqltoAzuresql">
+      <class name="com.Fullload_CDC.FullLoad">
         <methods>
-          <include name="verifyAddDestination"/>
-          <include name="tearDown"/>
-          <include name="verifyAddDataFlow"/>
+          <include name="verifySystemParams"/>
           <include name="verifySourceAdd"/>
-          <include name="Report"/>
-          <include name="getResult"/>
-          <include name="verifyScheduledFlow"/>
-          <include name="init"/>
+          <include name="verifyAddDataFactory"/>
           <include name="verifyFlowOnMontioringScreen"/>
+          <include name="verifyScheduledFlow"/>
+          <include name="getResult"/>
+          <include name="verifyAddDataFlow"/>
+          <include name="verifyAddSendgrid"/>
+          <include name="tearDown"/>
+          <include name="verifyAddDestination"/>
+          <include name="verifySubscription"/>
+          <include name="Report"/>
+          <include name="verifyAddAzureFunction"/>
+          <include name="verifyServicePrinciple"/>
+          <include name="init"/>
         </methods>
-      </class> <!-- com.Fullload_CDC.SqltoAzuresql -->
+      </class> <!-- com.Fullload_CDC.FullLoad -->
     </classes>
   </test> <!-- CloudBlaze Tests(failed) -->
 </suite> <!-- Failed suite [CloudBlaze Automation] -->

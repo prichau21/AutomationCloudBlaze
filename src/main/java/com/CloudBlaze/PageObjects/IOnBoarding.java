@@ -111,7 +111,7 @@ public interface IOnBoarding {
 	public String xpathSubmitStorageService="(//*[@id='root']/div//button[text()='Submit'])[3]";
 	public String xpathDatafactory="//*[@id='root']//div//table/tbody//td[text()='cb0oanfb2ihritaidemo1df']";
 	public String xpathSendgrids="//*[@id='root']//div//table/tbody//td[text()='azure_c3ef8800dba77de5ab07913965260507@azure.com']";
-	public String xpathAzureFunctions="//*[@id='root']//div//table/tbody//td[text()='Azure_Function']";
+	public String xpathAzureFunctions="//*[@id='root']//div//table/tbody//td[text()='AzureFunction']";
 	public String xpathOraclePckey="//*[@id='menu-173']/div//li[@data-value='OraclePCKey']";
 	public String xpathAzureSql="//*[@id='menu-dataSourceTypeId']/div//ul/li[text()='Azure Sql']";
 	public String xpathAzureSqlPass="//*[@id='menu-9']/div/ul/li[text()='azuresqlpass']";
