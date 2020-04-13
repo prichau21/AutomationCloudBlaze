@@ -25,7 +25,7 @@ static ExcelUtils reader = new ExcelUtils(System.getProperty("user.dir") + "/Tes
 //Connection con = DriverManager.getConnection(URL, "userid", "password" );
 	
 		
-     @Test(priority =17,groups = { "Smoke" })
+     @Test(priority =31,groups = { "Smoke" })
 	     public static void verifySourceAdd() throws InterruptedException 
 	   {    
 	        
@@ -34,13 +34,13 @@ static ExcelUtils reader = new ExcelUtils(System.getProperty("user.dir") + "/Tes
 	    } 
 	 
 	  
-	    @Test(priority = 18, dependsOnMethods = {"verifySourceAdd"},groups = { "Smoke" })
+	    @Test(priority = 32, dependsOnMethods = {"verifySourceAdd"},groups = { "Smoke" })
 	    public static void verifyAddDestination() throws InterruptedException 
 	    {	 verifyDestinationADLS(9);
 	        }
 	
 	 
-		           @Test(priority = 19,dependsOnMethods = { "verifyAddDestination" },groups = { "Smoke" })
+		           @Test(priority = 33,dependsOnMethods = { "verifyAddDestination" },groups = { "Smoke" })
 	               public static void verifyAddDataFlow() throws InterruptedException 
 	                 {    
 			  
@@ -148,7 +148,7 @@ static ExcelUtils reader = new ExcelUtils(System.getProperty("user.dir") + "/Tes
 				    	 Assert.assertEquals(toaster2,"data flow published successfully","data flow is not published");
 				        test.log(LogStatus.PASS, "Publish","data flow published successfully");
 				   	     }
-		           @Test(priority = 20, dependsOnMethods = { "verifyAddDataFlow" },groups = { "Smoke" })
+		           @Test(priority = 34, dependsOnMethods = { "verifyAddDataFlow" },groups = { "Smoke" })
 	               public static void verifyScheduledFlow() throws InterruptedException 
 	                 {   
 		        	  
@@ -187,7 +187,7 @@ static ExcelUtils reader = new ExcelUtils(System.getProperty("user.dir") + "/Tes
 		   	           
 		            }
 		   			
-		          @Test(priority = 21,dependsOnMethods = { "verifyScheduledFlow" }, groups = { "Smoke" })
+		          @Test(priority = 35,dependsOnMethods = { "verifyScheduledFlow" }, groups = { "Smoke" })
 	               public static void verifyDataFlowOnMontioringScreen() throws InterruptedException  
 	               {
 		        	  verifyFlowMontioringScreen(9);
@@ -197,7 +197,7 @@ static ExcelUtils reader = new ExcelUtils(System.getProperty("user.dir") + "/Tes
 		       	  
 		       
  
-             @Test(priority = 22,dependsOnMethods = { "verifyDataFlowOnMontioringScreen" },groups = { "Smoke" })
+             @Test(priority = 36,dependsOnMethods = { "verifyDataFlowOnMontioringScreen" },groups = { "Smoke" })
              public static void verifyDeleteScheduledFlow() throws InterruptedException  
             {   
 	         test= report.startTest("ReSccheduling Flow");
@@ -220,7 +220,7 @@ static ExcelUtils reader = new ExcelUtils(System.getProperty("user.dir") + "/Tes
             }
     
     
-            @Test(priority = 23, dependsOnMethods = { "verifyDeleteScheduledFlow" },groups = { "Smoke" })
+            @Test(priority = 37, dependsOnMethods = { "verifyDeleteScheduledFlow" },groups = { "Smoke" })
 	        public static void verifyRescheduled() throws InterruptedException  
 	        { 
 			    verifyScheduledFlowR(9 ,2);
@@ -255,7 +255,7 @@ static ExcelUtils reader = new ExcelUtils(System.getProperty("user.dir") + "/Tes
 			   				
 			   		  
         }
-			   		 @Test(priority = 24,dependsOnMethods = { "verifyRescheduled" }, groups = { "Smoke" })
+			   		 @Test(priority = 38,dependsOnMethods = { "verifyRescheduled" }, groups = { "Smoke" })
 		               public static void verifyFlowOnMontioringScren() throws InterruptedException  
 		               {  
 			   			 Thread.sleep(3000);

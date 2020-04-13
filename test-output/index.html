@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-CloudBlaze_Automation">
-              <span class="suite-name border-passed">CloudBlaze Automation</span>
+              <span class="suite-name border-failed">CloudBlaze Automation</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,40 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">11 methods,   11 passed</span>
+                    <span class="method-stats">24 methods, 1 failed,  2 skipped,  21 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-CloudBlaze_Automation" class="hide-methods failed suite-CloudBlaze_Automation"> (hide)</a> <!-- hide-methods failed suite-CloudBlaze_Automation -->
+                      <a href="#" panel-name="suite-CloudBlaze_Automation" class="show-methods failed suite-CloudBlaze_Automation"> (show)</a> <!-- show-methods failed suite-CloudBlaze_Automation -->
+                    </span>
+                    <div class="method-list-content failed suite-CloudBlaze_Automation">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CloudBlaze_Automation" title="com.Fullload_CDC.OracleToAdlsCDC" hash-for-method="verifyDeleteScheduledFlow">verifyDeleteScheduledFlow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-CloudBlaze_Automation -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-CloudBlaze_Automation" class="hide-methods skipped suite-CloudBlaze_Automation"> (hide)</a> <!-- hide-methods skipped suite-CloudBlaze_Automation -->
+                      <a href="#" panel-name="suite-CloudBlaze_Automation" class="show-methods skipped suite-CloudBlaze_Automation"> (show)</a> <!-- show-methods skipped suite-CloudBlaze_Automation -->
+                    </span>
+                    <div class="method-list-content skipped suite-CloudBlaze_Automation">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CloudBlaze_Automation" title="com.Fullload_CDC.OracleToAdlsCDC" hash-for-method="verifyFlowOnMontioringScren">verifyFlowOnMontioringScren</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CloudBlaze_Automation" title="com.Fullload_CDC.OracleToAdlsCDC" hash-for-method="verifyRescheduled">verifyRescheduled</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-CloudBlaze_Automation -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -112,7 +145,22 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CloudBlaze_Automation" title="com.Fullload_CDC.OracleToAdlsCDC" hash-for-method="verifyAddDataFlow">verifyAddDataFlow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CloudBlaze_Automation" title="com.Fullload_CDC.SqltoAzuresql" hash-for-method="verifyAddDataFlow">verifyAddDataFlow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-CloudBlaze_Automation" title="com.Fullload_CDC.FullLoad" hash-for-method="verifyAddDataFlow">verifyAddDataFlow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CloudBlaze_Automation" title="com.Fullload_CDC.OracleToAdlsCDC" hash-for-method="verifyAddDestination">verifyAddDestination</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -122,7 +170,22 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CloudBlaze_Automation" title="com.Fullload_CDC.SqltoAzuresql" hash-for-method="verifyAddDestination">verifyAddDestination</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-CloudBlaze_Automation" title="com.Fullload_CDC.FullLoad" hash-for-method="verifyAddSendgrid">verifyAddSendgrid</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CloudBlaze_Automation" title="com.Fullload_CDC.OracleToAdlsCDC" hash-for-method="verifyDataFlowOnMontioringScreen">verifyDataFlowOnMontioringScreen</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CloudBlaze_Automation" title="com.Fullload_CDC.SqltoAzuresql" hash-for-method="verifyFlowOnMontioringScreen">verifyFlowOnMontioringScreen</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -132,7 +195,17 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CloudBlaze_Automation" title="com.Fullload_CDC.SqltoAzuresql" hash-for-method="verifyScheduledFlow">verifyScheduledFlow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-CloudBlaze_Automation" title="com.Fullload_CDC.FullLoad" hash-for-method="verifyScheduledFlow">verifyScheduledFlow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CloudBlaze_Automation" title="com.Fullload_CDC.OracleToAdlsCDC" hash-for-method="verifyScheduledFlow">verifyScheduledFlow</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -143,6 +216,16 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-CloudBlaze_Automation" title="com.Fullload_CDC.FullLoad" hash-for-method="verifySourceAdd">verifySourceAdd</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CloudBlaze_Automation" title="com.Fullload_CDC.OracleToAdlsCDC" hash-for-method="verifySourceAdd">verifySourceAdd</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CloudBlaze_Automation" title="com.Fullload_CDC.SqltoAzuresql" hash-for-method="verifySourceAdd">verifySourceAdd</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -167,6 +250,71 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-CloudBlaze_Automation" class="panel CloudBlaze_Automation">
+          <div class="suite-CloudBlaze_Automation-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.Fullload_CDC.OracleToAdlsCDC</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDeleteScheduledFlow">
+                  </a> <!-- verifyDeleteScheduledFlow -->
+                  <span class="method-name">verifyDeleteScheduledFlow</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;root&apos;]//div/table/tbody/tr[1]/td[2][text()=&apos;DataFlowOracletoADLSCDC&apos;]/..//a[2]&quot;}
+  (Session info: chrome=80.0.3987.163)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;LAPTOP-2G86F66K&apos;, ip: &apos;192.168.29.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:64826}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7c51614171f7449b29975a52831c6fcb
+*** Element info: {Using=xpath, value=//*[@id=&apos;root&apos;]//div/table/tbody/tr[1]/td[2][text()=&apos;DataFlowOracletoADLSCDC&apos;]/..//a[2]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+	at com.Fullload_CDC.OracleToAdlsCDC.verifyDeleteScheduledFlow(OracleToAdlsCDC.java:212)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CloudBlaze_Automation-class-failed -->
+          <div class="suite-CloudBlaze_Automation-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.Fullload_CDC.OracleToAdlsCDC</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyFlowOnMontioringScren">
+                  </a> <!-- verifyFlowOnMontioringScren -->
+                  <span class="method-name">verifyFlowOnMontioringScren</span>
+                  <div class="stack-trace">java.lang.Throwable: Method OracleToAdlsCDC.verifyFlowOnMontioringScren()[pri:38, instance:com.Fullload_CDC.OracleToAdlsCDC@28f3b248] depends on not successfully finished methods
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRescheduled">
+                  </a> <!-- verifyRescheduled -->
+                  <span class="method-name">verifyRescheduled</span>
+                  <div class="stack-trace">java.lang.Throwable: Method OracleToAdlsCDC.verifyRescheduled()[pri:37, instance:com.Fullload_CDC.OracleToAdlsCDC@28f3b248] depends on not successfully finished methods
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CloudBlaze_Automation-class-skipped -->
           <div class="suite-CloudBlaze_Automation-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -252,6 +400,92 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-CloudBlaze_Automation-class-passed -->
+          <div class="suite-CloudBlaze_Automation-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.Fullload_CDC.OracleToAdlsCDC</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddDataFlow">
+                  </a> <!-- verifyAddDataFlow -->
+                  <span class="method-name">verifyAddDataFlow</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddDestination">
+                  </a> <!-- verifyAddDestination -->
+                  <span class="method-name">verifyAddDestination</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDataFlowOnMontioringScreen">
+                  </a> <!-- verifyDataFlowOnMontioringScreen -->
+                  <span class="method-name">verifyDataFlowOnMontioringScreen</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyScheduledFlow">
+                  </a> <!-- verifyScheduledFlow -->
+                  <span class="method-name">verifyScheduledFlow</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySourceAdd">
+                  </a> <!-- verifySourceAdd -->
+                  <span class="method-name">verifySourceAdd</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CloudBlaze_Automation-class-passed -->
+          <div class="suite-CloudBlaze_Automation-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.Fullload_CDC.SqltoAzuresql</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddDataFlow">
+                  </a> <!-- verifyAddDataFlow -->
+                  <span class="method-name">verifyAddDataFlow</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddDestination">
+                  </a> <!-- verifyAddDestination -->
+                  <span class="method-name">verifyAddDestination</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyFlowOnMontioringScreen">
+                  </a> <!-- verifyFlowOnMontioringScreen -->
+                  <span class="method-name">verifyFlowOnMontioringScreen</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyScheduledFlow">
+                  </a> <!-- verifyScheduledFlow -->
+                  <span class="method-name">verifyScheduledFlow</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySourceAdd">
+                  </a> <!-- verifySourceAdd -->
+                  <span class="method-name">verifySourceAdd</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CloudBlaze_Automation-class-passed -->
         </div> <!-- panel CloudBlaze_Automation -->
         <div panel-name="test-xml-CloudBlaze_Automation" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -270,7 +504,9 @@
       &lt;/run&gt;
     &lt;/groups&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;com.Fullload_CDC.SqltoAzuresql&quot;/&gt;
       &lt;class name=&quot;com.Fullload_CDC.FullLoad&quot;/&gt;
+      &lt;class name=&quot;com.Fullload_CDC.OracleToAdlsCDC&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- CloudBlaze Tests --&gt;
 &lt;/suite&gt; &lt;!-- CloudBlaze Automation --&gt;
@@ -284,7 +520,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">CloudBlaze Tests (1 class)</span>
+                <span class="test-name">CloudBlaze Tests (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -318,7 +554,23 @@
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
+                <span class="method-in-group-name">verifyDataFlowOnMontioringScreen</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyDeleteScheduledFlow</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
                 <span class="method-in-group-name">verifyFlowOnMontioringScreen</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyFlowOnMontioringScren</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyRescheduled</span>
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
@@ -358,56 +610,108 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(11);
+data.addRows(24);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyFlowOnMontioringScreen')
 data.setCell(0, 2, 'com.Fullload_CDC.FullLoad')
-data.setCell(0, 3, 1069760);
+data.setCell(0, 3, 1212407);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyAddDataFlow')
-data.setCell(1, 2, 'com.Fullload_CDC.FullLoad')
-data.setCell(1, 3, 71122);
+data.setCell(1, 1, 'verifyDataFlowOnMontioringScreen')
+data.setCell(1, 2, 'com.Fullload_CDC.OracleToAdlsCDC')
+data.setCell(1, 3, 551458);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifySourceAdd')
-data.setCell(2, 2, 'com.Fullload_CDC.FullLoad')
-data.setCell(2, 3, 52042);
+data.setCell(2, 1, 'verifyFlowOnMontioringScreen')
+data.setCell(2, 2, 'com.Fullload_CDC.SqltoAzuresql')
+data.setCell(2, 3, 426378);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyAddDestination')
+data.setCell(3, 1, 'verifyAddDataFlow')
 data.setCell(3, 2, 'com.Fullload_CDC.FullLoad')
-data.setCell(3, 3, 22059);
+data.setCell(3, 3, 70849);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyScheduledFlow')
-data.setCell(4, 2, 'com.Fullload_CDC.FullLoad')
-data.setCell(4, 3, 18397);
+data.setCell(4, 1, 'verifyAddDataFlow')
+data.setCell(4, 2, 'com.Fullload_CDC.OracleToAdlsCDC')
+data.setCell(4, 3, 63964);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifySystemParams')
+data.setCell(5, 1, 'verifySourceAdd')
 data.setCell(5, 2, 'com.Fullload_CDC.FullLoad')
-data.setCell(5, 3, 6788);
+data.setCell(5, 3, 52762);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'verifyAddDataFactory')
-data.setCell(6, 2, 'com.Fullload_CDC.FullLoad')
-data.setCell(6, 3, 5574);
+data.setCell(6, 1, 'verifySourceAdd')
+data.setCell(6, 2, 'com.Fullload_CDC.SqltoAzuresql')
+data.setCell(6, 3, 49187);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'verifySubscription')
-data.setCell(7, 2, 'com.Fullload_CDC.FullLoad')
-data.setCell(7, 3, 4123);
+data.setCell(7, 1, 'verifyAddDataFlow')
+data.setCell(7, 2, 'com.Fullload_CDC.SqltoAzuresql')
+data.setCell(7, 3, 42265);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'verifyAddAzureFunction')
-data.setCell(8, 2, 'com.Fullload_CDC.FullLoad')
-data.setCell(8, 3, 3586);
+data.setCell(8, 1, 'verifySourceAdd')
+data.setCell(8, 2, 'com.Fullload_CDC.OracleToAdlsCDC')
+data.setCell(8, 3, 40980);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'verifyServicePrinciple')
-data.setCell(9, 2, 'com.Fullload_CDC.FullLoad')
-data.setCell(9, 3, 3565);
+data.setCell(9, 1, 'verifyAddDestination')
+data.setCell(9, 2, 'com.Fullload_CDC.SqltoAzuresql')
+data.setCell(9, 3, 22835);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'verifyAddSendgrid')
+data.setCell(10, 1, 'verifyAddDestination')
 data.setCell(10, 2, 'com.Fullload_CDC.FullLoad')
-data.setCell(10, 3, 3486);
+data.setCell(10, 3, 22541);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifyScheduledFlow')
+data.setCell(11, 2, 'com.Fullload_CDC.OracleToAdlsCDC')
+data.setCell(11, 3, 20508);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'verifyScheduledFlow')
+data.setCell(12, 2, 'com.Fullload_CDC.FullLoad')
+data.setCell(12, 3, 17754);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'verifyScheduledFlow')
+data.setCell(13, 2, 'com.Fullload_CDC.SqltoAzuresql')
+data.setCell(13, 3, 17552);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'verifyAddDestination')
+data.setCell(14, 2, 'com.Fullload_CDC.OracleToAdlsCDC')
+data.setCell(14, 3, 16560);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'verifyDeleteScheduledFlow')
+data.setCell(15, 2, 'com.Fullload_CDC.OracleToAdlsCDC')
+data.setCell(15, 3, 9866);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'verifySystemParams')
+data.setCell(16, 2, 'com.Fullload_CDC.FullLoad')
+data.setCell(16, 3, 6755);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'verifyAddDataFactory')
+data.setCell(17, 2, 'com.Fullload_CDC.FullLoad')
+data.setCell(17, 3, 5578);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'verifySubscription')
+data.setCell(18, 2, 'com.Fullload_CDC.FullLoad')
+data.setCell(18, 3, 4354);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'verifyServicePrinciple')
+data.setCell(19, 2, 'com.Fullload_CDC.FullLoad')
+data.setCell(19, 3, 3824);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'verifyAddSendgrid')
+data.setCell(20, 2, 'com.Fullload_CDC.FullLoad')
+data.setCell(20, 3, 3531);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'verifyAddAzureFunction')
+data.setCell(21, 2, 'com.Fullload_CDC.FullLoad')
+data.setCell(21, 3, 3528);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'verifyFlowOnMontioringScren')
+data.setCell(22, 2, 'com.Fullload_CDC.OracleToAdlsCDC')
+data.setCell(22, 3, 0);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'verifyRescheduled')
+data.setCell(23, 2, 'com.Fullload_CDC.OracleToAdlsCDC')
+data.setCell(23, 3, 0);
 window.suiteTableData['CloudBlaze_Automation']= { tableData: data, tableDiv: 'times-div-CloudBlaze_Automation'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 21 minutes</span>
+              <span class="suite-total-time">Total running time: 44 minutes</span>
               <div id="times-div-CloudBlaze_Automation">
               </div> <!-- times-div-CloudBlaze_Automation -->
             </div> <!-- times-div -->
@@ -422,9 +726,31 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-CloudBlaze_Automation" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">6 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.Fullload_CDC.FullLoad</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">Report</span>
+                <br/>
+                <span class="ignored-method-name">init</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.Fullload_CDC.OracleToAdlsCDC</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">Report</span>
+                <br/>
+                <span class="ignored-method-name">init</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-CloudBlaze_Automation" class="panel">
@@ -433,106 +759,205 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.Fullload_CDC.FullLoad</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.Fullload_CDC.SqltoAzuresql</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">Report(https://cloudblaze-ui-react.azurewebsites.net/#)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-test before">
                 <span class="method-name">init(https://cloudblaze-ui-react.azurewebsites.net/#)</span>
-                <span class="method-start">297 ms</span>
+                <span class="method-start">156 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">verifySystemParams</span>
-                <span class="method-start">27127 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=verifySystemParams status=SUCCESS method=FullLoad.verifySystemParams()[pri:21, inst...)</span>
-                <span class="method-start">33916 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">verifyServicePrinciple</span>
-                <span class="method-start">33917 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=verifyServicePrinciple status=SUCCESS method=FullLoad.verifyServicePrinciple()[pri:...)</span>
-                <span class="method-start">37489 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">verifySubscription</span>
-                <span class="method-start">37489 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=verifySubscription status=SUCCESS method=FullLoad.verifySubscription()[pri:23, inst...)</span>
-                <span class="method-start">41614 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">verifyAddDataFactory</span>
-                <span class="method-start">41615 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=verifyAddDataFactory status=SUCCESS method=FullLoad.verifyAddDataFactory()[pri:24, ...)</span>
-                <span class="method-start">47201 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">verifyAddSendgrid</span>
-                <span class="method-start">47202 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=verifyAddSendgrid status=SUCCESS method=FullLoad.verifyAddSendgrid()[pri:25, instan...)</span>
-                <span class="method-start">50691 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">verifyAddAzureFunction</span>
-                <span class="method-start">50692 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=verifyAddAzureFunction status=SUCCESS method=FullLoad.verifyAddAzureFunction()[pri:...)</span>
-                <span class="method-start">54283 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
                 <span class="method-name">verifySourceAdd</span>
-                <span class="method-start">54283 ms</span>
+                <span class="method-start">26248 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=verifySourceAdd status=SUCCESS method=FullLoad.verifySourceAdd()[pri:27, instance:c...)</span>
-                <span class="method-start">106325 ms</span>
+                <span class="method-name">getResult([TestResult name=verifySourceAdd status=SUCCESS method=SqltoAzuresql.verifySourceAdd()[pri:1, instan...)</span>
+                <span class="method-start">75436 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">verifyAddDestination</span>
-                <span class="method-start">106325 ms</span>
+                <span class="method-start">75437 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=verifyAddDestination status=SUCCESS method=FullLoad.verifyAddDestination()[pri:28, ...)</span>
-                <span class="method-start">128384 ms</span>
+                <span class="method-name">getResult([TestResult name=verifyAddDestination status=SUCCESS method=SqltoAzuresql.verifyAddDestination()[pri...)</span>
+                <span class="method-start">98273 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">verifyAddDataFlow</span>
-                <span class="method-start">128399 ms</span>
+                <span class="method-start">98273 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=verifyAddDataFlow status=SUCCESS method=FullLoad.verifyAddDataFlow()[pri:29, instan...)</span>
-                <span class="method-start">199523 ms</span>
+                <span class="method-name">getResult([TestResult name=verifyAddDataFlow status=SUCCESS method=SqltoAzuresql.verifyAddDataFlow()[pri:3, in...)</span>
+                <span class="method-start">140539 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">verifyScheduledFlow</span>
-                <span class="method-start">199523 ms</span>
+                <span class="method-start">140540 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=verifyScheduledFlow status=SUCCESS method=FullLoad.verifyScheduledFlow()[pri:30, in...)</span>
-                <span class="method-start">217934 ms</span>
+                <span class="method-name">getResult([TestResult name=verifyScheduledFlow status=SUCCESS method=SqltoAzuresql.verifyScheduledFlow()[pri:4...)</span>
+                <span class="method-start">158097 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">verifyFlowOnMontioringScreen</span>
-                <span class="method-start">217935 ms</span>
+                <span class="method-start">158097 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=verifyFlowOnMontioringScreen status=SUCCESS method=SqltoAzuresql.verifyFlowOnMontio...)</span>
+                <span class="method-start">584475 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.Fullload_CDC.FullLoad</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifySystemParams</span>
+                <span class="method-start">584479 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=verifySystemParams status=SUCCESS method=FullLoad.verifySystemParams()[pri:11, inst...)</span>
+                <span class="method-start">591238 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyServicePrinciple</span>
+                <span class="method-start">591239 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=verifyServicePrinciple status=SUCCESS method=FullLoad.verifyServicePrinciple()[pri:...)</span>
+                <span class="method-start">595064 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifySubscription</span>
+                <span class="method-start">595065 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=verifySubscription status=SUCCESS method=FullLoad.verifySubscription()[pri:13, inst...)</span>
+                <span class="method-start">599422 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyAddDataFactory</span>
+                <span class="method-start">599422 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=verifyAddDataFactory status=SUCCESS method=FullLoad.verifyAddDataFactory()[pri:14, ...)</span>
+                <span class="method-start">605003 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyAddSendgrid</span>
+                <span class="method-start">605005 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=verifyAddSendgrid status=SUCCESS method=FullLoad.verifyAddSendgrid()[pri:15, instan...)</span>
+                <span class="method-start">608539 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyAddAzureFunction</span>
+                <span class="method-start">608540 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=verifyAddAzureFunction status=SUCCESS method=FullLoad.verifyAddAzureFunction()[pri:...)</span>
+                <span class="method-start">612069 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifySourceAdd</span>
+                <span class="method-start">612069 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=verifySourceAdd status=SUCCESS method=FullLoad.verifySourceAdd()[pri:17, instance:c...)</span>
+                <span class="method-start">664835 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyAddDestination</span>
+                <span class="method-start">664839 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=verifyAddDestination status=SUCCESS method=FullLoad.verifyAddDestination()[pri:18, ...)</span>
+                <span class="method-start">687382 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyAddDataFlow</span>
+                <span class="method-start">687386 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=verifyAddDataFlow status=SUCCESS method=FullLoad.verifyAddDataFlow()[pri:19, instan...)</span>
+                <span class="method-start">758235 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyScheduledFlow</span>
+                <span class="method-start">758236 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=verifyScheduledFlow status=SUCCESS method=FullLoad.verifyScheduledFlow()[pri:20, in...)</span>
+                <span class="method-start">775991 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyFlowOnMontioringScreen</span>
+                <span class="method-start">775992 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=verifyFlowOnMontioringScreen status=SUCCESS method=FullLoad.verifyFlowOnMontioringS...)</span>
-                <span class="method-start">1287699 ms</span>
+                <span class="method-start">1988400 ms</span>
               </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.Fullload_CDC.OracleToAdlsCDC</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifySourceAdd</span>
+                <span class="method-start">1988401 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=verifySourceAdd status=SUCCESS method=OracleToAdlsCDC.verifySourceAdd()[pri:31, ins...)</span>
+                <span class="method-start">2029382 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyAddDestination</span>
+                <span class="method-start">2029382 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=verifyAddDestination status=SUCCESS method=OracleToAdlsCDC.verifyAddDestination()[p...)</span>
+                <span class="method-start">2045942 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyAddDataFlow</span>
+                <span class="method-start">2045943 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=verifyAddDataFlow status=SUCCESS method=OracleToAdlsCDC.verifyAddDataFlow()[pri:33,...)</span>
+                <span class="method-start">2109908 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyScheduledFlow</span>
+                <span class="method-start">2109909 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=verifyScheduledFlow status=SUCCESS method=OracleToAdlsCDC.verifyScheduledFlow()[pri...)</span>
+                <span class="method-start">2130417 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyDataFlowOnMontioringScreen</span>
+                <span class="method-start">2130419 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=verifyDataFlowOnMontioringScreen status=SUCCESS method=OracleToAdlsCDC.verifyDataFl...)</span>
+                <span class="method-start">2681878 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyDeleteScheduledFlow</span>
+                <span class="method-start">2681879 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=verifyDeleteScheduledFlow status=FAILURE method=OracleToAdlsCDC.verifyDeleteSchedul...)</span>
+                <span class="method-start">2691749 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.Fullload_CDC.SqltoAzuresql</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">1287727 ms</span>
+                <span class="method-start">2692507 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

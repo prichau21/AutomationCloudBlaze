@@ -129,6 +129,7 @@ public class ReuseFuntions extends BaseClass implements IOnBoarding ,IMonitoring
     Assert.assertEquals(toaster,"Service/Storage added successfully!","Service/Storage  is not added succesfully ");
     test.log(LogStatus.PASS, "add Service/Storage ", "Service/Storage  is added Successfully Toaster message is displaying");
     Thread.sleep(2000);
+    System.out.println("Sql Source is Created Successfully !!");
 
 }
  
@@ -187,6 +188,7 @@ public class ReuseFuntions extends BaseClass implements IOnBoarding ,IMonitoring
    Assert.assertEquals(toaster,"Service/Storage added successfully!","Service/Storage  is not added succesfully ");
    test.log(LogStatus.PASS, "add Service/Storage ", "Service/Storage  is added Successfully");
    Thread.sleep(2000);
+   System.out.println("Oracle Source is Created Successfully !!");
 
 }
     
@@ -248,6 +250,8 @@ public class ReuseFuntions extends BaseClass implements IOnBoarding ,IMonitoring
    {
   	test.log(LogStatus.FAIL,"Record is  not displaying in grid Sucessfully or Record is not Updated!!!");
    }
+   
+   System.out.println("SQL Destination is Created Successfully !!");
    }
 
 
@@ -303,6 +307,7 @@ public class ReuseFuntions extends BaseClass implements IOnBoarding ,IMonitoring
    {
   	test.log(LogStatus.FAIL,"Record is  not displaying in grid Sucessfully or Record is not Updated!!!");
    }
+   System.out.println("ADLS Destination is Created Successfully !!");
 }
   
   
@@ -338,6 +343,7 @@ public class ReuseFuntions extends BaseClass implements IOnBoarding ,IMonitoring
 	 System.out.println(toaster);
    Assert.assertEquals(toaster,"Flow Scheduled successfully!","Flow is not Scheduled succesfully");
    test.log(LogStatus.PASS,"Flow Scheduled", "Flow is Scheduled succesfully");
+   System.out.println("Flow is Scheduled Successfully !!");
  }  
 
 	 //verify and validate Monitoring Screen

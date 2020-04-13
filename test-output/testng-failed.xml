@@ -9,25 +9,22 @@
       </run>
     </groups>
     <classes>
-      <class name="com.Fullload_CDC.FullLoad">
+      <class name="com.Fullload_CDC.OracleToAdlsCDC">
         <methods>
-          <include name="verifySystemParams"/>
-          <include name="verifySourceAdd"/>
-          <include name="verifyAddDataFactory"/>
-          <include name="verifyFlowOnMontioringScreen"/>
-          <include name="verifyScheduledFlow"/>
-          <include name="getResult"/>
-          <include name="verifyAddDataFlow"/>
-          <include name="verifyAddSendgrid"/>
+          <include name="verifyRescheduled"/>
           <include name="tearDown"/>
-          <include name="verifyAddDestination"/>
-          <include name="verifySubscription"/>
+          <include name="verifyAddDataFlow"/>
+          <include name="verifyDeleteScheduledFlow"/>
+          <include name="verifyScheduledFlow"/>
+          <include name="verifySourceAdd"/>
           <include name="Report"/>
-          <include name="verifyAddAzureFunction"/>
-          <include name="verifyServicePrinciple"/>
+          <include name="getResult"/>
+          <include name="verifyAddDestination"/>
+          <include name="verifyDataFlowOnMontioringScreen"/>
           <include name="init"/>
+          <include name="verifyFlowOnMontioringScren"/>
         </methods>
-      </class> <!-- com.Fullload_CDC.FullLoad -->
+      </class> <!-- com.Fullload_CDC.OracleToAdlsCDC -->
     </classes>
   </test> <!-- CloudBlaze Tests(failed) -->
 </suite> <!-- Failed suite [CloudBlaze Automation] -->

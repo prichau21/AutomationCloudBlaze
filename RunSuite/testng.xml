@@ -1,7 +1,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
            <suite name="CloudBlaze Automation">
-	       <test name="CloudBlaze Tests">
+	       <test name="CloudBlaze Tests" preserve-order="true">
 	
 	 	   <parameter name="env" value="https://cloudblaze-ui-react.azurewebsites.net/#"/>
 	

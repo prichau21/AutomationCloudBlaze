@@ -26,7 +26,7 @@ package com.Fullload_CDC;
      public static void verifySourceAdd() throws InterruptedException 
   {    
 		verifySourceSQL(7);
-         
+        
   
   
   } @Test(priority = 2, dependsOnMethods = { "verifySourceAdd" } ,groups = { "Smoke" })

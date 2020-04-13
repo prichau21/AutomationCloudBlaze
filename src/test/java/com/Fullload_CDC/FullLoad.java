@@ -26,7 +26,7 @@ public class FullLoad extends ReuseFuntions implements IOnBoarding ,IMonitoring{
 static ExcelUtils reader = new ExcelUtils(System.getProperty("user.dir") + "/TestData/TestData.xlsx");
 
 	
-	@Test(priority=6,groups = { "Smoke" })
+	@Test(priority=11,groups = { "Smoke" })
      public static void verifySystemParams() throws InterruptedException 
    {    
 		 test =report.startTest("Verify System Parameter");
@@ -60,7 +60,7 @@ static ExcelUtils reader = new ExcelUtils(System.getProperty("user.dir") + "/Tes
 
        }
 	 
-	 @Test(priority=7, dependsOnMethods = { "verifySystemParams" } ,groups = { "Smoke" })
+	 @Test(priority=12, dependsOnMethods = { "verifySystemParams" } ,groups = { "Smoke" })
      public static void verifyServicePrinciple() throws InterruptedException 
    {    
 		 test =report.startTest("Verify Service Principal");
@@ -120,7 +120,7 @@ static ExcelUtils reader = new ExcelUtils(System.getProperty("user.dir") + "/Tes
    
    }
 	 
-	 @Test(priority=8, dependsOnMethods = { "verifyServicePrinciple" } ,groups = { "Smoke" })
+	 @Test(priority=13, dependsOnMethods = { "verifyServicePrinciple" } ,groups = { "Smoke" })
      public static void verifySubscription() throws InterruptedException 
      {   
 		 test =report.startTest("Verify Subscription");
@@ -156,7 +156,7 @@ static ExcelUtils reader = new ExcelUtils(System.getProperty("user.dir") + "/Tes
 			 test.log(LogStatus.PASS,"Fields are not Blank in Subscription Page");
 		}
    }
-	 @Test(priority=9, dependsOnMethods = { "verifySubscription" } ,groups = { "Smoke" })
+	 @Test(priority=14, dependsOnMethods = { "verifySubscription" } ,groups = { "Smoke" })
      public static void verifyAddDataFactory() throws InterruptedException 
    {   
 		 test =report.startTest("Verify Add Services");
@@ -218,7 +218,7 @@ static ExcelUtils reader = new ExcelUtils(System.getProperty("user.dir") + "/Tes
 	        }
 	 //add Send grid
 	
-	 @Test(priority=10, dependsOnMethods = { "verifyAddDataFactory" } ,groups = { "Smoke" })
+	 @Test(priority=15, dependsOnMethods = { "verifyAddDataFactory" } ,groups = { "Smoke" })
      public static void verifyAddSendgrid() throws InterruptedException 
    {   
 	 test =report.startTest("Verify Add Send Grid");
@@ -286,7 +286,7 @@ static ExcelUtils reader = new ExcelUtils(System.getProperty("user.dir") + "/Tes
 	 }
    }
 	 // Add Azure Function
-	 @Test(priority=11, dependsOnMethods = { "verifyAddSendgrid" } ,groups = { "Smoke" })
+	 @Test(priority=16, dependsOnMethods = { "verifyAddSendgrid" } ,groups = { "Smoke" })
      public static void verifyAddAzureFunction() throws InterruptedException 
 	 
      {
@@ -327,18 +327,18 @@ static ExcelUtils reader = new ExcelUtils(System.getProperty("user.dir") + "/Tes
 		 }
      }
 	 
-	 @Test(priority = 12, dependsOnMethods = { "verifyAddAzureFunction" } ,groups = { "Smoke" })
+	 @Test(priority = 17, dependsOnMethods = { "verifyAddAzureFunction" } ,groups = { "Smoke" })
      public static void verifySourceAdd() throws InterruptedException 
    {    
 		 verifySourceSQL(2);
    } 
 	    
-	 @Test(priority =  13,dependsOnMethods = { "verifySourceAdd" },groups = { "Smoke" })
+	 @Test(priority =  18,dependsOnMethods = { "verifySourceAdd" },groups = { "Smoke" })
 	    public static void verifyAddDestination() throws InterruptedException 
 	    {	  verifyDestinationADLS(2);
 		        }
 	   
-	           @Test(priority = 14,dependsOnMethods = { "verifyAddDestination" },groups = { "Smoke" })
+	           @Test(priority = 19,dependsOnMethods = { "verifyAddDestination" },groups = { "Smoke" })
                public static void verifyAddDataFlow() throws InterruptedException, AWTException 
                    {    
 		             test = report.startTest("Verify Add DataFlow");
@@ -482,7 +482,7 @@ static ExcelUtils reader = new ExcelUtils(System.getProperty("user.dir") + "/Tes
 			        } 
 	          
 	           
-	               @Test(priority = 15, dependsOnMethods = { "verifyAddDataFlow" },groups = { "Smoke" })
+	               @Test(priority = 20, dependsOnMethods = { "verifyAddDataFlow" },groups = { "Smoke" })
                    public static void verifyScheduledFlow() throws InterruptedException 
                    { 
 	            	   verifyScheduledFlowR(2 ,2);
@@ -490,7 +490,7 @@ static ExcelUtils reader = new ExcelUtils(System.getProperty("user.dir") + "/Tes
 	   		  
 	   			}
 	   			
-	          @Test(priority = 16, dependsOnMethods = { "verifyScheduledFlow" },groups = { "Smoke" })
+	          @Test(priority = 21, dependsOnMethods = { "verifyScheduledFlow" },groups = { "Smoke" })
                public static void verifyFlowOnMontioringScreen() throws InterruptedException  
                {    
 	        	  verifyFlowMontioringScreen(2);   
