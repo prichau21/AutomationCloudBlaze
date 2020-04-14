@@ -22,6 +22,19 @@
           <include name="init"/>
         </methods>
       </class> <!-- com.Fullload_CDC.SqlToAdlsDM -->
+      <class name="com.Fullload_CDC.SqltoAzuresql">
+        <methods>
+          <include name="verifyAddDestination"/>
+          <include name="tearDown"/>
+          <include name="verifyAddDataFlow"/>
+          <include name="verifySourceAdd"/>
+          <include name="Report"/>
+          <include name="getResult"/>
+          <include name="verifyScheduledFlow"/>
+          <include name="init"/>
+          <include name="verifyFlowOnMontioringScreen"/>
+        </methods>
+      </class> <!-- com.Fullload_CDC.SqltoAzuresql -->
     </classes>
   </test> <!-- CloudBlaze Tests(failed) -->
 </suite> <!-- Failed suite [CloudBlaze Automation] -->
