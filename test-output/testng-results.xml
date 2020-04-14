@@ -2,7 +2,7 @@
 <testng-results skipped="2" failed="1" ignored="6" total="30" passed="21">
   <reporter-output>
   </reporter-output>
-  <suite name="CloudBlaze Automation" duration-ms="2692475" started-at="2020-04-13T13:18:40Z" finished-at="2020-04-13T14:03:32Z">
+  <suite name="CloudBlaze Automation" duration-ms="2567916" started-at="2020-04-14T06:42:09Z" finished-at="2020-04-14T07:24:57Z">
     <groups>
       <group name="Smoke">
         <method signature="FullLoad.verifySystemParams()[pri:11, instance:com.Fullload_CDC.FullLoad@429bffaa]" name="verifySystemParams" class="com.Fullload_CDC.FullLoad"/>
@@ -31,17 +31,13 @@
         <method signature="SqltoAzuresql.verifyFlowOnMontioringScreen()[pri:5, instance:com.Fullload_CDC.SqltoAzuresql@3c73951]" name="verifyFlowOnMontioringScreen" class="com.Fullload_CDC.SqltoAzuresql"/>
       </group> <!-- Smoke -->
     </groups>
-    <test name="CloudBlaze Tests" duration-ms="2692475" started-at="2020-04-13T13:18:40Z" finished-at="2020-04-13T14:03:32Z">
+    <test name="CloudBlaze Tests" duration-ms="2567916" started-at="2020-04-14T06:42:09Z" finished-at="2020-04-14T07:24:57Z">
       <class name="com.Fullload_CDC.OracleToAdlsCDC">
-        <test-method status="PASS" signature="verifySourceAdd()[pri:31, instance:com.Fullload_CDC.OracleToAdlsCDC@28f3b248]" name="verifySourceAdd" duration-ms="40980" started-at="2020-04-13T13:51:48Z" finished-at="2020-04-13T13:52:29Z">
+        <test-method status="PASS" signature="verifySourceAdd()[pri:31, instance:com.Fullload_CDC.OracleToAdlsCDC@28f3b248]" name="verifySourceAdd" duration-ms="41643" started-at="2020-04-14T07:11:19Z" finished-at="2020-04-14T07:12:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySourceAdd -->
-        <test-method status="PASS" signature="verifyAddDestination()[pri:32, instance:com.Fullload_CDC.OracleToAdlsCDC@28f3b248]" name="verifyAddDestination" duration-ms="16560" started-at="2020-04-13T13:52:29Z" depends-on-methods="com.Fullload_CDC.OracleToAdlsCDC.verifySourceAdd" finished-at="2020-04-13T13:52:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddDestination -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.OracleToAdlsCDC@28f3b248]" name="getResult" is-config="true" duration-ms="0" started-at="2020-04-13T13:52:29Z" finished-at="2020-04-13T13:52:29Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.OracleToAdlsCDC@28f3b248]" name="getResult" is-config="true" duration-ms="0" started-at="2020-04-14T07:12:01Z" finished-at="2020-04-14T07:12:01Z">
           <params>
             <param index="0">
               <value>
@@ -52,7 +48,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.OracleToAdlsCDC@28f3b248]" name="getResult" is-config="true" duration-ms="1" started-at="2020-04-13T13:52:46Z" finished-at="2020-04-13T13:52:46Z">
+        <test-method status="PASS" signature="verifyAddDestination()[pri:32, instance:com.Fullload_CDC.OracleToAdlsCDC@28f3b248]" name="verifyAddDestination" duration-ms="16886" started-at="2020-04-14T07:12:01Z" depends-on-methods="com.Fullload_CDC.OracleToAdlsCDC.verifySourceAdd" finished-at="2020-04-14T07:12:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddDestination -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.OracleToAdlsCDC@28f3b248]" name="getResult" is-config="true" duration-ms="0" started-at="2020-04-14T07:12:17Z" finished-at="2020-04-14T07:12:17Z">
           <params>
             <param index="0">
               <value>
@@ -63,11 +63,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="verifyAddDataFlow()[pri:33, instance:com.Fullload_CDC.OracleToAdlsCDC@28f3b248]" name="verifyAddDataFlow" duration-ms="63964" started-at="2020-04-13T13:52:46Z" depends-on-methods="com.Fullload_CDC.OracleToAdlsCDC.verifyAddDestination" finished-at="2020-04-13T13:53:50Z">
+        <test-method status="PASS" signature="verifyAddDataFlow()[pri:33, instance:com.Fullload_CDC.OracleToAdlsCDC@28f3b248]" name="verifyAddDataFlow" duration-ms="65471" started-at="2020-04-14T07:12:17Z" depends-on-methods="com.Fullload_CDC.OracleToAdlsCDC.verifyAddDestination" finished-at="2020-04-14T07:13:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddDataFlow -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.OracleToAdlsCDC@28f3b248]" name="getResult" is-config="true" duration-ms="0" started-at="2020-04-13T13:53:50Z" finished-at="2020-04-13T13:53:50Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.OracleToAdlsCDC@28f3b248]" name="getResult" is-config="true" duration-ms="0" started-at="2020-04-14T07:13:23Z" finished-at="2020-04-14T07:13:23Z">
           <params>
             <param index="0">
               <value>
@@ -78,11 +78,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="verifyScheduledFlow()[pri:34, instance:com.Fullload_CDC.OracleToAdlsCDC@28f3b248]" name="verifyScheduledFlow" duration-ms="20508" started-at="2020-04-13T13:53:50Z" depends-on-methods="com.Fullload_CDC.OracleToAdlsCDC.verifyAddDataFlow" finished-at="2020-04-13T13:54:10Z">
+        <test-method status="PASS" signature="verifyScheduledFlow()[pri:34, instance:com.Fullload_CDC.OracleToAdlsCDC@28f3b248]" name="verifyScheduledFlow" duration-ms="20846" started-at="2020-04-14T07:13:23Z" depends-on-methods="com.Fullload_CDC.OracleToAdlsCDC.verifyAddDataFlow" finished-at="2020-04-14T07:13:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyScheduledFlow -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.OracleToAdlsCDC@28f3b248]" name="getResult" is-config="true" duration-ms="1" started-at="2020-04-13T13:54:10Z" finished-at="2020-04-13T13:54:10Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.OracleToAdlsCDC@28f3b248]" name="getResult" is-config="true" duration-ms="1" started-at="2020-04-14T07:13:44Z" finished-at="2020-04-14T07:13:44Z">
           <params>
             <param index="0">
               <value>
@@ -93,11 +93,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="verifyDataFlowOnMontioringScreen()[pri:35, instance:com.Fullload_CDC.OracleToAdlsCDC@28f3b248]" name="verifyDataFlowOnMontioringScreen" duration-ms="551458" started-at="2020-04-13T13:54:10Z" depends-on-methods="com.Fullload_CDC.OracleToAdlsCDC.verifyScheduledFlow" finished-at="2020-04-13T14:03:22Z">
+        <test-method status="PASS" signature="verifyDataFlowOnMontioringScreen()[pri:35, instance:com.Fullload_CDC.OracleToAdlsCDC@28f3b248]" name="verifyDataFlowOnMontioringScreen" duration-ms="663385" started-at="2020-04-14T07:13:44Z" depends-on-methods="com.Fullload_CDC.OracleToAdlsCDC.verifyScheduledFlow" finished-at="2020-04-14T07:24:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDataFlowOnMontioringScreen -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.OracleToAdlsCDC@28f3b248]" name="getResult" is-config="true" duration-ms="1" started-at="2020-04-13T14:03:22Z" finished-at="2020-04-13T14:03:22Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.OracleToAdlsCDC@28f3b248]" name="getResult" is-config="true" duration-ms="0" started-at="2020-04-14T07:24:47Z" finished-at="2020-04-14T07:24:47Z">
           <params>
             <param index="0">
               <value>
@@ -108,7 +108,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="FAIL" signature="verifyDeleteScheduledFlow()[pri:36, instance:com.Fullload_CDC.OracleToAdlsCDC@28f3b248]" name="verifyDeleteScheduledFlow" duration-ms="9866" started-at="2020-04-13T14:03:22Z" depends-on-methods="com.Fullload_CDC.OracleToAdlsCDC.verifyDataFlowOnMontioringScreen" finished-at="2020-04-13T14:03:31Z">
+        <test-method status="FAIL" signature="verifyDeleteScheduledFlow()[pri:36, instance:com.Fullload_CDC.OracleToAdlsCDC@28f3b248]" name="verifyDeleteScheduledFlow" duration-ms="9512" started-at="2020-04-14T07:24:47Z" depends-on-methods="com.Fullload_CDC.OracleToAdlsCDC.verifyDataFlowOnMontioringScreen" finished-at="2020-04-14T07:24:57Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='root']//div/table/tbody/tr[1]/td[2][text()='DataFlowOracletoADLSCDC']/..//a[2]"}
@@ -117,8 +117,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
 System info: host: 'LAPTOP-2G86F66K', ip: '192.168.29.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:64826}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 7c51614171f7449b29975a52831c6fcb
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51565}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 031b7c13e670a529f1c02fc9ff2556d3
 *** Element info: {Using=xpath, value=//*[@id='root']//div/table/tbody/tr[1]/td[2][text()='DataFlowOracletoADLSCDC']/..//a[2]}]]>
             </message>
             <full-stacktrace>
@@ -128,8 +128,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
 System info: host: 'LAPTOP-2G86F66K', ip: '192.168.29.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:64826}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 7c51614171f7449b29975a52831c6fcb
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51565}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 031b7c13e670a529f1c02fc9ff2556d3
 *** Element info: {Using=xpath, value=//*[@id='root']//div/table/tbody/tr[1]/td[2][text()='DataFlowOracletoADLSCDC']/..//a[2]}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -177,7 +177,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDeleteScheduledFlow -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.OracleToAdlsCDC@28f3b248]" name="getResult" is-config="true" duration-ms="724" started-at="2020-04-13T14:03:31Z" finished-at="2020-04-13T14:03:32Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.OracleToAdlsCDC@28f3b248]" name="getResult" is-config="true" duration-ms="717" started-at="2020-04-14T07:24:57Z" finished-at="2020-04-14T07:24:57Z">
           <params>
             <param index="0">
               <value>
@@ -188,7 +188,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="SKIP" signature="verifyRescheduled()[pri:37, instance:com.Fullload_CDC.OracleToAdlsCDC@28f3b248]" name="verifyRescheduled" duration-ms="0" started-at="2020-04-13T14:03:32Z" depends-on-methods="com.Fullload_CDC.OracleToAdlsCDC.verifyDeleteScheduledFlow" finished-at="2020-04-13T14:03:32Z">
+        <test-method status="SKIP" signature="verifyRescheduled()[pri:37, instance:com.Fullload_CDC.OracleToAdlsCDC@28f3b248]" name="verifyRescheduled" duration-ms="0" started-at="2020-04-14T07:24:57Z" depends-on-methods="com.Fullload_CDC.OracleToAdlsCDC.verifyDeleteScheduledFlow" finished-at="2020-04-14T07:24:57Z">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method OracleToAdlsCDC.verifyRescheduled()[pri:37, instance:com.Fullload_CDC.OracleToAdlsCDC@28f3b248] depends on not successfully finished methods]]>
@@ -219,7 +219,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRescheduled -->
-        <test-method status="SKIP" signature="verifyFlowOnMontioringScren()[pri:38, instance:com.Fullload_CDC.OracleToAdlsCDC@28f3b248]" name="verifyFlowOnMontioringScren" duration-ms="0" started-at="2020-04-13T14:03:32Z" depends-on-methods="com.Fullload_CDC.OracleToAdlsCDC.verifyRescheduled" finished-at="2020-04-13T14:03:32Z">
+        <test-method status="SKIP" signature="verifyFlowOnMontioringScren()[pri:38, instance:com.Fullload_CDC.OracleToAdlsCDC@28f3b248]" name="verifyFlowOnMontioringScren" duration-ms="0" started-at="2020-04-14T07:24:57Z" depends-on-methods="com.Fullload_CDC.OracleToAdlsCDC.verifyRescheduled" finished-at="2020-04-14T07:24:57Z">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method OracleToAdlsCDC.verifyFlowOnMontioringScren()[pri:38, instance:com.Fullload_CDC.OracleToAdlsCDC@28f3b248] depends on not successfully finished methods]]>
@@ -252,11 +252,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- verifyFlowOnMontioringScren -->
       </class> <!-- com.Fullload_CDC.OracleToAdlsCDC -->
       <class name="com.Fullload_CDC.FullLoad">
-        <test-method status="PASS" signature="verifySystemParams()[pri:11, instance:com.Fullload_CDC.FullLoad@429bffaa]" name="verifySystemParams" duration-ms="6755" started-at="2020-04-13T13:28:24Z" finished-at="2020-04-13T13:28:31Z">
+        <test-method status="PASS" signature="verifySystemParams()[pri:11, instance:com.Fullload_CDC.FullLoad@429bffaa]" name="verifySystemParams" duration-ms="6515" started-at="2020-04-14T06:50:59Z" finished-at="2020-04-14T06:51:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySystemParams -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.FullLoad@429bffaa]" name="getResult" is-config="true" duration-ms="1" started-at="2020-04-13T13:28:31Z" finished-at="2020-04-13T13:28:31Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.FullLoad@429bffaa]" name="getResult" is-config="true" duration-ms="0" started-at="2020-04-14T06:51:05Z" finished-at="2020-04-14T06:51:05Z">
           <params>
             <param index="0">
               <value>
@@ -267,11 +267,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="verifyServicePrinciple()[pri:12, instance:com.Fullload_CDC.FullLoad@429bffaa]" name="verifyServicePrinciple" duration-ms="3824" started-at="2020-04-13T13:28:31Z" depends-on-methods="com.Fullload_CDC.FullLoad.verifySystemParams" finished-at="2020-04-13T13:28:35Z">
+        <test-method status="PASS" signature="verifyServicePrinciple()[pri:12, instance:com.Fullload_CDC.FullLoad@429bffaa]" name="verifyServicePrinciple" duration-ms="3536" started-at="2020-04-14T06:51:05Z" depends-on-methods="com.Fullload_CDC.FullLoad.verifySystemParams" finished-at="2020-04-14T06:51:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyServicePrinciple -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.FullLoad@429bffaa]" name="getResult" is-config="true" duration-ms="1" started-at="2020-04-13T13:28:35Z" finished-at="2020-04-13T13:28:35Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.FullLoad@429bffaa]" name="getResult" is-config="true" duration-ms="0" started-at="2020-04-14T06:51:09Z" finished-at="2020-04-14T06:51:09Z">
           <params>
             <param index="0">
               <value>
@@ -282,15 +282,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="verifySubscription()[pri:13, instance:com.Fullload_CDC.FullLoad@429bffaa]" name="verifySubscription" duration-ms="4354" started-at="2020-04-13T13:28:35Z" depends-on-methods="com.Fullload_CDC.FullLoad.verifyServicePrinciple" finished-at="2020-04-13T13:28:39Z">
+        <test-method status="PASS" signature="verifySubscription()[pri:13, instance:com.Fullload_CDC.FullLoad@429bffaa]" name="verifySubscription" duration-ms="4089" started-at="2020-04-14T06:51:09Z" depends-on-methods="com.Fullload_CDC.FullLoad.verifyServicePrinciple" finished-at="2020-04-14T06:51:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySubscription -->
-        <test-method status="PASS" signature="verifyAddDataFactory()[pri:14, instance:com.Fullload_CDC.FullLoad@429bffaa]" name="verifyAddDataFactory" duration-ms="5578" started-at="2020-04-13T13:28:39Z" depends-on-methods="com.Fullload_CDC.FullLoad.verifySubscription" finished-at="2020-04-13T13:28:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddDataFactory -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.FullLoad@429bffaa]" name="getResult" is-config="true" duration-ms="0" started-at="2020-04-13T13:28:39Z" finished-at="2020-04-13T13:28:39Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.FullLoad@429bffaa]" name="getResult" is-config="true" duration-ms="0" started-at="2020-04-14T06:51:13Z" finished-at="2020-04-14T06:51:13Z">
           <params>
             <param index="0">
               <value>
@@ -301,7 +297,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.FullLoad@429bffaa]" name="getResult" is-config="true" duration-ms="1" started-at="2020-04-13T13:28:45Z" finished-at="2020-04-13T13:28:45Z">
+        <test-method status="PASS" signature="verifyAddDataFactory()[pri:14, instance:com.Fullload_CDC.FullLoad@429bffaa]" name="verifyAddDataFactory" duration-ms="5566" started-at="2020-04-14T06:51:13Z" depends-on-methods="com.Fullload_CDC.FullLoad.verifySubscription" finished-at="2020-04-14T06:51:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddDataFactory -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.FullLoad@429bffaa]" name="getResult" is-config="true" duration-ms="0" started-at="2020-04-14T06:51:18Z" finished-at="2020-04-14T06:51:18Z">
           <params>
             <param index="0">
               <value>
@@ -312,11 +312,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="verifyAddSendgrid()[pri:15, instance:com.Fullload_CDC.FullLoad@429bffaa]" name="verifyAddSendgrid" duration-ms="3531" started-at="2020-04-13T13:28:45Z" depends-on-methods="com.Fullload_CDC.FullLoad.verifyAddDataFactory" finished-at="2020-04-13T13:28:48Z">
+        <test-method status="PASS" signature="verifyAddSendgrid()[pri:15, instance:com.Fullload_CDC.FullLoad@429bffaa]" name="verifyAddSendgrid" duration-ms="3469" started-at="2020-04-14T06:51:18Z" depends-on-methods="com.Fullload_CDC.FullLoad.verifyAddDataFactory" finished-at="2020-04-14T06:51:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddSendgrid -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.FullLoad@429bffaa]" name="getResult" is-config="true" duration-ms="0" started-at="2020-04-13T13:28:48Z" finished-at="2020-04-13T13:28:48Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.FullLoad@429bffaa]" name="getResult" is-config="true" duration-ms="0" started-at="2020-04-14T06:51:22Z" finished-at="2020-04-14T06:51:22Z">
           <params>
             <param index="0">
               <value>
@@ -327,15 +327,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="verifyAddAzureFunction()[pri:16, instance:com.Fullload_CDC.FullLoad@429bffaa]" name="verifyAddAzureFunction" duration-ms="3528" started-at="2020-04-13T13:28:48Z" depends-on-methods="com.Fullload_CDC.FullLoad.verifyAddSendgrid" finished-at="2020-04-13T13:28:52Z">
+        <test-method status="PASS" signature="verifyAddAzureFunction()[pri:16, instance:com.Fullload_CDC.FullLoad@429bffaa]" name="verifyAddAzureFunction" duration-ms="3429" started-at="2020-04-14T06:51:22Z" depends-on-methods="com.Fullload_CDC.FullLoad.verifyAddSendgrid" finished-at="2020-04-14T06:51:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddAzureFunction -->
-        <test-method status="PASS" signature="verifySourceAdd()[pri:17, instance:com.Fullload_CDC.FullLoad@429bffaa]" name="verifySourceAdd" duration-ms="52762" started-at="2020-04-13T13:28:52Z" depends-on-methods="com.Fullload_CDC.FullLoad.verifyAddAzureFunction" finished-at="2020-04-13T13:29:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySourceAdd -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.FullLoad@429bffaa]" name="getResult" is-config="true" duration-ms="0" started-at="2020-04-13T13:28:52Z" finished-at="2020-04-13T13:28:52Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.FullLoad@429bffaa]" name="getResult" is-config="true" duration-ms="0" started-at="2020-04-14T06:51:25Z" finished-at="2020-04-14T06:51:25Z">
           <params>
             <param index="0">
               <value>
@@ -346,7 +342,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.FullLoad@429bffaa]" name="getResult" is-config="true" duration-ms="0" started-at="2020-04-13T13:29:45Z" finished-at="2020-04-13T13:29:45Z">
+        <test-method status="PASS" signature="verifySourceAdd()[pri:17, instance:com.Fullload_CDC.FullLoad@429bffaa]" name="verifySourceAdd" duration-ms="46983" started-at="2020-04-14T06:51:25Z" depends-on-methods="com.Fullload_CDC.FullLoad.verifyAddAzureFunction" finished-at="2020-04-14T06:52:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySourceAdd -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.FullLoad@429bffaa]" name="getResult" is-config="true" duration-ms="0" started-at="2020-04-14T06:52:12Z" finished-at="2020-04-14T06:52:12Z">
           <params>
             <param index="0">
               <value>
@@ -357,11 +357,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="verifyAddDestination()[pri:18, instance:com.Fullload_CDC.FullLoad@429bffaa]" name="verifyAddDestination" duration-ms="22541" started-at="2020-04-13T13:29:45Z" depends-on-methods="com.Fullload_CDC.FullLoad.verifySourceAdd" finished-at="2020-04-13T13:30:07Z">
+        <test-method status="PASS" signature="verifyAddDestination()[pri:18, instance:com.Fullload_CDC.FullLoad@429bffaa]" name="verifyAddDestination" duration-ms="16900" started-at="2020-04-14T06:52:12Z" depends-on-methods="com.Fullload_CDC.FullLoad.verifySourceAdd" finished-at="2020-04-14T06:52:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddDestination -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.FullLoad@429bffaa]" name="getResult" is-config="true" duration-ms="0" started-at="2020-04-13T13:30:07Z" finished-at="2020-04-13T13:30:07Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.FullLoad@429bffaa]" name="getResult" is-config="true" duration-ms="1" started-at="2020-04-14T06:52:29Z" finished-at="2020-04-14T06:52:29Z">
           <params>
             <param index="0">
               <value>
@@ -372,11 +372,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="verifyAddDataFlow()[pri:19, instance:com.Fullload_CDC.FullLoad@429bffaa]" name="verifyAddDataFlow" duration-ms="70849" started-at="2020-04-13T13:30:07Z" depends-on-methods="com.Fullload_CDC.FullLoad.verifyAddDestination" finished-at="2020-04-13T13:31:18Z">
+        <test-method status="PASS" signature="verifyAddDataFlow()[pri:19, instance:com.Fullload_CDC.FullLoad@429bffaa]" name="verifyAddDataFlow" duration-ms="64522" started-at="2020-04-14T06:52:29Z" depends-on-methods="com.Fullload_CDC.FullLoad.verifyAddDestination" finished-at="2020-04-14T06:53:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddDataFlow -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.FullLoad@429bffaa]" name="getResult" is-config="true" duration-ms="1" started-at="2020-04-13T13:31:18Z" finished-at="2020-04-13T13:31:18Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.FullLoad@429bffaa]" name="getResult" is-config="true" duration-ms="0" started-at="2020-04-14T06:53:34Z" finished-at="2020-04-14T06:53:34Z">
           <params>
             <param index="0">
               <value>
@@ -387,11 +387,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="verifyScheduledFlow()[pri:20, instance:com.Fullload_CDC.FullLoad@429bffaa]" name="verifyScheduledFlow" duration-ms="17754" started-at="2020-04-13T13:31:18Z" depends-on-methods="com.Fullload_CDC.FullLoad.verifyAddDataFlow" finished-at="2020-04-13T13:31:36Z">
+        <test-method status="PASS" signature="verifyScheduledFlow()[pri:20, instance:com.Fullload_CDC.FullLoad@429bffaa]" name="verifyScheduledFlow" duration-ms="18248" started-at="2020-04-14T06:53:34Z" depends-on-methods="com.Fullload_CDC.FullLoad.verifyAddDataFlow" finished-at="2020-04-14T06:53:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyScheduledFlow -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.FullLoad@429bffaa]" name="getResult" is-config="true" duration-ms="0" started-at="2020-04-13T13:31:36Z" finished-at="2020-04-13T13:31:36Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.FullLoad@429bffaa]" name="getResult" is-config="true" duration-ms="1" started-at="2020-04-14T06:53:52Z" finished-at="2020-04-14T06:53:52Z">
           <params>
             <param index="0">
               <value>
@@ -402,11 +402,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="verifyFlowOnMontioringScreen()[pri:21, instance:com.Fullload_CDC.FullLoad@429bffaa]" name="verifyFlowOnMontioringScreen" duration-ms="1212407" started-at="2020-04-13T13:31:36Z" depends-on-methods="com.Fullload_CDC.FullLoad.verifyScheduledFlow" finished-at="2020-04-13T13:51:48Z">
+        <test-method status="PASS" signature="verifyFlowOnMontioringScreen()[pri:21, instance:com.Fullload_CDC.FullLoad@429bffaa]" name="verifyFlowOnMontioringScreen" duration-ms="1047069" started-at="2020-04-14T06:53:52Z" depends-on-methods="com.Fullload_CDC.FullLoad.verifyScheduledFlow" finished-at="2020-04-14T07:11:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyFlowOnMontioringScreen -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.FullLoad@429bffaa]" name="getResult" is-config="true" duration-ms="0" started-at="2020-04-13T13:51:48Z" finished-at="2020-04-13T13:51:48Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.FullLoad@429bffaa]" name="getResult" is-config="true" duration-ms="0" started-at="2020-04-14T07:11:19Z" finished-at="2020-04-14T07:11:19Z">
           <params>
             <param index="0">
               <value>
@@ -419,7 +419,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- getResult -->
       </class> <!-- com.Fullload_CDC.FullLoad -->
       <class name="com.Fullload_CDC.SqltoAzuresql">
-        <test-method status="PASS" signature="Report(java.lang.String)[pri:0, instance:com.Fullload_CDC.SqltoAzuresql@3c73951]" name="Report" is-config="true" duration-ms="156" started-at="2020-04-13T13:18:40Z" finished-at="2020-04-13T13:18:40Z">
+        <test-method status="PASS" signature="Report(java.lang.String)[pri:0, instance:com.Fullload_CDC.SqltoAzuresql@3c73951]" name="Report" is-config="true" duration-ms="296" started-at="2020-04-14T06:42:09Z" finished-at="2020-04-14T06:42:10Z">
           <params>
             <param index="0">
               <value>
@@ -430,7 +430,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Report -->
-        <test-method status="PASS" signature="init(java.lang.String)[pri:0, instance:com.Fullload_CDC.SqltoAzuresql@3c73951]" name="init" is-config="true" duration-ms="26072" started-at="2020-04-13T13:18:40Z" finished-at="2020-04-13T13:19:06Z">
+        <test-method status="PASS" signature="init(java.lang.String)[pri:0, instance:com.Fullload_CDC.SqltoAzuresql@3c73951]" name="init" is-config="true" duration-ms="29733" started-at="2020-04-14T06:42:10Z" finished-at="2020-04-14T06:42:39Z">
           <params>
             <param index="0">
               <value>
@@ -441,11 +441,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="verifySourceAdd()[pri:1, instance:com.Fullload_CDC.SqltoAzuresql@3c73951]" name="verifySourceAdd" duration-ms="49187" started-at="2020-04-13T13:19:06Z" finished-at="2020-04-13T13:19:55Z">
+        <test-method status="PASS" signature="verifySourceAdd()[pri:1, instance:com.Fullload_CDC.SqltoAzuresql@3c73951]" name="verifySourceAdd" duration-ms="51088" started-at="2020-04-14T06:42:40Z" finished-at="2020-04-14T06:43:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySourceAdd -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.SqltoAzuresql@3c73951]" name="getResult" is-config="true" duration-ms="1" started-at="2020-04-13T13:19:55Z" finished-at="2020-04-13T13:19:55Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.SqltoAzuresql@3c73951]" name="getResult" is-config="true" duration-ms="3" started-at="2020-04-14T06:43:31Z" finished-at="2020-04-14T06:43:31Z">
           <params>
             <param index="0">
               <value>
@@ -456,11 +456,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="verifyAddDestination()[pri:2, instance:com.Fullload_CDC.SqltoAzuresql@3c73951]" name="verifyAddDestination" duration-ms="22835" started-at="2020-04-13T13:19:55Z" depends-on-methods="com.Fullload_CDC.SqltoAzuresql.verifySourceAdd" finished-at="2020-04-13T13:20:18Z">
+        <test-method status="PASS" signature="verifyAddDestination()[pri:2, instance:com.Fullload_CDC.SqltoAzuresql@3c73951]" name="verifyAddDestination" duration-ms="21916" started-at="2020-04-14T06:43:31Z" depends-on-methods="com.Fullload_CDC.SqltoAzuresql.verifySourceAdd" finished-at="2020-04-14T06:43:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddDestination -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.SqltoAzuresql@3c73951]" name="getResult" is-config="true" duration-ms="0" started-at="2020-04-13T13:20:18Z" finished-at="2020-04-13T13:20:18Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.SqltoAzuresql@3c73951]" name="getResult" is-config="true" duration-ms="1" started-at="2020-04-14T06:43:53Z" finished-at="2020-04-14T06:43:53Z">
           <params>
             <param index="0">
               <value>
@@ -471,11 +471,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="verifyAddDataFlow()[pri:3, instance:com.Fullload_CDC.SqltoAzuresql@3c73951]" name="verifyAddDataFlow" duration-ms="42265" started-at="2020-04-13T13:20:18Z" depends-on-methods="com.Fullload_CDC.SqltoAzuresql.verifyAddDestination" finished-at="2020-04-13T13:21:00Z">
+        <test-method status="PASS" signature="verifyAddDataFlow()[pri:3, instance:com.Fullload_CDC.SqltoAzuresql@3c73951]" name="verifyAddDataFlow" duration-ms="42754" started-at="2020-04-14T06:43:53Z" depends-on-methods="com.Fullload_CDC.SqltoAzuresql.verifyAddDestination" finished-at="2020-04-14T06:44:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddDataFlow -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.SqltoAzuresql@3c73951]" name="getResult" is-config="true" duration-ms="1" started-at="2020-04-13T13:21:00Z" finished-at="2020-04-13T13:21:00Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.SqltoAzuresql@3c73951]" name="getResult" is-config="true" duration-ms="1" started-at="2020-04-14T06:44:35Z" finished-at="2020-04-14T06:44:35Z">
           <params>
             <param index="0">
               <value>
@@ -486,15 +486,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="verifyScheduledFlow()[pri:4, instance:com.Fullload_CDC.SqltoAzuresql@3c73951]" name="verifyScheduledFlow" duration-ms="17552" started-at="2020-04-13T13:21:00Z" depends-on-methods="com.Fullload_CDC.SqltoAzuresql.verifyAddDataFlow" finished-at="2020-04-13T13:21:18Z">
+        <test-method status="PASS" signature="verifyScheduledFlow()[pri:4, instance:com.Fullload_CDC.SqltoAzuresql@3c73951]" name="verifyScheduledFlow" duration-ms="17747" started-at="2020-04-14T06:44:35Z" depends-on-methods="com.Fullload_CDC.SqltoAzuresql.verifyAddDataFlow" finished-at="2020-04-14T06:44:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyScheduledFlow -->
-        <test-method status="PASS" signature="verifyFlowOnMontioringScreen()[pri:5, instance:com.Fullload_CDC.SqltoAzuresql@3c73951]" name="verifyFlowOnMontioringScreen" duration-ms="426378" started-at="2020-04-13T13:21:18Z" depends-on-methods="com.Fullload_CDC.SqltoAzuresql.verifyScheduledFlow" finished-at="2020-04-13T13:28:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyFlowOnMontioringScreen -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.SqltoAzuresql@3c73951]" name="getResult" is-config="true" duration-ms="0" started-at="2020-04-13T13:21:18Z" finished-at="2020-04-13T13:21:18Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.SqltoAzuresql@3c73951]" name="getResult" is-config="true" duration-ms="1" started-at="2020-04-14T06:44:53Z" finished-at="2020-04-14T06:44:53Z">
           <params>
             <param index="0">
               <value>
@@ -505,7 +501,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.SqltoAzuresql@3c73951]" name="getResult" is-config="true" duration-ms="0" started-at="2020-04-13T13:28:24Z" finished-at="2020-04-13T13:28:24Z">
+        <test-method status="PASS" signature="verifyFlowOnMontioringScreen()[pri:5, instance:com.Fullload_CDC.SqltoAzuresql@3c73951]" name="verifyFlowOnMontioringScreen" duration-ms="365504" started-at="2020-04-14T06:44:53Z" depends-on-methods="com.Fullload_CDC.SqltoAzuresql.verifyScheduledFlow" finished-at="2020-04-14T06:50:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFlowOnMontioringScreen -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.SqltoAzuresql@3c73951]" name="getResult" is-config="true" duration-ms="0" started-at="2020-04-14T06:50:59Z" finished-at="2020-04-14T06:50:59Z">
           <params>
             <param index="0">
               <value>
@@ -516,7 +516,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Fullload_CDC.SqltoAzuresql@3c73951]" name="tearDown" is-config="true" duration-ms="229" started-at="2020-04-13T14:03:32Z" finished-at="2020-04-13T14:03:32Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Fullload_CDC.SqltoAzuresql@3c73951]" name="tearDown" is-config="true" duration-ms="200" started-at="2020-04-14T07:24:57Z" finished-at="2020-04-14T07:24:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

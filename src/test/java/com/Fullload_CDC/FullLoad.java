@@ -26,7 +26,7 @@ public class FullLoad extends ReuseFuntions implements IOnBoarding ,IMonitoring{
 static ExcelUtils reader = new ExcelUtils(System.getProperty("user.dir") + "/TestData/TestData.xlsx");
 
 	
-	@Test(priority=11,groups = { "Smoke" })
+	/*@Test(priority=11,groups = { "Smoke" })
      public static void verifySystemParams() throws InterruptedException 
    {    
 		 test =report.startTest("Verify System Parameter");
@@ -325,9 +325,9 @@ static ExcelUtils reader = new ExcelUtils(System.getProperty("user.dir") + "/Tes
 		     test.log(LogStatus.PASS,"Azure Function is Already Created");
 			 
 		 }
-     }
+     }*/
 	 
-	 @Test(priority = 17, dependsOnMethods = { "verifyAddAzureFunction" } ,groups = { "Smoke" })
+	 @Test(priority = 17,groups = { "Smoke" })
      public static void verifySourceAdd() throws InterruptedException 
    {    
 		 verifySourceSQL(2);
