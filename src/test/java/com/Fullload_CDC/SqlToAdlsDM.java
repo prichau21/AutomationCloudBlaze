@@ -15,20 +15,20 @@ import com.relevantcodes.extentreports.LogStatus;
 
 public class SqlToAdlsDM extends ReuseFuntions implements IOnBoarding ,IMonitoring{
 	 static ExcelUtils reader = new ExcelUtils(System.getProperty("user.dir") + "/TestData/TestData.xlsx");
-	@Test(priority = 1,groups = { "Smoke" })
+	@Test(priority = 6,groups = { "Smoke" })
     public static void verifySourceAdd() throws InterruptedException 
  {    
 		verifySourceSQL(15);
         
  
  
- } @Test(priority = 2, dependsOnMethods = { "verifySourceAdd" } ,groups = { "Smoke" })
+ } @Test(priority = 7, dependsOnMethods = { "verifySourceAdd" } ,groups = { "Smoke" })
 	 public static void verifyAddDestination() throws InterruptedException 
  {	 
 	 verifyDestinationADLS(15);
  }
  
- @Test(priority = 3,dependsOnMethods = { "verifyAddDestination" } ,groups = { "Smoke" })
+ @Test(priority = 8,dependsOnMethods = { "verifyAddDestination" } ,groups = { "Smoke" })
  public static void verifyAddDataFlow() throws InterruptedException, AWTException 
   {    
 test = report.startTest("Verify Add DataFlow");
@@ -60,7 +60,7 @@ test = report.startTest("Verify Add DataFlow");
 	 Assert.assertEquals(tableName,"Table Name", "Table Name Column is Not displaying");
 	 test.log(LogStatus.PASS,"Table Columns","Table Column is displaying");
 	 
-	driver.findElement(By.xpath("/html/body/div[6]/div[2]/div[1]/div[4]/div/div[1]/table/thead/tr/th[1]/span/span[1]/input")).click();
+	driver.findElement(By.xpath("/html/body/div[6]/div[2]/div[1]/div[5]/div/div[1]/table/thead/tr/th[1]/span/span[1]/input")).click();
   driver.findElement(By.xpath("(//*[@id='1'])[5]")).click();
 
 	  Thread.sleep(2000);
@@ -86,14 +86,14 @@ test = report.startTest("Verify Add DataFlow");
      Assert.assertEquals(toaster2,"data flow published successfully","data flow is not published");
     test.log(LogStatus.PASS, "Publish","data flow published successfully");
 }  
- @Test(priority = 4, dependsOnMethods = { "verifyAddDataFlow" },groups = { "Smoke" })
+ @Test(priority = 9, dependsOnMethods = { "verifyAddDataFlow" },groups = { "Smoke" })
  public static void verifyScheduledFlow() throws InterruptedException 
  {   
 	  verifyScheduledFlowR(15 ,5);
 
  }
 
- @Test(priority = 5, dependsOnMethods = { "verifyScheduledFlow" },groups = { "Smoke" })
+ @Test(priority = 10, dependsOnMethods = { "verifyScheduledFlow" },groups = { "Smoke" })
  public static void verifyFlowOnMontioringScreen() throws InterruptedException  
  {
  verifyFlowMontioringScreen(15);

@@ -9,22 +9,19 @@
       </run>
     </groups>
     <classes>
-      <class name="com.Fullload_CDC.OracleToAdlsCDC">
+      <class name="com.Fullload_CDC.SqlToAdlsDM">
         <methods>
-          <include name="verifyRescheduled"/>
           <include name="tearDown"/>
-          <include name="verifyAddDataFlow"/>
-          <include name="verifyDeleteScheduledFlow"/>
-          <include name="verifyScheduledFlow"/>
+          <include name="verifyFlowOnMontioringScreen"/>
           <include name="verifySourceAdd"/>
+          <include name="verifyAddDestination"/>
+          <include name="verifyAddDataFlow"/>
+          <include name="verifyScheduledFlow"/>
           <include name="Report"/>
           <include name="getResult"/>
-          <include name="verifyAddDestination"/>
-          <include name="verifyDataFlowOnMontioringScreen"/>
           <include name="init"/>
-          <include name="verifyFlowOnMontioringScren"/>
         </methods>
-      </class> <!-- com.Fullload_CDC.OracleToAdlsCDC -->
+      </class> <!-- com.Fullload_CDC.SqlToAdlsDM -->
     </classes>
   </test> <!-- CloudBlaze Tests(failed) -->
 </suite> <!-- Failed suite [CloudBlaze Automation] -->
