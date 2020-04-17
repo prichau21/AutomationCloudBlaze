@@ -83,7 +83,7 @@ public class ReuseFuntions extends BaseClass implements IOnBoarding ,IMonitoring
     test = report.startTest("Verify Add Source");
     driver.navigate().refresh();
     Thread.sleep(2000);
-   // driver.findElement(By.xpath(xpathDataSourcePageLink)).click();
+    driver.findElement(By.xpath(xpathDataSourcePageLink)).click();
     driver.findElement(By.xpath("//*[@id='root']/div/div/div/div/ul/li[6]/a")).click();
     driver.findElement(By.id("select-source")).click();
     Thread.sleep(1000);
@@ -227,7 +227,7 @@ public class ReuseFuntions extends BaseClass implements IOnBoarding ,IMonitoring
    Thread.sleep(1000);
    driver.findElement(By.xpath(xpathYesBtnn)).click();
    WebDriverWait wait = new WebDriverWait(driver,60);
-   wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(toasterRecordSaved)));
+   wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(toasterRecordSaved))); 
    String toaster = driver.findElement(By.xpath(toasterRecordSaved)).getText();
    System.out.println(toaster);
    Assert.assertEquals(toaster,"Service/Storage added successfully!","Service/Storage  is not added succesfully ");
