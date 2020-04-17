@@ -23,8 +23,8 @@
  		    <class name="com.CloudBlaze.UserSecurity.UserRoles"></class> 
  		    <class name="com.Fullload_CDC.ChangeDataCapture"></class>
  		    <class name="com.Fullload_CDC.OracleToAdls"></class>
-            <class name="com.Fullload_CDC.OracletoAzureSql"></class>-->
- 		    <class name="com.Fullload_CDC.SqltoAzuresql"></class>
+            <class name="com.Fullload_CDC.OracletoAzureSql"></class>
+ 		    <class name="com.Fullload_CDC.SqltoAzuresql"></class>-->
  		     <class name="com.Fullload_CDC.SqlToAdlsDM"></class>
  		  <!--  <class name="com.Fullload_CDC.FullLoad"></class>
  		    <class name="com.Fullload_CDC.OracleToAdlsCDC"></class>

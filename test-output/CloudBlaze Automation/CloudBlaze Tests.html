@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>CloudBlaze Tests</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/9</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/10</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Apr 14 17:29:27 IST 2020</td>
+<td>Started on:</td><td>Tue Apr 14 17:32:03 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>71 seconds (71667 ms)</td>
+<tr><td>Total time:</td><td>16 seconds (16486 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td>Smoke </td>
 </tr><tr>
@@ -75,46 +75,128 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.Fullload_CDC.SqltoAzuresql.getResult()'><b>getResult</b><br>Test class: com.Fullload_CDC.SqltoAzuresql<br>Parameters: [TestResult name=verifySourceAdd status=FAILURE method=SqltoAzuresql.verifySourceAdd()[pri:1, instance:com.Fullload_CDC.SqltoAzuresql@550ee7e5] output={null}]</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: chrome not reachable
+<td title='com.Fullload_CDC.SqltoAzuresql.init()'><b>init</b><br>Test class: com.Fullload_CDC.SqltoAzuresql<br>Parameters: https://cloudblaze-ui-react.azurewebsites.net/#</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: session not created
+from chrome not reachable
   (Session info: chrome=80.0.3987.163)
 Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
 System info: host: &apos;LAPTOP-2G86F66K&apos;, ip: &apos;192.168.29.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:56361}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 74ed7faf6f529c4e23d47a8b477f87c4
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00220AE3+1706723]
+	Ordinal0 [0x001868C1+1075393]
+	Ordinal0 [0x000FDE52+515666]
+	Ordinal0 [0x000F7C88+490632]
+	Ordinal0 [0x000F837B+492411]
+	Ordinal0 [0x000F92D5+496341]
+	Ordinal0 [0x000F4EE5+478949]
+	Ordinal0 [0x000FEC80+519296]
+	Ordinal0 [0x000ACA67+182887]
+	Ordinal0 [0x000ABDDD+179677]
+	Ordinal0 [0x000A9D4B+171339]
+	Ordinal0 [0x00091D4A+73034]
+	Ordinal0 [0x00092DC0+77248]
+	Ordinal0 [0x00092D59+77145]
+	Ordinal0 [0x0019BB37+1162039]
+	GetHandleVerifier [0x002BA7C6+508998]
+	GetHandleVerifier [0x002BA504+508292]
+	GetHandleVerifier [0x002CF617+594583]
+	GetHandleVerifier [0x002BB036+511158]
+	Ordinal0 [0x00193FFC+1130492]
+	Ordinal0 [0x0019D49B+1168539]
+	Ordinal0 [0x0019D603+1168899]
+	Ordinal0 [0x001B5B05+1268485]
+	BaseThreadInitThunk [0x770E6359+25]
+	RtlGetAppContainerNamedObjectPath [0x77697B74+228]
+	RtlGetAppContainerNamedObjectPath [0x77697B44+180]
+	(No symbol) [0x00000000]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:289)
-	at com.CloudBlaze.Base.BaseClass.getScreenshot(BaseClass.java:224)
-	at com.CloudBlaze.Base.BaseClass.getResult(BaseClass.java:201)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1491623023", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1491623023'><pre>org.openqa.selenium.WebDriverException: chrome not reachable
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:207)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:130)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at com.CloudBlaze.Base.BaseClass.init(BaseClass.java:75)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace82275756", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace82275756'><pre>org.openqa.selenium.SessionNotCreatedException: session not created
+from chrome not reachable
   (Session info: chrome=80.0.3987.163)
 Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
 System info: host: &apos;LAPTOP-2G86F66K&apos;, ip: &apos;192.168.29.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:56361}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 74ed7faf6f529c4e23d47a8b477f87c4
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00220AE3+1706723]
+	Ordinal0 [0x001868C1+1075393]
+	Ordinal0 [0x000FDE52+515666]
+	Ordinal0 [0x000F7C88+490632]
+	Ordinal0 [0x000F837B+492411]
+	Ordinal0 [0x000F92D5+496341]
+	Ordinal0 [0x000F4EE5+478949]
+	Ordinal0 [0x000FEC80+519296]
+	Ordinal0 [0x000ACA67+182887]
+	Ordinal0 [0x000ABDDD+179677]
+	Ordinal0 [0x000A9D4B+171339]
+	Ordinal0 [0x00091D4A+73034]
+	Ordinal0 [0x00092DC0+77248]
+	Ordinal0 [0x00092D59+77145]
+	Ordinal0 [0x0019BB37+1162039]
+	GetHandleVerifier [0x002BA7C6+508998]
+	GetHandleVerifier [0x002BA504+508292]
+	GetHandleVerifier [0x002CF617+594583]
+	GetHandleVerifier [0x002BB036+511158]
+	Ordinal0 [0x00193FFC+1130492]
+	Ordinal0 [0x0019D49B+1168539]
+	Ordinal0 [0x0019D603+1168899]
+	Ordinal0 [0x001B5B05+1268485]
+	BaseThreadInitThunk [0x770E6359+25]
+	RtlGetAppContainerNamedObjectPath [0x77697B74+228]
+	RtlGetAppContainerNamedObjectPath [0x77697B44+180]
+	(No symbol) [0x00000000]
+
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
 	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:289)
-	at com.CloudBlaze.Base.BaseClass.getScreenshot(BaseClass.java:224)
-	at com.CloudBlaze.Base.BaseClass.getResult(BaseClass.java:201)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:207)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:130)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at com.CloudBlaze.Base.BaseClass.init(BaseClass.java:75)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -123,13 +205,9 @@ Session ID: 74ed7faf6f529c4e23d47a8b477f87c4
 	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
 	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+	at org.testng.TestRunner.run(TestRunner.java:497)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
@@ -144,69 +222,24 @@ Session ID: 74ed7faf6f529c4e23d47a8b477f87c4
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>14</td>
+<td>16</td>
 <td>com.Fullload_CDC.SqltoAzuresql@550ee7e5</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
 <tr>
-<td title='com.Fullload_CDC.SqltoAzuresql.verifySourceAdd()'><b>verifySourceAdd</b><br>Test class: com.Fullload_CDC.SqltoAzuresql</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=80.0.3987.163)
-Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
-System info: host: &apos;LAPTOP-2G86F66K&apos;, ip: &apos;192.168.29.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:56361}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 74ed7faf6f529c4e23d47a8b477f87c4
-*** Element info: {Using=xpath, value=//*[@id=&apos;menu-33&apos;]/div//li[@data-value=&apos;PriynakaSystemKey&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
-	at com.Fullload_CDC.ReuseFuntions.verifySourceSQL(ReuseFuntions.java:109)
-	at com.Fullload_CDC.SqltoAzuresql.verifySourceAdd(SqltoAzuresql.java:28)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace7646139", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace7646139'><pre>org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=80.0.3987.163)
-Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
-System info: host: &apos;LAPTOP-2G86F66K&apos;, ip: &apos;192.168.29.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:56361}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 74ed7faf6f529c4e23d47a8b477f87c4
-*** Element info: {Using=xpath, value=//*[@id=&apos;menu-33&apos;]/div//li[@data-value=&apos;PriynakaSystemKey&apos;]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
-	at com.Fullload_CDC.ReuseFuntions.verifySourceSQL(ReuseFuntions.java:109)
-	at com.Fullload_CDC.SqltoAzuresql.verifySourceAdd(SqltoAzuresql.java:28)
+<td title='com.Fullload_CDC.SqltoAzuresql.getResult()'><b>getResult</b><br>Test class: com.Fullload_CDC.SqltoAzuresql<br>Parameters: [TestResult name={null} status=CREATED method=SqltoAzuresql.verifySourceAdd()[pri:1, instance:com.Fullload_CDC.SqltoAzuresql@550ee7e5] output={null}]</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.CloudBlaze.Base.BaseClass.getResult(BaseClass.java:215)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1622613647", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1622613647'><pre>java.lang.NullPointerException
+	at com.CloudBlaze.Base.BaseClass.getResult(BaseClass.java:215)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:533)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
@@ -227,8 +260,46 @@ Session ID: 74ed7faf6f529c4e23d47a8b477f87c4
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>30</td>
+<td>0</td>
 <td>com.Fullload_CDC.SqltoAzuresql@550ee7e5</td></tr>
+<tr>
+<td title='com.Fullload_CDC.SqlToAdlsDM.getResult()'><b>getResult</b><br>Test class: com.Fullload_CDC.SqlToAdlsDM<br>Parameters: [TestResult name={null} status=CREATED method=SqlToAdlsDM.verifySourceAdd()[pri:6, instance:com.Fullload_CDC.SqlToAdlsDM@193f604a] output={null}]</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.CloudBlaze.Base.BaseClass.getResult(BaseClass.java:215)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1815370847", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1815370847'><pre>java.lang.NullPointerException
+	at com.CloudBlaze.Base.BaseClass.getResult(BaseClass.java:215)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:533)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.Fullload_CDC.SqlToAdlsDM@193f604a</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -240,8 +311,8 @@ Session ID: 74ed7faf6f529c4e23d47a8b477f87c4
 <tr>
 <td title='com.Fullload_CDC.SqltoAzuresql.verifyAddDataFlow()'><b>verifyAddDataFlow</b><br>Test class: com.Fullload_CDC.SqltoAzuresql</td>
 <td><div><pre>java.lang.Throwable: Method SqltoAzuresql.verifyAddDataFlow()[pri:3, instance:com.Fullload_CDC.SqltoAzuresql@550ee7e5] depends on not successfully finished methods
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1621939721", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1621939721'><pre>java.lang.Throwable: Method SqltoAzuresql.verifyAddDataFlow()[pri:3, instance:com.Fullload_CDC.SqltoAzuresql@550ee7e5] depends on not successfully finished methods
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1607869297", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1607869297'><pre>java.lang.Throwable: Method SqltoAzuresql.verifyAddDataFlow()[pri:3, instance:com.Fullload_CDC.SqltoAzuresql@550ee7e5] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -266,8 +337,8 @@ Session ID: 74ed7faf6f529c4e23d47a8b477f87c4
 <tr>
 <td title='com.Fullload_CDC.SqlToAdlsDM.verifyAddDataFlow()'><b>verifyAddDataFlow</b><br>Test class: com.Fullload_CDC.SqlToAdlsDM</td>
 <td><div><pre>java.lang.Throwable: Method SqlToAdlsDM.verifyAddDataFlow()[pri:8, instance:com.Fullload_CDC.SqlToAdlsDM@193f604a] depends on not successfully finished methods
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace986238875", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace986238875'><pre>java.lang.Throwable: Method SqlToAdlsDM.verifyAddDataFlow()[pri:8, instance:com.Fullload_CDC.SqlToAdlsDM@193f604a] depends on not successfully finished methods
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace988904418", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace988904418'><pre>java.lang.Throwable: Method SqlToAdlsDM.verifyAddDataFlow()[pri:8, instance:com.Fullload_CDC.SqlToAdlsDM@193f604a] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -292,8 +363,8 @@ Session ID: 74ed7faf6f529c4e23d47a8b477f87c4
 <tr>
 <td title='com.Fullload_CDC.SqltoAzuresql.verifyAddDestination()'><b>verifyAddDestination</b><br>Test class: com.Fullload_CDC.SqltoAzuresql</td>
 <td><div><pre>java.lang.Throwable: Method SqltoAzuresql.verifyAddDestination()[pri:2, instance:com.Fullload_CDC.SqltoAzuresql@550ee7e5] depends on not successfully finished methods
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1005331061", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1005331061'><pre>java.lang.Throwable: Method SqltoAzuresql.verifyAddDestination()[pri:2, instance:com.Fullload_CDC.SqltoAzuresql@550ee7e5] depends on not successfully finished methods
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1189651769", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1189651769'><pre>java.lang.Throwable: Method SqltoAzuresql.verifyAddDestination()[pri:2, instance:com.Fullload_CDC.SqltoAzuresql@550ee7e5] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -318,8 +389,8 @@ Session ID: 74ed7faf6f529c4e23d47a8b477f87c4
 <tr>
 <td title='com.Fullload_CDC.SqlToAdlsDM.verifyAddDestination()'><b>verifyAddDestination</b><br>Test class: com.Fullload_CDC.SqlToAdlsDM</td>
 <td><div><pre>java.lang.Throwable: Method SqlToAdlsDM.verifyAddDestination()[pri:7, instance:com.Fullload_CDC.SqlToAdlsDM@193f604a] depends on not successfully finished methods
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2082232630", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2082232630'><pre>java.lang.Throwable: Method SqlToAdlsDM.verifyAddDestination()[pri:7, instance:com.Fullload_CDC.SqlToAdlsDM@193f604a] depends on not successfully finished methods
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1338958728", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1338958728'><pre>java.lang.Throwable: Method SqlToAdlsDM.verifyAddDestination()[pri:7, instance:com.Fullload_CDC.SqlToAdlsDM@193f604a] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -344,8 +415,8 @@ Session ID: 74ed7faf6f529c4e23d47a8b477f87c4
 <tr>
 <td title='com.Fullload_CDC.SqltoAzuresql.verifyFlowOnMontioringScreen()'><b>verifyFlowOnMontioringScreen</b><br>Test class: com.Fullload_CDC.SqltoAzuresql</td>
 <td><div><pre>java.lang.Throwable: Method SqltoAzuresql.verifyFlowOnMontioringScreen()[pri:5, instance:com.Fullload_CDC.SqltoAzuresql@550ee7e5] depends on not successfully finished methods
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1501716646", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1501716646'><pre>java.lang.Throwable: Method SqltoAzuresql.verifyFlowOnMontioringScreen()[pri:5, instance:com.Fullload_CDC.SqltoAzuresql@550ee7e5] depends on not successfully finished methods
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace138536309", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace138536309'><pre>java.lang.Throwable: Method SqltoAzuresql.verifyFlowOnMontioringScreen()[pri:5, instance:com.Fullload_CDC.SqltoAzuresql@550ee7e5] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -370,8 +441,8 @@ Session ID: 74ed7faf6f529c4e23d47a8b477f87c4
 <tr>
 <td title='com.Fullload_CDC.SqlToAdlsDM.verifyFlowOnMontioringScreen()'><b>verifyFlowOnMontioringScreen</b><br>Test class: com.Fullload_CDC.SqlToAdlsDM</td>
 <td><div><pre>java.lang.Throwable: Method SqlToAdlsDM.verifyFlowOnMontioringScreen()[pri:10, instance:com.Fullload_CDC.SqlToAdlsDM@193f604a] depends on not successfully finished methods
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1267110705", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1267110705'><pre>java.lang.Throwable: Method SqlToAdlsDM.verifyFlowOnMontioringScreen()[pri:10, instance:com.Fullload_CDC.SqlToAdlsDM@193f604a] depends on not successfully finished methods
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1850874910", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1850874910'><pre>java.lang.Throwable: Method SqlToAdlsDM.verifyFlowOnMontioringScreen()[pri:10, instance:com.Fullload_CDC.SqlToAdlsDM@193f604a] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -396,8 +467,8 @@ Session ID: 74ed7faf6f529c4e23d47a8b477f87c4
 <tr>
 <td title='com.Fullload_CDC.SqltoAzuresql.verifyScheduledFlow()'><b>verifyScheduledFlow</b><br>Test class: com.Fullload_CDC.SqltoAzuresql</td>
 <td><div><pre>java.lang.Throwable: Method SqltoAzuresql.verifyScheduledFlow()[pri:4, instance:com.Fullload_CDC.SqltoAzuresql@550ee7e5] depends on not successfully finished methods
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1061806694", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1061806694'><pre>java.lang.Throwable: Method SqltoAzuresql.verifyScheduledFlow()[pri:4, instance:com.Fullload_CDC.SqltoAzuresql@550ee7e5] depends on not successfully finished methods
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace727860268", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace727860268'><pre>java.lang.Throwable: Method SqltoAzuresql.verifyScheduledFlow()[pri:4, instance:com.Fullload_CDC.SqltoAzuresql@550ee7e5] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -422,8 +493,8 @@ Session ID: 74ed7faf6f529c4e23d47a8b477f87c4
 <tr>
 <td title='com.Fullload_CDC.SqlToAdlsDM.verifyScheduledFlow()'><b>verifyScheduledFlow</b><br>Test class: com.Fullload_CDC.SqlToAdlsDM</td>
 <td><div><pre>java.lang.Throwable: Method SqlToAdlsDM.verifyScheduledFlow()[pri:9, instance:com.Fullload_CDC.SqlToAdlsDM@193f604a] depends on not successfully finished methods
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace454424866", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace454424866'><pre>java.lang.Throwable: Method SqlToAdlsDM.verifyScheduledFlow()[pri:9, instance:com.Fullload_CDC.SqlToAdlsDM@193f604a] depends on not successfully finished methods
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace938613108", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace938613108'><pre>java.lang.Throwable: Method SqlToAdlsDM.verifyScheduledFlow()[pri:9, instance:com.Fullload_CDC.SqlToAdlsDM@193f604a] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -446,46 +517,128 @@ Session ID: 74ed7faf6f529c4e23d47a8b477f87c4
 <td>0</td>
 <td>null</td></tr>
 <tr>
-<td title='com.Fullload_CDC.SqlToAdlsDM.verifySourceAdd()'><b>verifySourceAdd</b><br>Test class: com.Fullload_CDC.SqlToAdlsDM</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: chrome not reachable
+<td title='com.Fullload_CDC.SqltoAzuresql.verifySourceAdd()'><b>verifySourceAdd</b><br>Test class: com.Fullload_CDC.SqltoAzuresql</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: session not created
+from chrome not reachable
   (Session info: chrome=80.0.3987.163)
 Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
 System info: host: &apos;LAPTOP-2G86F66K&apos;, ip: &apos;192.168.29.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:56361}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 74ed7faf6f529c4e23d47a8b477f87c4
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00220AE3+1706723]
+	Ordinal0 [0x001868C1+1075393]
+	Ordinal0 [0x000FDE52+515666]
+	Ordinal0 [0x000F7C88+490632]
+	Ordinal0 [0x000F837B+492411]
+	Ordinal0 [0x000F92D5+496341]
+	Ordinal0 [0x000F4EE5+478949]
+	Ordinal0 [0x000FEC80+519296]
+	Ordinal0 [0x000ACA67+182887]
+	Ordinal0 [0x000ABDDD+179677]
+	Ordinal0 [0x000A9D4B+171339]
+	Ordinal0 [0x00091D4A+73034]
+	Ordinal0 [0x00092DC0+77248]
+	Ordinal0 [0x00092D59+77145]
+	Ordinal0 [0x0019BB37+1162039]
+	GetHandleVerifier [0x002BA7C6+508998]
+	GetHandleVerifier [0x002BA504+508292]
+	GetHandleVerifier [0x002CF617+594583]
+	GetHandleVerifier [0x002BB036+511158]
+	Ordinal0 [0x00193FFC+1130492]
+	Ordinal0 [0x0019D49B+1168539]
+	Ordinal0 [0x0019D603+1168899]
+	Ordinal0 [0x001B5B05+1268485]
+	BaseThreadInitThunk [0x770E6359+25]
+	RtlGetAppContainerNamedObjectPath [0x77697B74+228]
+	RtlGetAppContainerNamedObjectPath [0x77697B44+180]
+	(No symbol) [0x00000000]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:289)
-	at com.CloudBlaze.Base.BaseClass.getScreenshot(BaseClass.java:224)
-	at com.CloudBlaze.Base.BaseClass.getResult(BaseClass.java:201)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2048888303", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2048888303'><pre>org.openqa.selenium.WebDriverException: chrome not reachable
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:207)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:130)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at com.CloudBlaze.Base.BaseClass.init(BaseClass.java:75)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace503595296", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace503595296'><pre>org.openqa.selenium.SessionNotCreatedException: session not created
+from chrome not reachable
   (Session info: chrome=80.0.3987.163)
 Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
 System info: host: &apos;LAPTOP-2G86F66K&apos;, ip: &apos;192.168.29.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:56361}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 74ed7faf6f529c4e23d47a8b477f87c4
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00220AE3+1706723]
+	Ordinal0 [0x001868C1+1075393]
+	Ordinal0 [0x000FDE52+515666]
+	Ordinal0 [0x000F7C88+490632]
+	Ordinal0 [0x000F837B+492411]
+	Ordinal0 [0x000F92D5+496341]
+	Ordinal0 [0x000F4EE5+478949]
+	Ordinal0 [0x000FEC80+519296]
+	Ordinal0 [0x000ACA67+182887]
+	Ordinal0 [0x000ABDDD+179677]
+	Ordinal0 [0x000A9D4B+171339]
+	Ordinal0 [0x00091D4A+73034]
+	Ordinal0 [0x00092DC0+77248]
+	Ordinal0 [0x00092D59+77145]
+	Ordinal0 [0x0019BB37+1162039]
+	GetHandleVerifier [0x002BA7C6+508998]
+	GetHandleVerifier [0x002BA504+508292]
+	GetHandleVerifier [0x002CF617+594583]
+	GetHandleVerifier [0x002BB036+511158]
+	Ordinal0 [0x00193FFC+1130492]
+	Ordinal0 [0x0019D49B+1168539]
+	Ordinal0 [0x0019D603+1168899]
+	Ordinal0 [0x001B5B05+1268485]
+	BaseThreadInitThunk [0x770E6359+25]
+	RtlGetAppContainerNamedObjectPath [0x77697B74+228]
+	RtlGetAppContainerNamedObjectPath [0x77697B44+180]
+	(No symbol) [0x00000000]
+
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
 	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:289)
-	at com.CloudBlaze.Base.BaseClass.getScreenshot(BaseClass.java:224)
-	at com.CloudBlaze.Base.BaseClass.getResult(BaseClass.java:201)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:207)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:130)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at com.CloudBlaze.Base.BaseClass.init(BaseClass.java:75)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -494,7 +647,41 @@ Session ID: 74ed7faf6f529c4e23d47a8b477f87c4
 	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
 	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+	at org.testng.TestRunner.run(TestRunner.java:497)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.Fullload_CDC.SqltoAzuresql@550ee7e5</td></tr>
+<tr>
+<td title='com.Fullload_CDC.SqlToAdlsDM.verifySourceAdd()'><b>verifySourceAdd</b><br>Test class: com.Fullload_CDC.SqlToAdlsDM</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.CloudBlaze.Base.BaseClass.getResult(BaseClass.java:215)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace509559152", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace509559152'><pre>java.lang.NullPointerException
+	at com.CloudBlaze.Base.BaseClass.getResult(BaseClass.java:215)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:533)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
