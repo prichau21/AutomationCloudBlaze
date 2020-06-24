@@ -2,7 +2,7 @@
 <testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="CloudBlaze Automation" duration-ms="281261" started-at="2020-06-23T13:18:35Z" finished-at="2020-06-23T13:23:16Z">
+  <suite name="CloudBlaze Automation" duration-ms="318344" started-at="2020-06-24T10:31:22Z" finished-at="2020-06-24T10:36:40Z">
     <groups>
       <group name="Smoke">
         <method signature="MySqlToSql.verifySourceMySql()[pri:1, instance:com.Fullload_CDC.MySqlToSql@67080771]" name="verifySourceMySql" class="com.Fullload_CDC.MySqlToSql"/>
@@ -12,9 +12,9 @@
         <method signature="MySqlToSql.verifyFlowOnMontioringScreen()[pri:5, instance:com.Fullload_CDC.MySqlToSql@67080771]" name="verifyFlowOnMontioringScreen" class="com.Fullload_CDC.MySqlToSql"/>
       </group> <!-- Smoke -->
     </groups>
-    <test name="CloudBlaze Tests" duration-ms="281261" started-at="2020-06-23T13:18:35Z" finished-at="2020-06-23T13:23:16Z">
+    <test name="CloudBlaze Tests" duration-ms="318344" started-at="2020-06-24T10:31:22Z" finished-at="2020-06-24T10:36:40Z">
       <class name="com.Fullload_CDC.MySqlToSql">
-        <test-method status="PASS" signature="Report(java.lang.String)[pri:0, instance:com.Fullload_CDC.MySqlToSql@67080771]" name="Report" is-config="true" duration-ms="154" started-at="2020-06-23T13:18:35Z" finished-at="2020-06-23T13:18:35Z">
+        <test-method status="PASS" signature="Report(java.lang.String)[pri:0, instance:com.Fullload_CDC.MySqlToSql@67080771]" name="Report" is-config="true" duration-ms="296" started-at="2020-06-24T10:31:22Z" finished-at="2020-06-24T10:31:22Z">
           <params>
             <param index="0">
               <value>
@@ -25,7 +25,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Report -->
-        <test-method status="PASS" signature="init(java.lang.String)[pri:0, instance:com.Fullload_CDC.MySqlToSql@67080771]" name="init" is-config="true" duration-ms="25196" started-at="2020-06-23T13:18:35Z" finished-at="2020-06-23T13:19:00Z">
+        <test-method status="PASS" signature="init(java.lang.String)[pri:0, instance:com.Fullload_CDC.MySqlToSql@67080771]" name="init" is-config="true" duration-ms="28328" started-at="2020-06-24T10:31:22Z" finished-at="2020-06-24T10:31:50Z">
           <params>
             <param index="0">
               <value>
@@ -36,11 +36,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="verifySourceMySql()[pri:1, instance:com.Fullload_CDC.MySqlToSql@67080771]" name="verifySourceMySql" duration-ms="55835" started-at="2020-06-23T13:19:00Z" finished-at="2020-06-23T13:19:56Z">
+        <test-method status="PASS" signature="verifySourceMySql()[pri:1, instance:com.Fullload_CDC.MySqlToSql@67080771]" name="verifySourceMySql" duration-ms="59016" started-at="2020-06-24T10:31:50Z" finished-at="2020-06-24T10:32:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySourceMySql -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.MySqlToSql@67080771]" name="getResult" is-config="true" duration-ms="1" started-at="2020-06-23T13:19:56Z" finished-at="2020-06-23T13:19:56Z">
+        <test-method status="PASS" signature="verifyAddDestination()[pri:2, instance:com.Fullload_CDC.MySqlToSql@67080771]" name="verifyAddDestination" duration-ms="31140" started-at="2020-06-24T10:32:49Z" depends-on-methods="com.Fullload_CDC.MySqlToSql.verifySourceMySql" finished-at="2020-06-24T10:33:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddDestination -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.MySqlToSql@67080771]" name="getResult" is-config="true" duration-ms="0" started-at="2020-06-24T10:32:49Z" finished-at="2020-06-24T10:32:49Z">
           <params>
             <param index="0">
               <value>
@@ -51,11 +55,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="verifyAddDestination()[pri:2, instance:com.Fullload_CDC.MySqlToSql@67080771]" name="verifyAddDestination" duration-ms="23406" started-at="2020-06-23T13:19:56Z" depends-on-methods="com.Fullload_CDC.MySqlToSql.verifySourceMySql" finished-at="2020-06-23T13:20:19Z">
+        <test-method status="PASS" signature="verifyAddDataFlow()[pri:3, instance:com.Fullload_CDC.MySqlToSql@67080771]" name="verifyAddDataFlow" duration-ms="42277" started-at="2020-06-24T10:33:20Z" depends-on-methods="com.Fullload_CDC.MySqlToSql.verifyAddDestination" finished-at="2020-06-24T10:34:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyAddDestination -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.MySqlToSql@67080771]" name="getResult" is-config="true" duration-ms="1" started-at="2020-06-23T13:20:19Z" finished-at="2020-06-23T13:20:19Z">
+        </test-method> <!-- verifyAddDataFlow -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.MySqlToSql@67080771]" name="getResult" is-config="true" duration-ms="0" started-at="2020-06-24T10:33:20Z" finished-at="2020-06-24T10:33:20Z">
           <params>
             <param index="0">
               <value>
@@ -66,15 +70,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="verifyAddDataFlow()[pri:3, instance:com.Fullload_CDC.MySqlToSql@67080771]" name="verifyAddDataFlow" duration-ms="40682" started-at="2020-06-23T13:20:19Z" depends-on-methods="com.Fullload_CDC.MySqlToSql.verifyAddDestination" finished-at="2020-06-23T13:21:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddDataFlow -->
-        <test-method status="PASS" signature="verifyScheduledFlow()[pri:4, instance:com.Fullload_CDC.MySqlToSql@67080771]" name="verifyScheduledFlow" duration-ms="18110" started-at="2020-06-23T13:21:00Z" depends-on-methods="com.Fullload_CDC.MySqlToSql.verifyAddDataFlow" finished-at="2020-06-23T13:21:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyScheduledFlow -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.MySqlToSql@67080771]" name="getResult" is-config="true" duration-ms="0" started-at="2020-06-23T13:21:00Z" finished-at="2020-06-23T13:21:00Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.MySqlToSql@67080771]" name="getResult" is-config="true" duration-ms="0" started-at="2020-06-24T10:34:03Z" finished-at="2020-06-24T10:34:03Z">
           <params>
             <param index="0">
               <value>
@@ -85,7 +81,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.MySqlToSql@67080771]" name="getResult" is-config="true" duration-ms="0" started-at="2020-06-23T13:21:18Z" finished-at="2020-06-23T13:21:18Z">
+        <test-method status="PASS" signature="verifyScheduledFlow()[pri:4, instance:com.Fullload_CDC.MySqlToSql@67080771]" name="verifyScheduledFlow" duration-ms="18714" started-at="2020-06-24T10:34:03Z" depends-on-methods="com.Fullload_CDC.MySqlToSql.verifyAddDataFlow" finished-at="2020-06-24T10:34:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyScheduledFlow -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.MySqlToSql@67080771]" name="getResult" is-config="true" duration-ms="0" started-at="2020-06-24T10:34:21Z" finished-at="2020-06-24T10:34:21Z">
           <params>
             <param index="0">
               <value>
@@ -96,11 +96,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="verifyFlowOnMontioringScreen()[pri:5, instance:com.Fullload_CDC.MySqlToSql@67080771]" name="verifyFlowOnMontioringScreen" duration-ms="117850" started-at="2020-06-23T13:21:18Z" depends-on-methods="com.Fullload_CDC.MySqlToSql.verifyScheduledFlow" finished-at="2020-06-23T13:23:16Z">
+        <test-method status="PASS" signature="verifyFlowOnMontioringScreen()[pri:5, instance:com.Fullload_CDC.MySqlToSql@67080771]" name="verifyFlowOnMontioringScreen" duration-ms="138537" started-at="2020-06-24T10:34:21Z" depends-on-methods="com.Fullload_CDC.MySqlToSql.verifyScheduledFlow" finished-at="2020-06-24T10:36:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyFlowOnMontioringScreen -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.MySqlToSql@67080771]" name="getResult" is-config="true" duration-ms="0" started-at="2020-06-23T13:23:16Z" finished-at="2020-06-23T13:23:16Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Fullload_CDC.MySqlToSql@67080771]" name="getResult" is-config="true" duration-ms="0" started-at="2020-06-24T10:36:40Z" finished-at="2020-06-24T10:36:40Z">
           <params>
             <param index="0">
               <value>

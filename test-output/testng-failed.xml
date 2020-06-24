@@ -9,18 +9,18 @@
       </run>
     </groups>
     <classes>
-      <class name="com.Fullload_CDC.ChangeDataCapture">
+      <class name="com.Fullload_CDC.MySqlToSql">
         <methods>
+          <include name="verifyAddDataFlow"/>
+          <include name="verifyScheduledFlow"/>
           <include name="verifyAddDestination"/>
-          <include name="verifySourceAdd"/>
           <include name="verifyFlowOnMontioringScreen"/>
           <include name="Report"/>
           <include name="getResult"/>
-          <include name="verifyAddDataFlow"/>
-          <include name="verifyScheduledFlow"/>
+          <include name="verifySourceMySql"/>
           <include name="init"/>
         </methods>
-      </class> <!-- com.Fullload_CDC.ChangeDataCapture -->
+      </class> <!-- com.Fullload_CDC.MySqlToSql -->
     </classes>
   </test> <!-- CloudBlaze Tests(failed) -->
 </suite> <!-- Failed suite [CloudBlaze Automation] -->

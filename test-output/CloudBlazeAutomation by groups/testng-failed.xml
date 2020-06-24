@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [CloudBlazeAutomation by groups]">
+  <test thread-count="5" name="GRP-Smoke(failed)">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.CloudBlaze.Onboarding.CustomOperation">
+        <methods>
+          <include name="getResult"/>
+          <include name="Report"/>
+          <include name="init"/>
+          <include name="verifyCustomOperationPage"/>
+        </methods>
+      </class> <!-- com.CloudBlaze.Onboarding.CustomOperation -->
+      <class name="com.Fullload_CDC.MySqlToSql">
+        <methods>
+          <include name="getResult"/>
+          <include name="Report"/>
+          <include name="verifySourceMySql"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.Fullload_CDC.MySqlToSql -->
+      <class name="com.Fullload_CDC.OracleToAdls">
+        <methods>
+          <include name="getResult"/>
+          <include name="Report"/>
+          <include name="verifySourceAdd"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.Fullload_CDC.OracleToAdls -->
+      <class name="com.Fullload_CDC.MysqlToAdlsDM">
+        <methods>
+          <include name="verifySourceMySql"/>
+          <include name="getResult"/>
+          <include name="Report"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.Fullload_CDC.MysqlToAdlsDM -->
+      <class name="com.Fullload_CDC.SqltoAzuresql">
+        <methods>
+          <include name="verifySourceAdd"/>
+          <include name="getResult"/>
+          <include name="Report"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.Fullload_CDC.SqltoAzuresql -->
+      <class name="com.CloudBlaze.UserSecurity.UserRoles">
+        <methods>
+          <include name="VerifyUserRolesPage"/>
+          <include name="getResult"/>
+          <include name="Report"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.CloudBlaze.UserSecurity.UserRoles -->
+      <class name="com.CloudBlaze.Onboarding.Home">
+        <methods>
+          <include name="getResult"/>
+          <include name="Report"/>
+          <include name="verifyHomePageLink"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.CloudBlaze.Onboarding.Home -->
+      <class name="com.Fullload_CDC.FiletoAdls">
+        <methods>
+          <include name="verifySourceFile"/>
+          <include name="getResult"/>
+          <include name="Report"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.Fullload_CDC.FiletoAdls -->
+      <class name="com.Fullload_CDC.OracleToAdlsDM">
+        <methods>
+          <include name="getResult"/>
+          <include name="Report"/>
+          <include name="verifySourceAdd"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.Fullload_CDC.OracleToAdlsDM -->
+      <class name="com.CloudBlaze.Onboarding.DataSources">
+        <methods>
+          <include name="verifyDataSourcesPageLink"/>
+          <include name="getResult"/>
+          <include name="Report"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.CloudBlaze.Onboarding.DataSources -->
+      <class name="com.Fullload_CDC.OracletoAzureSql">
+        <methods>
+          <include name="verifySourceAdd"/>
+          <include name="getResult"/>
+          <include name="Report"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.Fullload_CDC.OracletoAzureSql -->
+      <class name="com.Fullload_CDC.ChangeDataCapture">
+        <methods>
+          <include name="verifySourceAdd"/>
+          <include name="getResult"/>
+          <include name="Report"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.Fullload_CDC.ChangeDataCapture -->
+      <class name="com.Fullload_CDC.MySqlToAdls">
+        <methods>
+          <include name="getResult"/>
+          <include name="Report"/>
+          <include name="verifySourceMySql"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.Fullload_CDC.MySqlToAdls -->
+      <class name="com.Fullload_CDC.MysqlToAdlsCDC">
+        <methods>
+          <include name="verifySourceMySql"/>
+          <include name="getResult"/>
+          <include name="Report"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.Fullload_CDC.MysqlToAdlsCDC -->
+    </classes>
+  </test> <!-- GRP-Smoke(failed) -->
+</suite> <!-- Failed suite [CloudBlazeAutomation by groups] -->

@@ -61,7 +61,7 @@ public class ReuseFuntions extends BaseClass implements IOnBoarding ,IMonitoring
     driver.findElement(By.xpath("//*[@id='menu-169']/div//li[text()='"+reader.getCellData("Storage&Service", "IntegrationRunTime", 2)+"']")).click();
     Thread.sleep(1000);
     driver.findElement(By.id("Port")).sendKeys(reader.getCellData("Storage&Service","PortNo", 11));
-    Thread.sleep(1000);
+    Thread.sleep(3000);
     driver.findElement(By.xpath(xpathSubmitclick)).click();
     Thread.sleep(1000);
     driver.findElement(By.xpath(xpathYesBtnn)).click();

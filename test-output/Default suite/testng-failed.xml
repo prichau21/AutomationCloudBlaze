@@ -3,14 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Fullload_CDC.SqltoAzuresql">
+      <class name="com.Fullload_CDC.MySqlToSql">
         <methods>
-          <include name="verifySourceAdd"/>
           <include name="Report"/>
           <include name="getResult"/>
+          <include name="verifySourceMySql"/>
           <include name="init"/>
         </methods>
-      </class> <!-- com.Fullload_CDC.SqltoAzuresql -->
+      </class> <!-- com.Fullload_CDC.MySqlToSql -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
