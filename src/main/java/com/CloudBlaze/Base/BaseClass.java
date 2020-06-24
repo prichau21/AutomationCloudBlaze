@@ -229,9 +229,9 @@ public class BaseClass {
 		return destination;
 	}
 
-	@AfterSuite(alwaysRun = true)
-	public void tearDown() {
-	report.flush();
-	test.log(LogStatus.INFO, "Reports has been Flushed");
-	}
+	//@AfterSuite(alwaysRun = true)
+	//public void tearDown() {
+//	report.flush();
+	//test.log(LogStatus.INFO, "Reports has been Flushed");
+//	}
 	}

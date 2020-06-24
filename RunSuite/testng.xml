@@ -21,19 +21,19 @@
             <class name="com.CloudBlaze.Onboarding.ServicePrincipal"></class>	 
  		    <class name="com.CloudBlaze.Monitoring.DataFlowScheduled"></class>
  		    <class name="com.CloudBlaze.Monitoring.DataFlowMonitoring"></class>
- 		    <class name="com.CloudBlaze.UserSecurity.UserRoles"></class> 
- 		    <class name="com.Fullload_CDC.SqltoAzuresql"></class>-->
- 		     <class name="com.Fullload_CDC.SqlToAdlsDM"></class>
- 		  <!--  <class name="com.Fullload_CDC.FullLoad"></class>
+ 		    <class name="com.CloudBlaze.UserSecurity.UserRoles"></class>
+ 		    <class name="com.Fullload_CDC.SqltoAzuresql"></class>
+ 		    <class name="com.Fullload_CDC.SqlToAdlsDM"></class>
+ 		    <class name="com.Fullload_CDC.FullLoad"></class>
  		    <class name="com.Fullload_CDC.OracleToAdlsCDC"></class>
- 		<class name="com.Fullload_CDC.ChangeDataCapture"></class>
- 	        <class name="com.Fullload_CDC.OracleToAdls"></class>
+ 	    	<class name="com.Fullload_CDC.ChangeDataCapture"></class>
+ 	         <class name="com.Fullload_CDC.OracleToAdls"></class> 
             <class name="com.Fullload_CDC.OracletoAzureSql"></class>
  		    <class name="com.Fullload_CDC.FiletoAdls"></class>
  		    <class name="com.Fullload_CDC.MySqlToAdls"></class>
- 		    <class name="com.Fullload_CDC.MysqlToAdlsCDC"></class>
+ 		   <class name="com.Fullload_CDC.MysqlToAdlsCDC"></class>-->
  		    <class name="com.Fullload_CDC.MySqlToSql"></class>
- 		    <class name="com.Fullload_CDC.Demo"></class>
+ 		    <!--    <class name="com.Fullload_CDC.Demo"></class>
  		   
  		    <class name="com.Fullload_CDC.OracleToAdlsDM"></class>
  		    <class name="com.Fullload_CDC.MysqlToAdlsDM"></class>-->

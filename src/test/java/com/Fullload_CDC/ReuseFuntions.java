@@ -25,7 +25,7 @@ public class ReuseFuntions extends BaseClass implements IOnBoarding ,IMonitoring
     {   
     test = report.startTest("Verify MYSQL Source Creation");
     driver.navigate().refresh();
-    Thread.sleep(3000);
+    Thread.sleep(5000);
     driver.findElement(By.xpath(xpathDataSourcePageLink)).click();
     Thread.sleep(2000);
     driver.findElement(By.id("select-source")).click();
@@ -82,7 +82,7 @@ public class ReuseFuntions extends BaseClass implements IOnBoarding ,IMonitoring
 
     test = report.startTest("Verify Add Source");
     driver.navigate().refresh();
-    Thread.sleep(2000);
+    Thread.sleep(4000);
     driver.findElement(By.xpath(xpathDataSourcePageLink)).click();
     driver.findElement(By.xpath("//*[@id='root']/div/div/div/div/ul/li[6]/a")).click();
     driver.findElement(By.id("select-source")).click();
@@ -128,7 +128,7 @@ public class ReuseFuntions extends BaseClass implements IOnBoarding ,IMonitoring
     String toaster = driver.findElement(By.xpath(toasterRecordSaved)).getText();
     Assert.assertEquals(toaster,"Service/Storage added successfully!","Service/Storage  is not added succesfully ");
     test.log(LogStatus.PASS, "add Service/Storage ", "Service/Storage  is added Successfully Toaster message is displaying");
-    Thread.sleep(2000);
+    Thread.sleep(5000);
     System.out.println("Sql Source is Created Successfully !!");
 
 }

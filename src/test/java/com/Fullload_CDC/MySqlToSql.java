@@ -66,7 +66,7 @@ public class MySqlToSql extends ReuseFuntions implements IOnBoarding , IMonitori
 		 
 		 
      	 
-	     driver.findElement(By.xpath("/html/body/div[6]/div[2]/div[1]/div[4]/div/div[1]/table/thead/tr/th[1]/span/span[1]/input")).click();
+	     driver.findElement(By.xpath("/html/body/div[6]/div[2]/div[1]/div[6]/div/div[1]/table/thead/tr/th[1]/span/span[1]/input")).click();
          driver.findElement(By.xpath("(//*[@id='1'])[5]")).click();
 	     Thread.sleep(2000);
 		 driver.findElement(By.xpath("(/html/body//button[text()='Save'])[3]")).click();

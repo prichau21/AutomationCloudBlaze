@@ -3,26 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.CloudBlaze.Onboarding.DataFlow">
+      <class name="com.Fullload_CDC.SqltoAzuresql">
         <methods>
-          <include name="verifyNumberOfRecords"/>
-          <include name="verifyOnAddClickFirstPannel"/>
-          <include name="getResult"/>
-          <include name="verifyDataFlowPage"/>
-          <include name="verifyUrlOfDataFlowPage"/>
-          <include name="verifyComponentsOfDataFlowPage"/>
-          <include name="verifyColumnsOfGrid"/>
-          <include name="verifyOnAddClickPannelareDisplaying"/>
-          <include name="tearDown"/>
-          <include name="verifyGridComponents"/>
-          <include name="verifyEditDataFlow"/>
-          <include name="verifyComponentsOfDataFlow"/>
-          <include name="verifyAddDataFlow"/>
-          <include name="VerifyLogin"/>
+          <include name="verifySourceAdd"/>
           <include name="Report"/>
+          <include name="getResult"/>
           <include name="init"/>
         </methods>
-      </class> <!-- com.CloudBlaze.Onboarding.DataFlow -->
+      </class> <!-- com.Fullload_CDC.SqltoAzuresql -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

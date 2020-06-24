@@ -67,7 +67,7 @@ package com.Fullload_CDC;
   	 Assert.assertEquals(tableName,"Table Name", "Table Name Column is Not displaying");
   	 test.log(LogStatus.PASS,"Table Columns","Table Column is displaying");
   	 Thread.sleep(1000);
-  	driver.findElement(By.xpath("/html/body/div[6]/div[2]/div[1]/div[5]/div/div[1]/table/thead/tr/th[1]/span/span[1]/input")).click();
+  	driver.findElement(By.xpath("/html/body/div[6]/div[2]/div[1]/div[6]/div/div[1]/table/thead/tr/th[1]/span/span[1]/input")).click();
        driver.findElement(By.xpath("(//*[@id='1'])[5]")).click();
 
   	  Thread.sleep(2000);

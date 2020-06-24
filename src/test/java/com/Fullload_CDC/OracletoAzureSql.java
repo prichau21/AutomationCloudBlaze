@@ -53,7 +53,7 @@ public static void verifyAddDataFlow() throws InterruptedException, AWTException
 	 driver.findElement(By.xpath(xpathDataFlowPageLink)).click();
 	 Thread.sleep(2000);
 	 driver.findElement(By.xpath(xpathAddButton)).click();
-	 Thread.sleep(3000);
+	 Thread.sleep(5000);
      driver.findElement(By.xpath(xpathOracleToAzureSql)).click();
      Thread.sleep(2500);
 	 driver.findElement(By.id("name")).sendKeys(reader.getCellData("DataFlow","Name", 5));

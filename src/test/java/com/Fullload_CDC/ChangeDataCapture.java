@@ -27,10 +27,7 @@ import com.relevantcodes.extentreports.LogStatus;
 	   {    
 	        
 			 verifySourceSQL(8);
-	   
-	    
-	   
-	    } 
+	   } 
 	 
 	  
 	    @Test(priority =  2, dependsOnMethods = {"verifySourceAdd"},groups = { "Smoke" })
@@ -40,26 +37,23 @@ import com.relevantcodes.extentreports.LogStatus;
 		        
 	    }
 	
-	 
-	 
-		           @Test(priority = 3, dependsOnMethods = { "verifyAddDestination" },groups = { "Smoke" })
-	               public static void verifyAddDataFlow() throws InterruptedException 
-	                 {    
+	    @Test(priority = 3, dependsOnMethods = { "verifyAddDestination" },groups = { "Smoke" })
+	    public static void verifyAddDataFlow() throws InterruptedException 
+	      {    
 			  
-			   	      
-					     test = report.startTest("Verify Add DataFlow");
-						 Thread.sleep(2000);
+						     test = report.startTest("Verify Add DataFlow");
+						 Thread.sleep(3700);
 						 driver.findElement(By.xpath(xpathDataFlowPageLink)).click();
-						 Thread.sleep(2000);
+						 Thread.sleep(3700);
 						 driver.findElement(By.xpath(xpathAddButton)).click();
-						 Thread.sleep(3000);
+						 Thread.sleep(3700);
 	                     driver.findElement(By.xpath(xpathCreateDataFlow)).click();
-	                     Thread.sleep(2500);
+	                     Thread.sleep(3700);
 						 driver.findElement(By.id("name")).sendKeys(reader.getCellData("DataFlow","Name", 8));
-			     		 Thread.sleep(2500);
+			     		 Thread.sleep(3700);
 			     	
 						 driver.findElement(By.id("description")).sendKeys(reader.getCellData("DataFlow", "Description", 8));
-						 Thread.sleep(2500);
+						 Thread.sleep(3500);
 						
 						 driver.findElement(By.className("css-1hwfws3")).click();
 						 Thread.sleep(2500);
@@ -97,7 +91,7 @@ import com.relevantcodes.extentreports.LogStatus;
 						 test.log(LogStatus.PASS,"Table Columns","Where clause Column is displaying");
 			             Thread.sleep(1000);
 			             			 
-			             driver.findElement(By.xpath("/html/body/div[6]/div[2]/div[1]/div[4]/div/div[1]/table/thead/tr/th[1]/span/span[1]/input")).click();//to uselect all tables
+			             driver.findElement(By.xpath("/html/body/div[6]/div[2]/div[1]/div[6]/div/div[1]/table/thead/tr/th[1]/span/span[1]/input")).click();//to uselect all tables
 			             Thread.sleep(1000);
 			             //driver.findElement(By.xpath("(/html/body/div//table/tbody/tr//td[2][text()='superstoresales'])[2]/preceding-sibling::td")).click();
 			             driver.findElement(By.xpath("(/html/body/div//table/tbody/tr//td[2][text()='"+reader.getCellData("DataFlow","Tablename",8)+"'])[2]/preceding-sibling::td")).click();// to select store table
@@ -115,10 +109,10 @@ import com.relevantcodes.extentreports.LogStatus;
 			             driver.findElement(By.xpath("(/html/body/div//table/tbody/tr//td[2][text()='superstoresales'])[2]/child::button")).click();  // to click on [|] sign to see columns
 						 Thread.sleep(1000);
 			              
-			             driver.findElement(By.name("14")).click();
+			             driver.findElement(By.name("12")).click();
 			             Thread.sleep(3000);
 			              
-			             driver.findElement(By.xpath("/html/body//div[4]//div[2]/div/button[text()='Save']")).click(); //save columns
+			             driver.findElement(By.xpath("(/html/body//div[6]//div[2]/div/button[text()='Save'])[2]")).click(); //save columns
 						 boolean cancel = driver.findElement(By.xpath("(/html/body/div//button[text()='Cancel'])[3]")).isEnabled();
 						 Assert.assertEquals(cancel, true,"Cancel button is not Displaying or Disabled");
 						 test.log(LogStatus.PASS,"Cancel","Cancel button is Displaying and Enabled");
@@ -132,7 +126,8 @@ import com.relevantcodes.extentreports.LogStatus;
 						 
 						 Thread.sleep(1000);
 						 driver.findElement(By.xpath(xpathSaveButton)).click();
-						 Thread.sleep(1500);
+						 WebDriverWait wait = new WebDriverWait(driver,60);
+					  	 wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(toasterRecordSaved)));
 					     String toaster = driver.findElement(By.xpath(toasterRecordSaved)).getText();
 			    		
 				    	 Assert.assertEquals(toaster,"Flow added successfully!","Record is not added succesfully ");	    	
@@ -142,7 +137,7 @@ import com.relevantcodes.extentreports.LogStatus;
 				    	 driver.findElement(By.xpath("//*[@id='root']/div//div[4]/table/tbody/tr[1]/td[7]/button[@title='Publish flow']")).click(); //publish Flow 
 				    	 Thread.sleep(1000);
 				    	 driver.findElement(By.xpath(xpathYesBtn)).click();
-				    	 WebDriverWait wait = new WebDriverWait(driver,60);
+				    	// WebDriverWait wait = new WebDriverWait(driver,60);
 				    	 wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(toasterRecordSaved)));
 				    	 String toaster2 = driver.findElement(By.xpath(toasterRecordSaved)).getText();
 				    	 System.out.println(toaster2);
@@ -154,23 +149,11 @@ import com.relevantcodes.extentreports.LogStatus;
 		           @Test(priority = 4,dependsOnMethods = { "verifyAddDataFlow" },groups = { "Smoke" })
 	               public static void verifyScheduledFlow() throws InterruptedException 
 	                 {   
-		        	   test = report.startTest("Verify Scheduled DataFlow");
-		        	   Thread.sleep(1000);
-				        driver.findElement(By.xpath(xpathDataFlowScheduled)).click();
-		   				Thread.sleep(1000);
-		   				driver.findElement(By.id("select-dataflowname")).click();
-		   				Thread.sleep(1000);
-		   				driver.findElement(By.xpath("//*[@id='menu-dataflowname']//div//li[text()='"+reader.getCellData("DataFlow","Name", 8)+"']")).click();
-		   				Thread.sleep(1000);
-		   				driver.findElement(By.xpath(xpathSelectFrequency)).click();
-		   				
-		   	            Thread.sleep(2000);
-		   				driver.findElement(By.xpath("//*[@id='root']//div/form//div[text()='Now']")).click();
-		   			    
-		   			    String description=reader.getCellData("Scheduler","Description", 2); 
-		   				driver.findElement(By.xpath("//*[@id='root']//*[@name='description']")).sendKeys(description);
-		   		        Thread.sleep(1000);
-		   		        driver.findElement(By.id("addScheduler")).click();
+		        	   
+		        	   
+		        	   
+		        	   verifyScheduledFlowR(8 ,2);
+		        	   
 		   		     
 		   		     String connectionUrl =
 		   	                "jdbc:sqlserver://cloudblazenewuiserver.database.windows.net:1433;"
@@ -185,28 +168,103 @@ import com.relevantcodes.extentreports.LogStatus;
 		   	        try (Connection connection = DriverManager.getConnection(connectionUrl);
 		   	         Statement statement = connection.createStatement();) {
                        
+		   	        	
+		   	        	
+		   	         String selectsql1="select DataFlowId from DataFlow where name='"+reader.getCellData("DataFlow","Name", 8)+"' and IsActive=1"; 	
+				   	    ResultSet rs=statement.executeQuery(selectsql1);
+				   	    while (rs.next()) {
+				            String FlowId = rs.getString(1);
+				            System.out.println("DataFlowId is "+ FlowId);
+		   	        	
+		   	        	
+		   	        	
+		   	        	
 		   	         
-		   	            String selectSql = "update [Scheduling].[DataflowExeuctionCalendar] set currentsnapshotdate='2019-02-18'  where DataflowId=923";
+		   	            String selectSql = "update [Scheduling].[DataflowExeuctionCalendar] set currentsnapshotdate='2019-02-18'  where DataflowId="+FlowId+"";
 		   	             statement.executeQuery(selectSql);
 
 		   	      
-		   	        }
+		   	        }}
 		   	        
 		   	        catch (SQLException e) {
 		   	            e.printStackTrace();
 		   	        }
-		   		        
-		   				Thread.sleep(1000);
-		   				String toaster = driver.findElement(By.xpath(xpathtoaster)).getText();
-		   			
-		   				System.out.println(toaster);
-		   		        Assert.assertEquals(toaster,"Flow Scheduled successfully!","Flow is not Scheduled succesfully");
-		   		        test.log(LogStatus.PASS,"Flow Scheduled", "Flow is Scheduled succesfully");
-		   		      }
-		   			
-		          @Test(priority = 5, dependsOnMethods = { "verifyScheduledFlow" },groups = { "Smoke" })
-	               public static void verifyFlowOnMontioringScreen() throws InterruptedException  
-	               {    
+	                 }
+		           @Test(priority = 5,dependsOnMethods = { "verifyScheduledFlow" }, groups = { "Smoke" })
+	               public static void verifyDataFlowOnMontioringScreen() throws InterruptedException  
+	               {
 		        	  verifyFlowMontioringScreen(8);
-	               }}
- 
+		        	 
+	               }
+		   		        
+
+		             @Test(priority = 6,dependsOnMethods = { "verifyDataFlowOnMontioringScreen" },groups = { "Smoke" })
+		             public static void verifyDeleteScheduledFlow() throws InterruptedException  
+		            {   
+			         test= report.startTest("ReSccheduling Flow");
+			         driver.navigate().refresh();
+			         Thread.sleep(3000);
+			        
+			         driver.findElement(By.xpath(xpathDataFlowScheduled)).click();
+			         
+			         
+			          Thread.sleep(1000);
+			          driver.findElement(By.xpath("//*[@id='root']//div/table/tbody/tr[1]/td[2][text()='"+reader.getCellData("DataFlow","Name", 8)+"']/..//a[2]")).click();
+			          Thread.sleep(1000);
+			          driver.findElement(By.xpath(xpathYesButn)).click();
+			          driver.findElement(By.id("select-dataflowname")).click();
+				      Thread.sleep(1000);
+					  driver.navigate().refresh();
+					  Thread.sleep(1000);
+					   
+		            }
+			         
+			         
+		   	  
+		             @Test(priority = 7, dependsOnMethods = { "verifyDeleteScheduledFlow" },groups = { "Smoke" })
+		 	        public static void verifyRescheduled() throws InterruptedException  
+		 	        { 
+		 			    verifyScheduledFlowR(8 ,2);
+		 				
+		 				String connectionUrl =
+		 	   	                "jdbc:sqlserver://cloudblazenewuiserver.database.windows.net:1433;"
+		 	   	                + "database=CloudBlazeDBNewWorkingNotebook;"
+		 	   	                + "user=cbadmin@cloudblazenewuiserver;"
+		 	   	                + "password=Cblaze@123;"
+		 	   	                + "encrypt=true;"
+		 	   	                + "trustServerCertificate=true;"
+		 	   	                + "hostNameInCertificate=*.database.windows.net;"
+		 	   	                + "loginTimeout=30;";
+		 				 try (Connection connection = DriverManager.getConnection(connectionUrl);
+		 			   	         Statement statement = connection.createStatement();) {
+		 					  String selectsql1="select DataFlowId from DataFlow where name='"+reader.getCellData("DataFlow","Name", 8)+"' and IsActive=1"; 	
+		 				   	    ResultSet rs=statement.executeQuery(selectsql1);
+		 				   	    while (rs.next()) {
+		 				            String FlowId = rs.getString(1);
+		 				            System.out.println("DataFlowId is "+ FlowId);
+		 			   	            
+		 			   	            String selectSql = "update [Scheduling].[DataflowExeuctionCalendar] set currentsnapshotdate='2019-12-04',PreviousSnapshotDate='2019-12-03'  where DataflowId="+FlowId+"";//NEED TO ADD DATAFLOW ID AND DATE
+		 			   	             statement.executeQuery(selectSql);
+
+		 				   	    }
+		 			   	        }
+		 			   	       
+		 			   	        catch (SQLException e) {
+		 			   	            e.printStackTrace();
+		 			   	        }
+		 			   		        
+		 			   				
+		 			   		  
+		         }
+		 			   		 @Test(priority = 8,dependsOnMethods = { "verifyRescheduled" }, groups = { "Smoke" })
+		 		               public static void verifyFlowOnMontioringScren() throws InterruptedException  
+		 		               {  
+		 			   			 Thread.sleep(3000);
+		 			   			 verifyFlowMontioringScreen(8);
+		 		               }
+		         }
+		 			   		
+		 		        
+		 	      
+		 	    
+		        

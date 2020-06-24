@@ -9,32 +9,18 @@
       </run>
     </groups>
     <classes>
-      <class name="com.Fullload_CDC.SqlToAdlsDM">
-        <methods>
-          <include name="tearDown"/>
-          <include name="verifyFlowOnMontioringScreen"/>
-          <include name="verifySourceAdd"/>
-          <include name="verifyAddDestination"/>
-          <include name="verifyAddDataFlow"/>
-          <include name="verifyScheduledFlow"/>
-          <include name="Report"/>
-          <include name="getResult"/>
-          <include name="init"/>
-        </methods>
-      </class> <!-- com.Fullload_CDC.SqlToAdlsDM -->
-      <class name="com.Fullload_CDC.SqltoAzuresql">
+      <class name="com.Fullload_CDC.ChangeDataCapture">
         <methods>
           <include name="verifyAddDestination"/>
-          <include name="tearDown"/>
-          <include name="verifyAddDataFlow"/>
           <include name="verifySourceAdd"/>
+          <include name="verifyFlowOnMontioringScreen"/>
           <include name="Report"/>
           <include name="getResult"/>
+          <include name="verifyAddDataFlow"/>
           <include name="verifyScheduledFlow"/>
           <include name="init"/>
-          <include name="verifyFlowOnMontioringScreen"/>
         </methods>
-      </class> <!-- com.Fullload_CDC.SqltoAzuresql -->
+      </class> <!-- com.Fullload_CDC.ChangeDataCapture -->
     </classes>
   </test> <!-- CloudBlaze Tests(failed) -->
 </suite> <!-- Failed suite [CloudBlaze Automation] -->
